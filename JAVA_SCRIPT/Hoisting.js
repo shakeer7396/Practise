@@ -25,9 +25,12 @@
 
 // Hoisting initialization are not supported only variable declaration are supported like you declare above console and initialize below console it will undefined
 
-// var x;
-// console.log(x)
-// x=100;
+var x;
+console.log(x)
+
+x=100;
+console.log(x)
+
 // ----------------------
 // function get(){
 //    var x;
