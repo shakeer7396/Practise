@@ -21,6 +21,7 @@ async function registerUser(e) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(user)
+        
     });
 
     data = await data.json();
