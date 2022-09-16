@@ -1,6 +1,5 @@
-{console.log(a)
-console.log(b)
-
-var a=10;
-let b=10;
-}
+var arr=[1];
+arr.reduce((a,b)=>{
+console.log(a);
+console.log(b);
+})
