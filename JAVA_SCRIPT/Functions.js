@@ -24,18 +24,18 @@
 // -----------------------------------------
 // arrow function =>
 // this function is introduced in Es6 version
-// function add(a,b){
-//     console.log(a+b)
+function add(a,b){
+    console.log(a+b)
+}
+add(5,5)//normal
+
+// var add=(a,b)=>{
+//    return a+b;
 // }
-// add(5,5)//normal
+// console.log(add(5,5))
 
-var add=(a,b)=>{
-   return a+b;
-}
-console.log(add(5,5))
-
-const mult=(a,b)=>{
-    return (a+b)*5
-}
-console.log(mult(5,5))
+// const mult=(a,b)=>{
+//     return (a+b)*5
+// }
+// console.log(mult(5,5))
 
