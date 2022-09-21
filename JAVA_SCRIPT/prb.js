@@ -161,3 +161,27 @@
 // }
 // cont(3)
 
+// function getName(){
+//     var status =true
+//     if(status){
+//         var name='masai'
+//     }
+//     console.log(name)
+// }
+// getName()
+
+// console.log([1]===[1])
+
+// typeof[1,1,1]===typeof{val:1,val:1,val:1}
+
+// const prod =(x)=>{
+//     x=x+5
+//     return inner=>(
+//         x*inner
+//     )
+// }
+// prod(5)(10)
+const name = 'Venkat';
+const age = 30;
+const person = { name, age };
+console.log(person);
