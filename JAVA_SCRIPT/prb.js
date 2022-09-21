@@ -116,4 +116,48 @@
 //      }, 3000);
 //     }
 
+// var isAuth
+
+// console.log(isAuth)
+
+// 'use strict'
+// function name(){
+// var name = 'masai'
+//  console.log(this.name)
+// }
+// function greet(){ 
+//     console.log('hello')
+// }
+// var arr= [{name: 'Nrupul'}, {name: 'Aman'}, {name: 'Albert'}]
+// for(var i=0; i<arr.length; i++){
+// setTimeout(name.call(arr[i]),0)
+// setTimeout(greet(),0)
+// }
+
+// var str="masai"
+// var {length}=str
+
+// var a="256"
+// var b=256
+// console.log(a===b)
+// console.log(a==b)
     
+// name=x||'name'
+// console.log(name)
+// var x='Masai'
+
+// console.log(typeof function (){})
+
+// name='masai'
+// var name
+// console.log(name)
+
+// function count(x){
+//     var y=x*10
+//     function val(z){
+//         console.log(x,y,z)
+//     }
+//     val(y*5)
+// }
+// cont(3)
+
