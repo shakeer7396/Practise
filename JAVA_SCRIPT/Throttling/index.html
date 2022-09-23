@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttling</title>
+</head>
+<body>
+    <input type="text" placeholder="Add Data" id="search">
+</body>
+</html>
+<script>
+
+let t=document.getElementById("search");
+t.onkeypress=wrapper
+
+let count=0;
+let flag=true;
+
+function wrapper(){
+if(flag){
+    throtling()
+    flag=false;
+    setTimeout(()=>{
+        flag=true
+    },3000)
+
+}
+}
+function throtling(){
+    console.log("call",count++)
+}
+
+
+</script>

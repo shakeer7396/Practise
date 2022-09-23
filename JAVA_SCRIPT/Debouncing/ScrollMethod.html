@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing</title>
+    <style>
+        #search{
+            height:100px;
+            width:40%;
+            border:1px solid blue;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+   <div id="search">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste suscipit quisquam ea eligendi dolores cupiditate reiciendis, veritatis dolor dolore aut velit, commodi repellendus cum placeat magni perferendis doloribus ipsa? 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste suscipit quisquam ea eligendi dolores cupiditate reiciendis, veritatis dolor dolore aut velit, commodi repellendus cum placeat magni perferendis doloribus ipsa?
+   </div>
+</body>
+</html>
+<script>
+let c=document.getElementById("search");
+c.onscroll= wrapper;
+let count=0;
+let timer;
+function wrapper(){
+    clearInterval(timer)
+    timer=setTimeout(debounce,3000)
+}
+
+function debounce(){
+    console.log("count",count++)
+}
+</script>
