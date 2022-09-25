@@ -1,29 +1,39 @@
-// // 'use strict'
-// // function printDetails(){
-// //      console.log(this.name)
-// // }
-// // var person = {
-// // name: 'Haren',
-// //  company: 'masai',
-// //   print: printDetails
-// // }
-// // person.print()
-// // var name = 'Ajay'
+// 'use strict'
+// function printDetails(){
+//      console.log(this.name)
+// }
+// var person = {
+// name: 'Haren',
+//  company: 'masai',
+//   print: printDetails
+// }
+// person.print()
+// var name = 'Ajay'
+
 
 // printName('Shoneil')
 // var printName=function(name){
 //     console.log('hello',name)
 // }
+
+
 // (function(){
 //     console.log('Hello!')})
 //     ();
+
+
+
+
 // console.log(typeof[])
+
+
 // function getYear () {
 //     var year = new Date().getFullYear()
 //     return year
 //     }
 //     getYear()
 //     console.log(year) // ?
+
 
 // function value(b){
 //     const a=100;
@@ -32,6 +42,9 @@
 // }
 // console.log(value(100))
 
+
+// console.log([1] === [1])
+
 // export default class Class extends Component{
 // constructor(props) {
 // super(props)
@@ -39,7 +52,6 @@
 // fname: 'Masai',
 // lname: 'School'
 // }
-
 // console.log(this.state.fname, this.state. lname)
 // }
 // componentDidUpdate(){
@@ -117,8 +129,8 @@
 //     }
 
 // var isAuth
-
 // console.log(isAuth)
+
 
 // 'use strict'
 // function name(){
@@ -172,7 +184,7 @@
 
 // console.log([1]===[1])
 
-// typeof[1,1,1]===typeof{val:1,val:1,val:1}
+// console.log(typeof[1,1,1]===typeof{val:1,val:1,val:1})
 
 // const prod =(x)=>{
 //     x=x+5
@@ -180,7 +192,7 @@
 //         x*inner
 //     )
 // }
-// prod(5)(10)
+// console.log(prod(5)(10))
 
 
 // const name = 'Venkat';
@@ -188,3 +200,106 @@
 // const person = { name, age };
 // console.log(person);
 
+// ------------------------------------------------------------------------------------------
+// const sum = (x,y)=>{
+//     x= x || 5
+//     y = y || 10
+//     return x + y
+//     }
+//     console.log(sum (0,10))
+
+// 'use strict'
+// function alpha(){
+// var name = 'masai'
+// console.log(this.name)
+// }
+// var name= 'masai school'
+// alpha()
+
+
+// function getYear () {
+//     var year = new Date().getFullYear()
+//     return year
+//     }
+//     getYear()
+//     console.log(year) // ?
+
+// const sum=(x,y)=>x+y
+// function sum(x,y){x+y}
+
+// render(){ 
+
+// <Header /> 
+// <content /> 
+// <Footer />
+// }
+
+
+// var name = 'Ajay'
+// function printDetails(){ console.log(this.name)
+// }
+// var person = {
+// name: 'Haren',
+// company: 'masai',
+// print: printDetails()
+// }
+// person.print()
+
+
+// function alpha(){
+//     var name = 'masai'
+//     console.log(this.name)
+//     }
+//     var name = 'masai_school'
+//     alpha(.)
+
+
+// var x = 100
+// function alpha(){ var x = 200
+// function beta(){
+// console.log(x)
+// }
+// return beta
+// }
+// var gamma= alpha()
+// gamma()
+
+
+// console.log(name)
+
+// name="masai"
+
+
+// console.log(typeof [])
+
+
+// function cont(x) { var y = x*10 
+//     function val(z){
+//          console.log(x,y,z)
+// }
+// val(y*5)
+// }
+// cont (3)
+
+
+// for (var i=0;i<=5;i++){
+//     setTimeout(function asyncronous () {
+//     console.log(i)
+//     }, 1*1000)
+//     }
+
+
+// printName('Shoneil')
+// var printName
+// function printName (name) { console.log('hello', name)
+// }
+// printName = function(name){ console.log('hey', name)
+// }
+
+// var str="masai";
+// var {length}=str
+
+// function alpha(a=100){...}
+
+// great()
+// setTimeout(great,1000)
