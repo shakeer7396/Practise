@@ -1,25 +1,25 @@
-// var count=100;
-// function clousers(){
-//     var name="hello"
-//     return function(){
-//         console.log(name)
-//         console.log(count)
-//     }
+var count=100;
+function clousers(){
+    var name="hello"
+    return function(){
+        console.log(name)
+        console.log(count)
+    }
 
-// }
-// var res=clousers();
-// res()
+}
+var res=clousers();
+res()
 // ------------------------------------------------------------------------
 
-function x(){
-    var a=7;
-    function y(){
-        console.log(a)
-    }
-    return y;
-}
-var z=x();
-console.log(z)
+// function x(){
+//     var a=7;
+//     function y(){
+//         console.log(a)
+//     }
+//     return y;
+// }
+// var z=x();
+// console.log(z)
 
 
 //Uses of Closure

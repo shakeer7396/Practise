@@ -10,18 +10,18 @@
 // ------------------------------------
 // redeclare the obj values
 // eg--2
-// var obj={
-//     name:"Shakeer",
-//     getName:function(){
-//         console.log(this.name)
-//     }
-// }
-// var get=obj.getName;
+var obj={
+    name:"Shakeer",
+    getName:function(){
+        console.log(this.name)
+    }
+}
+var get=obj.getName;
 
-// var obj2={
-//     name:"shaik",get
-// };
-// obj2.get()
+var obj2={
+    name:"shaik",get
+};
+obj2.get()
 // --------------------------------------------------
 
 

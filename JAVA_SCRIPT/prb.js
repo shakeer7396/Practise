@@ -181,7 +181,10 @@
 //     )
 // }
 // prod(5)(10)
-const name = 'Venkat';
-const age = 30;
-const person = { name, age };
-console.log(person);
+
+
+// const name = 'Venkat';
+// const age = 30;
+// const person = { name, age };
+// console.log(person);
+

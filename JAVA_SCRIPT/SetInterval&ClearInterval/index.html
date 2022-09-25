@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #setinterval{
+            height:200px;
+            width:20%;
+            border: 3px solid greenyellow;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="setinterval">Hello</div>
+</body>
+</html>
+<script>
+    // Setinterval
+    // var a=0;
+    // setInterval(Anim,1000);
+
+    // function Anim(){
+    //     a=a+10;
+
+
+    //     // console.log(a);
+    //     let target=document.getElementById("setinterval");
+
+    //     target.style.marginLeft =a +"%";
+    // }
+
+    //ClearInterval
+    var a=0;
+    let id=setInterval(Anim,1000);
+
+    function Anim(){
+        a=a+10;
+        if(a==200){
+            clearInterval(id)
+        }
+        else{
+            let target=document.getElementById("setinterval");
+
+            target.style.width =a +"px";
+        }
+
+    }
+</script>
