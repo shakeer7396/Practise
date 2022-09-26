@@ -303,3 +303,56 @@
 
 // great()
 // setTimeout(great,1000)
+
+// name=x||"name"
+// console.log(name);
+// var x="masai"
+
+
+// let lname="masai"
+// let fname="school"
+
+// const person={lname,fname}
+
+
+// name="masai"
+// var name
+// console.log(name)
+
+// const isAuth;
+
+// console.log(isAuth)
+
+
+// function getName() { 
+//     var status = true 
+//     if (status) {
+//     var name = 'masai'
+//     }
+//     console.log(name)
+//     }
+//     getName()
+
+
+// var arr = ['a', 'b', 'c', 'd', 'e'] 
+// const func =([f,...r])=> r.reduce((a,c)=>a+c)+f 
+
+// func(arr)
+
+
+// function getName() { name = 'albert'
+// }
+// getName()
+// console.log(name)
+
+
+// console.log(typeof(){})
+
+// const email = 'user@gmail.com'
+//  let name = 'Admin'
+// email = 'admin@gmail.com'
+// name ='Super Admin'
+
+
+// const arr = [ 'albert', 'nrupul', 'aman' ] 
+// console.log(arr[0] = 'yogesh')
