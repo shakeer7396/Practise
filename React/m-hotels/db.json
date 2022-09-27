@@ -1,0 +1,16 @@
+{
+  "rooms": [
+    {
+      "category": "family",
+      "image_url": "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__480.jpg",
+      "type_of_room": "AC",
+      "bed_type": "Double",
+      "no_of_persons": "4",
+      "capacity": "5",
+      "cost": "299",
+      "booked": false,
+      "id": 1
+    }
+  ]
+  
+}
