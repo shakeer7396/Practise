@@ -1,12 +1,35 @@
 import React from 'react'
-import { Box, Button } from '@chakra-ui/react'
+import { Box, Button, Flex } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
+
 
 const Home = () => {
+    const navigate=useNavigate();
   return (
-    <Box>
-    <Button colorScheme='blue' mr={'10px'}>Admin</Button>
-    <Button colorScheme='blue'>User</Button>
-    </Box>
+    
+    <Flex
+    w={"100vw"}
+    h={"100vh"}
+    justifyContent={"center"}
+    alignItems={"center"}
+  >
+    <Button
+      m={"1rem"}
+      variant="solid"
+      colorScheme={"blue"}
+      onClick={() => navigate("/adminlogin")}
+    >
+      Admin
+    </Button>
+    <Button
+      m={"1rem"}
+      variant="solid"
+      colorScheme={"blue"}
+      onClick={() => navigate("/signup")}
+    >
+      User
+    </Button>
+  </Flex>
   )
 }
 
