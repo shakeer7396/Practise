@@ -11,18 +11,31 @@
 // res()
 
 
+// var hello=100;
+// function out(){
+//     var out=500;
+//   return function inside(){
+//         var inside=400;
+//         console.log(hello);
+//         console.log(out);
+//         console.log(inside);
+//     } 
+// }
+// var res=out();
+// res();
 
 // ------------------------------------------------------------------------
 
-// function x(){
-//     var a=7;
-//     function y(){
-//         console.log(a)
-//     }
-//     return y;
-// }
-// var z=x();
-// console.log(z)
+
+
+var Person = function(pname){
+    var name=pname
+    this.getName=function(){
+        return name;
+    }
+}
+var person=new Person("Neelesh")
+console.log(person.getName())
 
 
 //Uses of Closure
