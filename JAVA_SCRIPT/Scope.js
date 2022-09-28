@@ -8,9 +8,8 @@
 // functional Scope
 // function awesomeFunction(){
 //     var a = 2;
-  
 //     var multiplyBy2 = function(){
-//       console.log(a*2); // Can access variable "a" since a and multiplyBy2 both are written inside the same function
+//       console.log(a*2); // Can access variable "a" since a and multiplyBy2 both are written    inside the same function
 //     }
 //     multiplyBy2(); 
 //   }
@@ -27,6 +26,5 @@
 }
 
 for(let i=0;i<5;i++){
-
 }
 console.log(i)//its came error because its in out side the block
