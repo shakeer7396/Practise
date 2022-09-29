@@ -1,0 +1,11 @@
+{
+  "details": [
+    {
+      "id": 1,
+      "name": "Shaik",
+      "age": 22,
+      "state":"Andhra",
+      "year":"Year"
+    }
+  ]
+}
