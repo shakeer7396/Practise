@@ -33,14 +33,14 @@
 // Apply()
 //the apply method similar to the call method ,the difference is call method takes arguments seperately,but apply method takes an arguments with arrays.
 
-// function check(message){
-//     console.log(this.name+" "+this.age+message)
-// }
-// var person={
-//     name:"shaik",
-//     age:22
-// }
-// check.apply(person,[" great"])
+function check(message){
+    console.log(this.name+" "+this.age+message)
+}
+var person={
+    name:"shaik",
+    age:22
+}
+check.apply(person,[" great"])
 
 
 // --------------------------------------------------------

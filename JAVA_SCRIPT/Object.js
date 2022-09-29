@@ -1,27 +1,33 @@
 // This key word depends on parent object
 
 // var obj={
-//     name:"shakeer",
-//     getname:function(){
-//         console.log(this.name);
+//     name:"shaik",
+//     getName:function(){
+//         console.log(this.name)
 //     }
 // }
-// obj.getname();
+// obj.getName();
+
+
 // ------------------------------------
 // redeclare the obj values
 // eg--2
 var obj={
-    name:"Shakeer",
+    name:"shaik",
+    age:23,
     getName:function(){
         console.log(this.name)
+        console.log(this.age)
     }
 }
-var get=obj.getName;
+var out=obj.getName;
 
 var obj2={
-    name:"shaik",get
-};
-obj2.get()
+    name:"shakeer",
+    age:22,out
+}
+obj2.out();
+
 // --------------------------------------------------
 
 
