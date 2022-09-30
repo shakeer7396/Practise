@@ -7,17 +7,33 @@ import {
     Select,
   } from '@chakra-ui/react'
 import { useAlert } from 'react-alert'
+import { personDetails } from '../Redux/AppReducer/action';
+import { PERSON_DETAILS } from '../Redux/AppReducer/actionTypes';
+import { useNavigate } from 'react-router-dom';
+import {useDispatch} from 'react-redux';
+
 const Tesla = () => {
+    const dispatch=useDispatch();
+    const navigate=useNavigate();
     const alert=useAlert();
 
-    const [input,setInput] = useState()
+    const [input,setInput] = useState({})
 
-    const handleChange=()=>{
-        const {id,value} =
+    const handleChange=(e)=>{
+        setInput({
+            ...input,
+            [e.target.id]:e.target.value,
+        })
     }
 
     const handleSubmit=()=>{
-
+        dispatch(personDetails(input,alert))
+        .then((r)=>{
+            if(r==PERSON_DETAILS){
+                navigate('/user')
+            }
+           
+        })
     }
   return (
     <FormControl w={"30%"} boxShadow={"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"} m={"auto"} mt={"100px"} padding={"15px"}>

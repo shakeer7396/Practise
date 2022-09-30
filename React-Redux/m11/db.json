@@ -4,8 +4,22 @@
       "id": 1,
       "name": "Shaik",
       "age": 22,
-      "state":"Andhra",
-      "year":"Year"
+      "state": "Andhra",
+      "year": "Year"
+    },
+    {
+      "name": "kj",
+      "age": "22",
+      "state": "Karnataka",
+      "year": "2024",
+      "id": 2
+    },
+    {
+      "name": "rebook",
+      "age": "20",
+      "state": "Telangana",
+      "year": "2024",
+      "id": 3
     }
   ]
 }

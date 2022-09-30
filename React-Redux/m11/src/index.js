@@ -7,6 +7,8 @@ import {BrowserRouter} from "react-router-dom";
 import { ChakraProvider } from '@chakra-ui/react';
 import { transitions, positions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+import { Provider } from 'react-redux';
+import {store} from './Redux/store';
 const options = {
   position: positions.BOTTOM_CENTER,
   timeout: 5000,
@@ -20,7 +22,9 @@ root.render(
     <BrowserRouter>
     <ChakraProvider>
   <AlertProvider template={AlertTemplate} {...options}>
+    <Provider store={store}>
     <App />
+    </Provider>
     </AlertProvider>
     </ChakraProvider>
     </BrowserRouter>
