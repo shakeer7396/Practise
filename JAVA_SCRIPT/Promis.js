@@ -40,7 +40,7 @@ function prob(complete){
     return new Promise(function(resolve,reject){
     console.log("data loading  wait")
         setTimeout(()=>{
-            if(complete){
+            if(!complete){
                 resolve("Right")
             }
             else{
@@ -59,3 +59,42 @@ let reject = (error)=>{
 }
 
 prob(true).then(fulfil).catch(reject);
+
+// function getresult(a,b){
+//     return new Promise(function(resolve,reject){
+//         console.log("Please wait checking")
+//         var c=a*b;
+//         setTimeout(()=>{
+//             if(a,b){
+//                 resolve(`your ans is ${c}`)
+//             }
+//             else{
+//                 reject('Failed')
+//             }
+//         },3000)
+//     })
+// }
+
+// getresult(10,5)
+// .then((result)=>{console.log(result)})
+// .catch((error)=>{console.log(error)})
+
+// function operation(a,b){
+//     return new Promise(function(resolve,reject){
+//         console.log("please wait data loading")
+
+//       let  mult=a*b;
+//         setTimeout(()=>{
+//             if(a,b){
+//                 resolve(`your result is-${mult}`)
+//             }
+//             else{
+//                 reject("some thing wrong ")
+//             }
+//         },3000)
+//     })
+// }
+
+// operation(2,50)
+// .then((res)=>{console.log(res)})
+// .catch((err)=>{console.log(err)})
