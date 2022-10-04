@@ -1,7 +1,7 @@
 
 // ***Note- Key differences between rest parameter and spread operator:
 
-// Rest parameter is used to take a variable number of arguments and turns them into an array while the spread operator takes an array or an object and spreads it
+// Rest parameter is used to take  number of arguments and turns them into an array while the spread operator takes an array or an object and spreads it
 // Rest parameter is used in function declaration whereas the spread operator is used in function calls.
 
 
@@ -20,6 +20,10 @@
 // }
 // indexCheck(1,5,8,9); output-9
 
+function helo(...args){
+    console.log(args[2])
+}
+helo(1,2,3,4,5)
 //   -----------------------------------------------------------------------------------------
 //   function addAllArgs(...args){
 //     let sumOfArgs = 0;

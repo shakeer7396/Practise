@@ -17,13 +17,23 @@
 
 // right-way are given below 
 
-var count=0;
-let check=setInterval(()=>{
-    console.log(count++);
+let count1=0;
+let out=setInterval(()=>{
+    console.log(count1++)
 },200)
-
 setTimeout(()=>{
-    clearInterval(check)
+    clearInterval(out)
+    
 },3000)
+
+
+// var count=0;
+// let check=setInterval(()=>{
+//     console.log(count++);
+// },200)
+
+// setTimeout(()=>{
+//     clearInterval(check)
+// },3000)
 
 

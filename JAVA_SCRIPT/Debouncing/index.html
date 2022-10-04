@@ -11,21 +11,36 @@
 </body>
 </html>
 <script>
-    let s=document.getElementById("search")
+//     let s=document.getElementById("search")
 
-    s.onkeypress =wrapper
+//     s.onkeypress =wrapper
 
-    let count=0;
-    let timer;
-    function wrapper(){
-        clearInterval(timer)
-   timer=setTimeout(debounce,3000)
+//     let count=0;
+//     let timer;
+//     function wrapper(){
+//         clearInterval(timer)
+//    timer=setTimeout(debounce,3000)
 
   
-    }
+//     }
 
-    function debounce(){
-        console.log("call",count++)
-    }
+//     function debounce(){
+//         console.log("call",count++)
+
+//     }
+let s=document.getElementById("search")
+
+s.onkeypress=wrapper;
+
+let count=0;
+let timer;
+function wrapper(){
+    clearInterval(timer)
+timer=setTimeout(debounce,3000)
+
+function debounce(){
+    console.log("count",count++)
+}
+}
 </script>
 

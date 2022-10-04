@@ -14,19 +14,18 @@
 // res()
 
 
-var hello=100;
+var a=100;
 function out(){
-    var out=500;
-  return function inside(){
-        var inside=400;
-        console.log(hello);
-        console.log(out);
-        console.log(inside);
-    } 
+    var b=50;
+    return function(){
+        var c=20;
+        console.log(a)
+        console.log(b)
+        console.log(c)
+    }
 }
 var res=out();
-res();
-
+res()
 // ------------------------------------------------------------------------
 
 
