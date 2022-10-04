@@ -25,8 +25,6 @@
 
     // function Anim(){
     //     a=a+10;
-
-
     //     // console.log(a);
     //     let target=document.getElementById("setinterval");
 
@@ -34,19 +32,29 @@
     // }
 
     //ClearInterval
-    var a=0;
-    let id=setInterval(Anim,1000);
+    // var a=0;
+    // let id=setInterval(Anim,1000);
+    // function Anim(){
+    //     a=a+10;
+    //     if(a==200){
+    //         clearInterval(id)
+    //     }
+    //     else{
+    //         let target=document.getElementById("setinterval");
 
+    //         target.style.width =a +"px";
+    //     }
+    // }
+    var a=0;
+    let id=setInterval(Anim,1000)
     function Anim(){
-        a=a+10;
+        a+=10;
         if(a==200){
-            clearInterval(id)
+            clearInterval(id);
         }
         else{
-            let target=document.getElementById("setinterval");
-
-            target.style.width =a +"px";
+            let timer=document.getElementById("setinterval")
+            timer.style.width=a+"px"
         }
-
     }
 </script>

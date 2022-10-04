@@ -17,15 +17,13 @@ t.onkeypress=wrapper
 
 let count=0;
 let flag=true;
-
 function wrapper(){
 if(flag){
     throtling()
     flag=false;
     setTimeout(()=>{
-        flag=true
+        flag=true;
     },3000)
-
 }
 }
 function throtling(){
