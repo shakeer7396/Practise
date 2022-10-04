@@ -4,22 +4,43 @@
 // isko use karne function ke baad vala name starting ka Captial hona like function Hello() && new Person (function name se pehle new word lena compulsory declare karte jab )
 
 // old class function
-function Person(name,age,gender){
-this.name=name;
-this.age=age;
-this.gender=gender;
+// function Person(name,age,gender){
+// this.name=name;
+// this.age=age;
+// this.gender=gender;
+// }
+
+// Person.prototype.city="pune"
+
+// let person1=new Person("shaik",22,"male")
+// console.log(person1)
+
+// let person2=new Person("sana",20,"female")
+// console.log(person2)
+
+// let person3=new Person("nasir",20,"male")
+// console.log(person3)
+
+function Person(name,age,roll){
+    this.name=name,
+    this.age=age,
+    this.roll=roll
 }
 
-Person.prototype.city="pune"
+let p1=new Person("shaik",22,14)
+console.log(p1)
 
-let person1=new Person("shaik",22,"male")
-console.log(person1)
 
-let person2=new Person("sana",20,"female")
-console.log(person2)
 
-let person3=new Person("nasir",20,"male")
-console.log(person3)
+class Persons{
+     constructor(name,age,roll){
+        this.name=name,
+        this.age=age,
+        this.roll=roll
+    }
+}
+let p2=new Persons("shakeer",23,14)
+console.log(p2);
 // ------------------------------------------------------
 // ES6 class functions
 

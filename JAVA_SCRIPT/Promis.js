@@ -36,29 +36,28 @@
 // prom(true).then(onfulfil).catch(onReject)
 
 
-function prob(complete){
+function getData(complete){
     return new Promise(function(resolve,reject){
-    console.log("data loading  wait")
+        console.log("data loading please wait")
         setTimeout(()=>{
-            if(!complete){
-                resolve("Right")
+            if(complete){
+                resolve("success")
             }
             else{
-                reject("Wrong")
+                reject("wrong")
             }
         },3000)
     })
-    
 }
 
-let fulfil=(result)=>{
-    console.log(result)
+let fulfil= (res)=>{
+    console.log(res)
 }
-let reject = (error)=>{
-    console.log(error)
+let pending =(err)=>{
+    console.log(err)
 }
-
-prob(true).then(fulfil).catch(reject);
+getData(false)
+.then(fulfil).catch(pending)
 
 // function getresult(a,b){
 //     return new Promise(function(resolve,reject){

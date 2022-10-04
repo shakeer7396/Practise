@@ -1,10 +1,17 @@
-function head(n1,n2,operation){
-    var sum=n1+n2//first add karne k baad vupar k functions me jaata hai 
-    operation(sum);
+function main(a,b,callback){
+    var sum=a+b
+    callback(sum)
 }
-
-function multiply(sum){
-    console.log("multiply : ",sum*2);
+function multi(sum){
+    console.log("multiply",sum*3)
 }
-
-head(5,5,multiply);
+main(5,5,multi)
+// -----------------------------------------------------------
+function back(a,b,operate){
+let sum=a+b;
+operate(sum)
+}
+function mult(sum){
+    console.log("mult",sum*2)
+}
+back(5,10,mult)

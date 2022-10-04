@@ -3,6 +3,15 @@
 // this method using another objects values,
 // eg- ek place me hoko dusre place me bulaneka
 
+function hello(){
+    console.log(this.name+" "+this.age);
+}
+var obj={
+    name:"shaik",
+    age:22,
+}
+
+hello.call(obj)
 // function calling(){
 //     console.log("hello " + this.name)
 // }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:grid;
+            gap:20px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            
+        }
+        #main{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:20px;
+            text-align: center;
+        }
+        img{
+            width:250px;
+            height:250px;
+        }
+        @media all and (max-width:399px){
+            #container{
+            display:grid;
+            gap:20px;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:auto; 
+            padding:0px 12px 0px 12px;
+            }
+        }
+        @media all and (min-width:400px) and (max-width:700px){
+            #container{
+            display:grid;
+            gap:20px;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+</body>
+</html>
+<script>
+    // https://fakestoreapi.com/products
+    async function getData(){
+        try{
+            let res=await fetch("https://fakestoreapi.com/products");
+            let data=await res.json();
+            appendData(data)
+            console.log(data);
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+    getData();
+
+    let container=document.getElementById("container");
+
+    function appendData(data){
+        data.forEach(el=>{
+          let div= document.createElement("div")
+          div.setAttribute("id","main");
+
+          let img=document.createElement("img")
+          img.src=el.image
+
+          let p1=document.createElement("p")
+          p1.innerText=el.category
+          let p2=document.createElement("p")
+          p2.innerText=el.description
+          let p3=document.createElement("p")
+          p3.innerText=el.price
+          let p4=document.createElement("p")
+          p4.innerText=el.rating.cost
+          let p5=document.createElement("p")
+          p5.innerText=el.rating.rate
+
+          div.append(img,p1,p2,p3,p4,p5);
+          container.append(div)
+          
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let container = document.getElementById("container");
+
+    // function appendData(data){
+    //     data.forEach(el=>{
+    //        let div= document.createElement("div")
+    //        div.setAttribute("id","main")
+
+    //        let img=document.createElement("img")
+    //        img.src=el.image
+
+    //        let p1=document.createElement("p")
+    //        p1.innerHTML=el.category
+
+    //        let p2=document.createElement("p")
+    //        p2.innerHTML=el.description
+
+    //        let p3=document.createElement("p")
+    //        p3.innerHTML=el.price
+
+    //        let p4=document.createElement("p")
+    //        p4.innerHTML=el.rating.count
+           
+    //        let p5=document.createElement("p")
+    //        p5.innerHTML=el.rating.rate
+
+    //        div.append(img,p1,p2,p3,p4,p5)
+    //        container.append(div);
+
+    //     })
+    // }
+</script>
+
