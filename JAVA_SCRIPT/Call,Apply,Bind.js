@@ -81,3 +81,13 @@ var details={
 var obj={name:"shakeer"}
 var out=details.bike.bind(obj,"shine",4562)
 out();
+
+// var check={
+//     car:function(brand,number){
+//         console.log(this.name+" "+brand+" "+number)
+//     }
+// }
+
+// var ob={name:"shakeer"}
+// var res=check.car.bind(ob,"odi",1234)
+// res();
