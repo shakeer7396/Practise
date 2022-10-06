@@ -30,6 +30,7 @@ const fun1=()=>{
 // }
 // fun1();
 
+
 // wait kartani fun1 si fun2 jata vune late bolta ina vaha si aako fun1 end karta baad me fun2 ko jaata
 
 

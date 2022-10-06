@@ -2,8 +2,8 @@
 
 var chek=["a","b","c",10];
 
-for(let value of chek){
-    console.log(value + " " +"\n")
+for(value of chek){
+    console.log(value,"\n")
 }
 
 // -----------------------------------------------

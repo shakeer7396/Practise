@@ -2,16 +2,15 @@
 
 
 // x=100;
-// console.log(x);
+// console.log(x)
 // var x;
 
-// x=100;
-// get();
-
-// function get(){
-//     console.log(x);
+// function hello(){
+//     y=100
+//     console.log(y)
 // }
-// var x;
+// var y;
+// hello()
 //-------------------------------------
 // get();
 // function get(){

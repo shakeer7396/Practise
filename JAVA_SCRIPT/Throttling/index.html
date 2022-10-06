@@ -12,23 +12,39 @@
 </html>
 <script>
 
-let t=document.getElementById("search");
-t.onkeypress=wrapper
+// let t=document.getElementById("search");
+// t.onkeypress=wrapper
+
+// let count=0;
+// let flag=true;
+// function wrapper(){
+// if(flag){
+//     throtling()
+//     flag=false;
+//     setTimeout(()=>{
+//         flag=true;
+//     },3000)
+// }
+// }
+// function throtling(){
+//     console.log("call",count++)
+// }
+
+let r=document.getElementById("search")
+r.onkeypress=wrapper
 
 let count=0;
 let flag=true;
 function wrapper(){
 if(flag){
-    throtling()
-    flag=false;
+    trot()
+    flag=false
     setTimeout(()=>{
-        flag=true;
-    },3000)
+        flag=true
+    },2000)
 }
 }
-function throtling(){
-    console.log("call",count++)
+function trot(){
+    console.log("count:",count++)
 }
-
-
 </script>

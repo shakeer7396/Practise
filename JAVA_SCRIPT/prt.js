@@ -13,4 +13,3 @@ function out(){
 }
 var res=out();
 res();
-console.log(res)

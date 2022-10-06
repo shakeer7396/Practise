@@ -97,7 +97,6 @@
 //     }
 // })
 
-
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8

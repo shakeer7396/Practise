@@ -3,28 +3,32 @@
 
 // var count=0;
 // var a=true;
-// setTimeout(()=>{
-//     a=false;
-// },2000)
-
 // setInterval(()=>{
 //     if(a){
 //     console.log(count++)
 
 //     }
 // },200)
+// setTimeout(()=>{
+//     a=false;
+// },2000)
+
+
 
 
 // right-way are given below 
 
-let count1=0;
-let out=setInterval(()=>{
-    console.log(count1++)
+let add=0;
+let timer=setInterval(()=>{
+    console.log(add++)
+
 },200)
+
 setTimeout(()=>{
-    clearInterval(out)
-    
-},3000)
+    clearInterval(timer)
+
+},2000)
+
 
 
 // var count=0;

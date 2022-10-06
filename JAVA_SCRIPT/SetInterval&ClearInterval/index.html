@@ -45,16 +45,17 @@
     //         target.style.width =a +"px";
     //     }
     // }
-    var a=0;
-    let id=setInterval(Anim,1000)
-    function Anim(){
-        a+=10;
-        if(a==200){
-            clearInterval(id);
-        }
-        else{
-            let timer=document.getElementById("setinterval")
-            timer.style.width=a+"px"
-        }
+   
+   let c=0;
+   let tim=setInterval(Fun,1000)
+   function Fun(){
+    c+=10;
+    if(c==100){
+        clearInterval(tim)
     }
+    else{
+        let res=document.getElementById("setinterval")
+        res.style.width=c+"px"
+    }
+   }
 </script>

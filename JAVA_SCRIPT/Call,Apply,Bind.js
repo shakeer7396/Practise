@@ -3,14 +3,17 @@
 // this method using another objects values,
 // eg- ek place me hoko dusre place me bulaneka
 
-// function calling(){
-//     console.log("hello"+" "+this.name)
-// }
-// var obj={
-//     name:"shaik",
+function calling(){
+    console.log(this.name+" "+this.age)
+}
 
-// }
-// calling.call(obj)
+var obj={
+    name:"shaik",
+    age:23
+}
+
+calling.call(obj)
+
 // function calling(){
 //     console.log("hello " + this.name)
 // }
@@ -41,15 +44,15 @@
 // Apply()
 //the apply method similar to the call method ,the difference is call method takes arguments seperately,but apply method takes an arguments with arrays.
 
-// function calling(message){
-//     console.log("hello"+" "+this.name+this.age+message)
-// }
+function hello(message){
+    console.log(this.name+" "+this.age+message)
+}
 
-// var obj2={
-//     name:"shakeer",
-//     age:23
-// }
-// calling.apply(obj2,["Good"])
+var obj1={
+    name:"shaik",
+    age:22
+}
+hello.apply(obj1,["male"])
 
 // function check(message){
 //     console.log(this.name+" "+this.age+message)
@@ -73,15 +76,16 @@
 // check();
 
 var details={
-    bike:function(brand,number){
-        console.log(this.name+" "+brand+" "+number)
+    bike:function(brand,num){
+        console.log(this.name+" "+brand+" "+num)
     }
-    
 }
-var obj={name:"shakeer"}
-var out=details.bike.bind(obj,"shine",4562)
-out();
 
+var obj2={
+    name:"sarmas"
+}
+var out=details.bike.bind(obj2,"appachi",2345)
+out()
 // var check={
 //     car:function(brand,number){
 //         console.log(this.name+" "+brand+" "+number)

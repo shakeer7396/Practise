@@ -38,26 +38,27 @@
 
 function getData(complete){
     return new Promise(function(resolve,reject){
-        console.log("data loading please wait")
+        console.log("please wait")
         setTimeout(()=>{
             if(complete){
-                resolve("success")
+                resolve("done")
             }
             else{
-                reject("wrong")
+                reject("not done")
             }
         },3000)
     })
 }
 
-let fulfil= (res)=>{
-    console.log(res)
+let ok=(yes)=>{
+    console.log(yes)
 }
-let pending =(err)=>{
-    console.log(err)
+let not_ok=(not)=>{
+    console.log(not)
 }
-getData(false)
-.then(fulfil).catch(pending)
+
+getData(true)
+.then(ok).catch(not_ok)
 
 // function getresult(a,b){
 //     return new Promise(function(resolve,reject){
@@ -97,3 +98,5 @@ getData(false)
 // operation(2,50)
 // .then((res)=>{console.log(res)})
 // .catch((err)=>{console.log(err)})
+
+

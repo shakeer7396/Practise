@@ -17,12 +17,14 @@
 var a=100;
 function out(){
     var b=50;
-    return function(){
+     function inside(){
         var c=20;
         console.log(a)
         console.log(b)
         console.log(c)
     }
+    return inside
+
 }
 var res=out();
 res()

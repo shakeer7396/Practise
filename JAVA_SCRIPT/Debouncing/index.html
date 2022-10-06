@@ -29,18 +29,15 @@
 
 //     }
 let s=document.getElementById("search")
-
-s.onkeypress=wrapper;
-
-let count=0;
+s.onkeypress=wrapper
 let timer;
+let count=0;
 function wrapper(){
     clearInterval(timer)
-timer=setTimeout(debounce,3000)
+timer=setTimeout(debounce,2000)
 }
 function debounce(){
-    console.log("count",count++)
+    console.log("call",count++)
 }
-
 </script>
 

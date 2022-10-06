@@ -32,15 +32,16 @@ console.log(p1)
 
 
 
-class Persons{
-     constructor(name,age,roll){
+class People{
+    constructor(name,age,gender){
         this.name=name,
         this.age=age,
-        this.roll=roll
+        this.gender=gender
     }
 }
-let p2=new Persons("shakeer",23,14)
-console.log(p2);
+
+var opt1=new People("shaik",22,"male")
+console.log(opt1)
 // ------------------------------------------------------
 // ES6 class functions
 

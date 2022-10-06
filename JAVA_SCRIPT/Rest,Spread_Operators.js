@@ -14,16 +14,27 @@
 // It also helps in extracting all or some parts of the arguments.
 // Rest parameters can be used by applying three dots (...) before the parameters.
 
-
-// function indexCheck(...args){
-//     console.log(args[3])
+// function hello(...args){
+//     console.log(args[2])
 // }
-// indexCheck(1,5,8,9); output-9
 
-function helo(...args){
-    console.log(args[2])
+// hello(1,23,4,5,6,7)
+
+
+function sumOff(...args){
+var sum=0;
+
+// var i=0;
+// while(i<args.length){
+//     sum+=args[i];
+//     i++;
+// }
+for(var i=0;i<args.length;i++){
+    sum+=args[i]
 }
-helo(1,2,3,4,5)
+console.log(sum);
+}
+sumOff(1,2,3,4,5)
 //   -----------------------------------------------------------------------------------------
 //   function addAllArgs(...args){
 //     let sumOfArgs = 0;
@@ -32,7 +43,7 @@ helo(1,2,3,4,5)
 //       sumOfArgs += args[i];
 //       i++;
 //     }
-//     return sumOfArgs;
+//     console.log(sumOfArgs);
 //   }
   
 //   addAllArgs(6, 5, 7, 99); // Returns 117
@@ -54,17 +65,17 @@ helo(1,2,3,4,5)
 
 // Spread Operator
 //This operator is used for merging or adding 2& more than  arrays or objects 
-var arr1=[1,2,3,4,5];
-var arr2=[6,7,8,9,10];
+// var arr1=[1,2,3,4,5];
+// var arr2=[6,7,8,9,10];
 
-console.log(...arr1,...arr2)
+// console.log(...arr1,...arr2)
 
-var obj1={
-    name:"shakeer",
-    age:22
-}
-var obj2={
-    marks:90
-}
-var obj3={...obj1,...obj2}
-console.log(obj3)
+// var obj1={
+//     name:"shakeer",
+//     age:22
+// }
+// var obj2={
+//     marks:90
+// }
+// var obj3={...obj1,...obj2}
+// console.log(obj3)
