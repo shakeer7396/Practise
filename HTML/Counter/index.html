@@ -27,7 +27,6 @@
         <button id="inc" onClick="changeCounter(inc)">INCREASE</button>
         <button id="dec" onClick="changeCounter(dec)">DECREASE</button>
         <button id="reset" onClick="changeCounter(reset)">RESET</button>
-
     </div>
    
 </div>
@@ -36,16 +35,16 @@
 <script >
 let counter=document.querySelector('.counter')
 let count=0;
-function changeCounter(button){
-    if(button==inc){
+function changeCounter(but){
+    if(but==inc){
         count+=1;
     }
-    else if(button==dec){
+    else if(but==dec){
         if(count>0){
             count=count-1;
         }   
     }
-    else if(button==reset){
+    else if(but==reset){
         count=0;
     }
     counter.innerText=count;
