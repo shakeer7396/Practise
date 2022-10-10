@@ -4,25 +4,30 @@ import styles from "./Countries.module.css";
 const Countries = () => {
    const [data,setData]=useState([])
 
-//    const getData=()=>{
-//     axios.get("https://restcountries.com/v2/all")
-//     .then((r)=>{
-//         setData(r.data)
-//     })
-//    }
+   const getData =async()=>{
+    axios.get("https://restcountries.com/v2/all")
+    .then((r)=>{
+        setData(r.data)
+    })
+   }
 
-//    useEffect(()=>{
-//     getData()
-//    },[])
-    const getData=async()=>{
-        let res=await fetch("https://restcountries.com/v2/all")
-        let datas=await res.json()
-        setData(datas)
-        console.log(datas)
-    }
-    useEffect(()=>{
-        getData()
-    },[])
+   useEffect(()=>{
+    getData()
+   },[])
+   console.log(data);
+
+   
+   //ANOTHER PROCESSES OF FETCHING DATA
+    // const getData=async()=>{
+    //     let res=await fetch("https://restcountries.com/v2/all")
+    //     let list=await res.json()
+    //     setData(list)
+    //     console.log(list);
+    // }
+
+    // useEffect(()=>{
+    //     getData()
+    // },[])
    
    
   return (
