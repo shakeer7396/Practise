@@ -47,15 +47,18 @@
     // }
    
    let c=0;
-   let tim=setInterval(Fun,1000)
-   function Fun(){
+   let timer=setInterval(Anim,1000)
+
+   function Anim(){
     c+=10;
     if(c==100){
-        clearInterval(tim)
+        clearInterval(timer);
     }
     else{
-        let res=document.getElementById("setinterval")
-        res.style.width=c+"px"
+        let res=document.getElementById("setinterval");
+   res.style.width=c+"px"
     }
    }
+
+   
 </script>

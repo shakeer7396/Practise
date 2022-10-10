@@ -30,21 +30,26 @@
 //     console.log("call",count++)
 // }
 
-let r=document.getElementById("search")
-r.onkeypress=wrapper
+let s=document.getElementById("search")
+s.onkeypress=wrapper;
 
 let count=0;
 let flag=true;
 function wrapper(){
-if(flag){
-    trot()
+    
+        if(flag){
+    throt()
     flag=false
     setTimeout(()=>{
-        flag=true
+        flag=true;
     },2000)
+    }
+    
+
+    
 }
-}
-function trot(){
-    console.log("count:",count++)
+
+function throt(){
+    console.log("count",count++)
 }
 </script>
