@@ -1,4 +1,11 @@
-.containetr{
-    border:1px solid red;
-    width:100%;
+.container{
+    width:99%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    padding:20px;
 }

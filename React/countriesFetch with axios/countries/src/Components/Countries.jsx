@@ -31,7 +31,7 @@ const Countries = () => {
         <div className={styles.container}>
             {data?.map((el)=>{
                 return(
-                    <div key={el.id}>
+                    <div key={el.id} className={styles.box}>
                     <div>
                         <img className={styles.image} src={el.flags.png}/>
                         </div>
