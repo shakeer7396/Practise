@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
+.breed-container {
+  background-color: #fcf8e8;
+}
+
+.breed-heading {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  font-family: "Raleway", sans-serif;
+}
+
+.breeds {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.breeds img {
+  margin: 1rem;
+  border-radius: 5%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 30%;
+  height: 30%;
+}
