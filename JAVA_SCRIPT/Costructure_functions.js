@@ -21,18 +21,31 @@
 // let person3=new Person("nasir",20,"male")
 // console.log(person3)
 
-function Person(name,age,roll){
-    this.name=name,
-    this.age=age,
-    this.roll=roll
-}
+// function Person(name,age,roll){
+//     this.name=name,
+//     this.age=age,
+//     this.roll=roll
+// }
 
-let p1=new Person("shaik",22,14)
-console.log(p1)
+// let p1=new Person("shaik",22,14)
+// console.log(p1)
 
 
 
-class People{
+// class People{
+//     constructor(name,age,gender){
+//         this.name=name,
+//         this.age=age,
+//         this.gender=gender
+//     }
+// }
+
+// var opt1=new People("shaik",22,"male")
+// console.log(opt1)
+// ------------------------------------------------------
+// ES6 class functions
+
+class Person{
     constructor(name,age,gender){
         this.name=name,
         this.age=age,
@@ -40,18 +53,6 @@ class People{
     }
 }
 
-var opt1=new People("shaik",22,"male")
-console.log(opt1)
-// ------------------------------------------------------
-// ES6 class functions
 
-// class Person{
-//     constructor(name,age,gender){
-//         this.name=name,
-//         this.age=age,
-//         this.gender=gender;
-//     }
-// }
-
-// let person1= new Person("shaik",22,"male")
-// console.log(person1)
+let r1=new Person("shaiks",23,"male")
+console.log(r1)

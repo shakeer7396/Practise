@@ -95,3 +95,37 @@ out()
 // var ob={name:"shakeer"}
 // var res=check.car.bind(ob,"odi",1234)
 // res();
+
+//call
+
+function hello(){
+    console.log(this.name)
+}
+
+var obj={
+    name:"shaik"
+}
+hello.call(obj)
+
+//apply
+function hellos(message){
+    console.log(this.name+" "+message)
+}
+
+var obj={
+    name:"shaik"
+}
+hellos.apply(obj,["student"])
+
+//bind
+
+data={
+    bike:function ride(brand,num){
+        console.log(this.name+" "+brand+" "+num)
+    }
+}
+var obj2={
+    name:"shakeer"
+}
+var temp=data.bike.bind(obj2,"apachi",1200)
+temp()
