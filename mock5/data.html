@@ -65,11 +65,13 @@
        <div id="top">
         <h1>Data</h1>
         <div id="filter">
-          <select id="filterbatch" onChange="handleFilter()">
-            <option value="none">Filter By Batch</option>
-            <option value="w-13">Web-13</option>
-            <option value="w-14">Web-14</option>
-            <option value="w-15">Web-15</option> 
+          <select name="" id="filter_by_batch">
+            <option value="--">select</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
           </select>
         </div>
         <div id="sort">
@@ -83,8 +85,8 @@
         <label for="search-name">Search :</label>
         <input
           type="text"
-          name="search-name"
-          id="search-name"
+          name=""
+          id="search_input"
           placeholder="Search By Name"
         />
       </div>
@@ -189,5 +191,55 @@ function deleteFunction(id) {
     window.location.href = "edit.html";
   }
 
+  let filter_by_batch_value = document.getElementById("filter_by_batch");
+
+filter_by_batch_value.addEventListener("change", () => {
+  filterByBatch(filter_by_batch_value.value);
+});
+
+function filterByBatch(value) {
+  //   console.log(value);
+  fetch(
+    `https://mock10api.herokuapp.com/details?batch_name_like=${value}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      renderScreen(data)
+    })
+  }
+
+
+// search_input
+// let search_value = document.getElementById("search_input");
+// search_value.addEventListener("input", () => {
+//   search_fun(search_value.value);
+// });
+
+// function search_fun(search_value) {
+//   showLoader();
+//   fetch(`https://mock10api.herokuapp.com/details?q=${search_value}`)
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .then((data) => {
+//       hideLoader();
+
+//       if (reqres_token) {
+//         display_data(data);
+//       } else {
+//         //
+//         let data_container = document.getElementById("data_container");
+//         let login_message = document.createElement("h1");
+//         login_message.setAttribute("id", "login_message");
+//         login_message.innerText = "Please login";
+//         data_container.append(login_message);
+
+//         setTimeout(() => {
+//           window.location.href = "login.html";
+//         }, 3000);
+//       }
+//     });
+// }
 
 </script>

@@ -1,0 +1,148 @@
+body {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  #form > input,
+  select {
+    margin: 10px;
+    width: 38%;
+  }
+  
+  #user_form_heading {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  #batch_name,
+  #profession {
+    width: 40%;
+  }
+  
+  /* ----------------------data---------------------- */
+  
+  #data_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  #data_content {
+    /* border: 1px solid blue; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #editDelete {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+  
+  #navbar {
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    background-color: blue;
+    align-items: center;
+  }
+  
+  #navbar > #navbar_content {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    height: 30%;
+    /* border: 1px solid red; */
+  }
+  
+  #navbar > #navbar_content > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #navbar > #navbar_content > a:active {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  #user_profession {
+    width: 100%;
+  
+    text-align: center;
+  }
+  
+  /* ----------------login--------------- */
+  
+  #login_form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  #login_form > input {
+    margin: 10px;
+    width: 38%;
+  }
+  
+  #login_form_heading {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* --------------loader---------- */
+  
+  #loader {
+    display: none;
+  }
+  
+  #loader.show {
+    display: block;
+  }
+  
+  #loader > h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+  
+  /* --------------------login message */
+  
+  #login_message {
+    font-size: 60px;
+  
+    text-align: center;
+  }
+  
+  /* ------------c */
+  
+  /* search */
+  
+  #search_input {
+    margin: 0px 10px;
+  }
+  
+  /* filter:- */
+  
+  #filter_by_batch {
+    width: 12%;
+  }

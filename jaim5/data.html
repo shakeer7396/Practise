@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="masaiverse.css" />
+    <title>Data</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="navbar_content">
+        <a href="index.html">Users</a>
+        <a href="data.html">Data</a>
+        <a href="report.html">Reports</a>
+      </div>
+    </div>
+
+    <div>
+      <select name="" id="filter_by_batch">
+        <option value="--">select</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+      </select>
+    </div>
+
+    <div id="search_div">
+      <input type="search" id="search_input" placeholder="🔍 search here" />
+    </div>
+
+    <div id="loader">
+      <h1>Loading...</h1>
+    </div>
+
+    <div id="data_container"></div>
+  </body>
+</html>
+
+<script src="data.js"></script>
