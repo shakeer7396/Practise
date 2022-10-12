@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-links-container{
+            /* border:1px solid red; */
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width:100%;
+            height:40px;
+            font-size: 22px;
+            font-weight: bold;
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        .login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef9f9;
+  }
+  
+  .login-container h1 {
+    font-weight: bold;
+  }
+  
+  #login-form {
+    background-color: lightgreen;
+    padding: 5rem 7rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+    </style>
+</head>
+<body>
+    <div class="nav-links-container">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login Page</a>
+        
+      </div>
+
+      <!-- Login Container -->
+    <div class="login-container">
+        <h1>User Login</h1>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="Enter username"
+            id="username"
+            required
+          />
+          <br />
+          <br />
+
+  
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="password"
+            required
+          />
+          <br />
+          <br />
+
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+</body>
+</html>
+<script>
+    //Sending login credentials to Masai API
+    let loginForm = document.getElementById('login-form');
+    loginForm.addEventListener("submit", loginUser);
+    
+    async function loginUser(e) {
+        e.preventDefault();
+    
+        let user = {
+            password: loginForm.password.value,
+            username: loginForm.username.value
+        }
+    
+        
+            let data = await fetch('https://reqres.in/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(user)
+            })
+    
+            data = await data.json();
+    
+            if (data.token) {
+                alert('Login Sucessful');
+                let obj = {
+                    username: loginForm.username.value,
+                    token: data.token
+                }
+    
+                localStorage.setItem("token", JSON.stringify(obj));
+                window.location.href = "data.html";
+            }
+            else{
+              alert('Invalid Credentials')
+            }
+        
+    }
+    </script>

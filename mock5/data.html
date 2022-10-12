@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-links-container{
+            /* border:1px solid red; */
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width:100%;
+            height:40px;
+            font-size: 22px;
+            font-weight: bold;
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+        }
+        #menu{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* gap: 20px; */
+            
+        }
+        .img{
+            margin-top: 2%;
+             margin-left: 35%;
+            width: 22%;
+            height: 22%;
+            border-radius: 5%;
+        }
+    .products{
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin: 5%;
+        height:400px;
+    }
+    .product{
+        margin-left: 20%;
+        /* height:; */
+    }
+    #top{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    #delete{
+        margin-left: 20%;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="nav-links-container">
+        <a href="index.html">Home</a>
+        <a href="data.html">Data Page</a>
+        <a href="reports.html">Report Page</a>
+      </div>
+
+      
+       <!-- Home Container -->
+       <div id="top">
+        <h1>Data</h1>
+        <div id="filter">
+          <select id="filterbatch" onChange="handleFilter()">
+            <option value="none">Filter By Batch</option>
+            <option value="w-13">Web-13</option>
+            <option value="w-14">Web-14</option>
+            <option value="w-15">Web-15</option> 
+          </select>
+        </div>
+        <div id="sort">
+      <select id="sortAge" onChange="handleAgeSort()">
+        <option value="none">Sort By Age</option>
+        <option value="htl">High to Low</option>
+        <option value="lth">Low to High</option>
+      </select>
+    </div>
+      <div class="search">
+        <label for="search-name">Search :</label>
+        <input
+          type="text"
+          name="search-name"
+          id="search-name"
+          placeholder="Search By Name"
+        />
+      </div>
+    </div>
+
+    <div id="menu">
+ 
+       
+   
+</body>
+</html>
+<script>
+    
+    let filteredData = [];
+ const url = "https://newname7396.herokuapp.com/users"
+async function showitem(){
+    let res =await fetch(url);
+    let users=await res.json();
+     renderScreen(users);
+     console.log(users)
+}
+showitem();
+
+
+
+function renderScreen(posts){
+    let menu=document.getElementById("menu");
+   
+    posts.forEach(element => {
+       
+       let box=document.createElement("div")
+       box.setAttribute("class","products");
+    
+         let img =document.createElement('img')
+         img.setAttribute("src","https://cdn-icons-png.flaticon.com/512/21/21104.png")
+         img.setAttribute("class","img")
+         
+         let div=document.createElement("div")
+         div.setAttribute("class","product");
+   
+       let name=document.createElement("h3");
+    name.innerText=` Name - ${element.name}`;
+
+    let age=document.createElement("h3");
+    age.innerText=  ` Age - ${element.age}`;
+
+    let place=document.createElement("h3");
+    place.innerText=`Place -${element.place}`;
+
+    let batch_name=document.createElement("h3");
+    batch_name.innerText=`Batch - ${element.batch_name}`;
+
+    let profession=document.createElement("h3");
+    profession.innerText=     `Profession- ${element.profession}`;
+    
+    let edit=document.createElement("button");
+    edit.innerText="Edit";
+    edit.setAttribute("id","edit");
+
+    edit.addEventListener("click",()=>{
+      EditFunction(element.id);
+    })
+    
+
+    let delt=document.createElement("button");
+    delt.innerText="Delete";
+    delt.setAttribute("id","delete");
+
+    delt.addEventListener("click",()=>{
+      deleteFunction(element.id);
+    })
+
+    
+
+    div.append(name,age,place,batch_name ,profession,edit,delt)
+    
+   box.append(img,div)
+    
+      menu.append(box)
+    // console.log(menu)
+    })
+}
+
+
+function deleteFunction(id) {
+    fetch(`https://newname7396.herokuapp.com/users/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then(() => {
+      
+        return setTimeout(() => {
+          showitem();
+          window.location.reload();
+        }, 500);
+      });
+  }
+  
+
+  function EditFunction(id) {
+    localStorage.setItem("profession", JSON.stringify(id));
+    window.location.href = "edit.html";
+  }
+
+
+</script>

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            text-align: center;
+        }
+        #Box1{
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            padding: 30px;
+            text-align: center;
+            width: 30%;
+        }
+        #submit{
+            background-color: teal;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="head">Edit Page</h1>
+    <div id="Box1">
+        <select id="profession" required>
+            <option value="Batch Name" selected disabled>Profession</option>
+            <option value="FSD">FSD</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="SoftWare Developer">SoftWare Developer</option>
+        </select><br><br>
+        <button id="submit">Submit</button>
+      </div>
+</body>
+</html>
+<script>
+    let id = JSON.parse(localStorage.getItem("profession"));
+
+document.querySelector("#submit").addEventListener("click", EditFunction);
+
+function EditFunction() {
+  let profession = document.querySelector("#profession").value;
+
+  let Editdata = {
+      profession: profession,
+  };
+
+  fetch(`https://newname7396.herokuapp.com/users/${id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(Editdata),
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      return setTimeout(() => {
+          window.location.href = 'data.html'
+      },500)
+    });
+}
+</script>

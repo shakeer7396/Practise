@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Section</title>
+    <style>
+        .register-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef9f9;
+  }
+  
+  .register-container h1 {
+    font-weight: bold;
+  }
+  
+  #register-form {
+    background-color: lightgreen;
+    padding: 3rem 7rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+       
+            <h1>User Section</h1>
+      <form id="register-form">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter name" id="name" required />
+        <br />
+        <br />
+        <label for="age">Age</label>
+        <input type="number" placeholder="Enter Age" id="age" required />
+        <br />
+        <br />
+        <label for="place">Place</label>
+        <input type="text" placeholder="Enter Place" id="place" required/>
+        <br />
+        <br />
+        <label for="batch_name">Batch  :</label>
+        <select name="batch" id="batch_name">
+          <option value="none">None</option>
+          <option value="w-13">Web-13</option>
+          <option value="w-14">Web-14</option>
+          <option value="w-15">Web-15</option>
+        </select>
+        <br />
+        <br />
+        <label for="profession">Profesion :</label>
+        <select name="profession" id="profession">
+          <option value="none">None</option>
+          <option value="FSD">FSD</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="SoftWare Developer">SoftWare Developer</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+    
+    </div>
+</body>
+</html>
+<script>
+    //Registering user using Masai API
+let registerForm = document.getElementById("register-form");
+registerForm.addEventListener("submit", registerUser);
+
+//Registering User
+async function registerUser(e) {
+    e.preventDefault();
+
+    let user = {
+        name: registerForm.name.value,
+        age: registerForm.age.value,
+        place: registerForm.place.value,
+        batch_name: registerForm.batch_name.value,
+        profession: registerForm.profession.value,
+    }
+
+    let data = await fetch('https://newname7396.herokuapp.com/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+        
+    });
+
+    data = await data.json();
+    console.log(data)
+    
+    alert("Submitted Successfully")
+    window.location.href="index.html"
+
+}
+</script>
