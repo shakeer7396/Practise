@@ -1,0 +1,115 @@
+#Navbar{
+    background-color:teal;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+#Navbar>a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+#Navbar>a:hover{
+    color: black;
+}
+
+#head{
+    text-align: center;
+    color: green;
+    font-size: 40px;
+    }
+
+    #container{
+        /* margin-top: 50px; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto; 
+         gap: 20px;
+        /* text-align: center; */
+    }
+    #container>div{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       height: auto;
+       width: 300px;
+       /* color: black; */
+       background-color: white;
+       /* font-weight: bold; */
+    }
+
+    .main{
+        padding: 10px;
+    }
+    .imgdiv{
+        width: 100%;
+        }
+    
+        .img{
+            width:100%
+        }
+    #div1{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        cursor: pointer;
+    }
+    #div1>img{
+        margin-top: 5px;
+       height: 50px;
+    
+    }
+    #div1>img:nth-child(2){
+        height: 40px;
+       margin-top: 10px;
+    }
+  
+
+    #div2{
+        display: flex;
+        gap: 10px;
+        font-weight: bold;
+    }
+    #type{
+        margin-top: -15px;
+        color: grey;
+    }
+    #kms{
+        background-color: #cae3f3;
+        width: auto;
+        border: none;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    #hr{
+        color: rgb(235, 224, 224);
+    }
+    #div3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+    #div3>h3{
+        color: orange;
+    }
+    .Description{
+        color: grey;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    #box3{
+        display: flex;
+        border: 1px solid gray;
+        padding:10px;
+        margin: auto;
+        width: 70%;
+    }
+    #box3>div{
+        width: 30%;
+        text-align: center;
+    }
+    #box3>div>select{
+        width: 60%;
+        padding: 10px;
+    }

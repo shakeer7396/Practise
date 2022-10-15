@@ -1,0 +1,22 @@
+#Navbar{
+    background-color:teal;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+#Navbar>a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+#Navbar>a:hover{
+    color: black;
+}
+
+#head{
+    text-align: center;
+    color: brown;
+    font-size: 70px;
+    }

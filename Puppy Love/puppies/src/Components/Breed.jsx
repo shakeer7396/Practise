@@ -8,7 +8,9 @@ export default function Breed() {
     const [breedData, setBreedData] = useState([]);
 
     useEffect(() => {
-        fetch(`https://dog.ceo/api/breed/${id}/images`).then(response => response.json()).then(data => setBreedData(data.message))
+        fetch(`https://dog.ceo/api/breed/${id}/images`)
+        .then(response => response.json())
+        .then(data => setBreedData(data.message))
     }, [id]);
     return (
         <div className="breed-container">

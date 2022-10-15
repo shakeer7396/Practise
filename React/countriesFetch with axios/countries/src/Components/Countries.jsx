@@ -4,8 +4,9 @@ import styles from "./Countries.module.css";
 const Countries = () => {
    const [data,setData]=useState([])
    const [filter,setFilter]=useState('')
-   const [sort,SetSort]=useState('')
+   const [sort,setSort]=useState('')
 
+    // Fetching Data
    const getData =async()=>{
     axios.get("https://restcountries.com/v2/all")
     .then((r)=>{
@@ -41,8 +42,18 @@ const Countries = () => {
    
 
 
-    const handleSort =()=>{
-
+    const handleSort =(e)=>{
+        console.log(e.target.value)
+        setSort(e.target.value);
+        if(e.target.value=="lth"){
+            return data.sort((a,b)=>a.population-b.population)
+        }
+        if(e.target.value=="htl"){
+            return data.sort((a,b)=>b.population-a.population)
+        }
+        else{
+            return data
+        }
     }
    
    
@@ -67,6 +78,7 @@ const Countries = () => {
             </select>
             </div>
         </div>
+        {/* mapping Data in Dom */}
         <div className={styles.container}>
             {data?.map((el)=>{
                 return(

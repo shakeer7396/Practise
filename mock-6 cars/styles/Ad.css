@@ -1,0 +1,52 @@
+#Navbar{
+    background-color:teal;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+#Navbar>a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+#Navbar>a:hover{
+    color: black;
+}
+
+#head{
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    }
+
+    #UserForm{
+        margin: auto;
+        width: 40%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        text-align: center;
+        padding: 30px;
+         border-radius: 15px;
+    }
+    #UserForm>input{
+        margin-top: 20px;
+        text-align: center;
+        width: 40%;
+        padding: 10px;
+    
+    }
+    #UserForm>select{
+        width: 45%;
+        padding: 10px;
+    }
+    #Submit{
+        background-color: teal;
+        text-decoration: none;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }

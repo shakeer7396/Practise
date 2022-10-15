@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Ad.css">
+</head>
+<body>
+    <div id="Navbar">
+        <a href="index.html">Home</a>
+        <a href="Ad.html">Ad_Page</a>
+        <a href="Cars_Page.html">Cars_Page</a>
+        <a href="Wishlist.html">Wishlist_Page</a>
+    </div >
+    <h1 id="head">Ad_Page</h1>
+
+
+    <form id="UserForm">
+        <select name="" id="Brand_car">
+            <option value="Brand of car" selected disabled>Brand of car</option>
+            <option value="Tata">Tata</option>
+          <option value="BMW">BMW</option>
+          <option value="Mahindra">Mahindra</option>
+          <option value="Maruti">Maruti</option>
+          <option value="Suzuki">Suzuki</option>
+        </select><br><br>
+        <select name="" id="Type_car">
+            <option value="Type of car" selected disabled>Tyepe of car</option>
+            <option value="Manual">Manual</option>
+            <option value="AMT">AMT</option>
+        </select><br><br>
+
+        <select name="" id="Year_Pur">
+            <option value="Year of purchase " selected disabled>Year of purchase </option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+        </select><br>
+        <input type="number" placeholder="Enter KM driven" id="KM" required><br>
+        <input type="text" placeholder="Enter the car Description" id="Description" required><br>
+        <input type="number" placeholder="Enter the car Price" id="Price" required><br>
+
+        <input type="submit" value="submit"  id="Submit">
+     </form>
+</body>
+</html>
+<script src="./scripts/Ad.js"></script>

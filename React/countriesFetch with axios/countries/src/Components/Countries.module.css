@@ -1,5 +1,5 @@
 .container{
-    width:99%;
+    width:95%;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
@@ -13,4 +13,22 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+}
+
+@media all and (max-width:399px){
+    .container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
+}
+
+@media all and (min-width:400px) and (max-width:800px){
+    .container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
 }

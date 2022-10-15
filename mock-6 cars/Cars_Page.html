@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Cars_Page.css">
+</head>
+<body>
+    <div id="Navbar">
+        <a href="index.html">Home</a>
+        <a href="Ad.html">Ad_Page</a>
+        <a href="Cars_Page.html">Cars_Page</a>
+        <a href="Wishlist.html">Wishlist_Page</a>
+    </div >
+    <h1 id="head">Cars_Page</h1>
+
+    <div id="box3">
+        <div>
+            <select name="Sort by Price" id="SortPrice" onclick="handleSortPrice()">
+                <option value="none" selected disabled>Sort by Price</option>
+                <option value="desc">Hight to low</option>
+                <option value="asc">low to High</option>
+            </select>
+        </div>
+       
+        <div>
+            <select name="Sort by Kilometer" id="Sortkilo" onclick="handleSortKilo()" >
+                <option value="none" selected disabled>Sort by Kilometer</option>
+                <option value="desc">Hight to low</option>
+                <option value="asc">low to High</option>
+            </select>
+        </div>
+      
+        <div>
+            <select name="Filter Brand of car" id="Brand_car" onclick="handleFilter()" >
+                <option value="none" selected disabled>Filter Brand of car</option>
+                <option value="Tata">Tata</option>
+                <option value="BMW">BMW</option>
+              <option value="Mahindra">Mahindra</option>
+              <option value="Maruti">Maruti</option>
+              <option value="Suzuki">Suzuki</option>
+            </select>
+        </div>
+      
+    </div>
+
+    <div id="container">
+    </div>
+</body>
+</html>
+<script src="./scripts/Cars_Page.js"></script>
