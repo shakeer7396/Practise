@@ -3,15 +3,17 @@
 
 // Syncronus means Jab tak ek work complete nai hota jab tak next wala nai kar sakte--> it is called syncronus function 
 
-const fun2=()=>{
-    console.log("Calling fun3")
-}
-const fun1=()=>{
-    console.log("Calling fun1");
-    fun2();
-        console.log("Calling fun2");
-    }
-    fun1();
+// const fun2=()=>{
+//     console.log("Calling fun3")
+// }
+// const fun1=()=>{
+//     console.log("Calling fun1");
+//     fun2();
+//         console.log("Calling fun2");
+//     }
+//     fun1();
+
+
     
 //fun1 k baad fun2 ko call karko vune jara late bolta wait karta fhir vaha si fun1 me aata ye
 
@@ -30,6 +32,19 @@ const fun1=()=>{
 // }
 // fun1();
 
+
+
+const func2 =()=>{
+    setTimeout(()=>{
+        console.log("hello-2")
+    },2000)
+}
+const func1 =()=>{
+    console.log("hello-1")
+    func2();
+    console.log("hello-3")
+}
+func1()
 
 // wait kartani fun1 si fun2 jata vune late bolta ina vaha si aako fun1 end karta baad me fun2 ko jaata
 

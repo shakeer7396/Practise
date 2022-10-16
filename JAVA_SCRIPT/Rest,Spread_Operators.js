@@ -1,8 +1,10 @@
 
 // ***Note- Key differences between rest parameter and spread operator:
 
-// Rest parameter is used to take  number of arguments and turns them into an array while the spread operator takes an array or an object and spreads it
-// Rest parameter is used in function declaration whereas the spread operator is used in function calls.
+// (Rest parameter is used to take  number of arguments and turns them into an array.Rest parameter is used in function declaration.) 
+
+//   Spread operator takes an array or an object and spreads it. the spread operator is used in function calls.
+
 
 
 // Rest_Operator
@@ -21,20 +23,20 @@
 // hello(1,23,4,5,6,7)
 
 
-function sumOff(...args){
-var sum=0;
+// function sumOff(...args){
+// var sum=0;
 
 // var i=0;
 // while(i<args.length){
 //     sum+=args[i];
 //     i++;
 // }
-for(var i=0;i<args.length;i++){
-    sum+=args[i]
-}
-console.log(sum);
-}
-sumOff(1,2,3,4,5)
+// for(var i=0;i<args.length;i++){
+//     sum+=args[i]
+// }
+// console.log(sum);
+// }
+// sumOff(1,2,3,4,5)
 //   -----------------------------------------------------------------------------------------
 //   function addAllArgs(...args){
 //     let sumOfArgs = 0;
@@ -61,6 +63,17 @@ sumOff(1,2,3,4,5)
 // add(6,5,7,99)
 // add(10,20,30)
 
+function rest(...args){
+    var sum=0;
+    var i=0;
+    while(i<args.length){
+        sum+=args[i];
+        i++;
+    }
+    console.log(sum);
+}
+rest(10,15,20)
+
 // -----------------------------------------------------------------------
 
 // Spread Operator
@@ -79,3 +92,8 @@ sumOff(1,2,3,4,5)
 // }
 // var obj3={...obj1,...obj2}
 // console.log(obj3)
+
+var arr1=[1,2,3,4,5];
+var arr2=[6,7,8,9,10];
+
+console.log(...arr1,...arr2)

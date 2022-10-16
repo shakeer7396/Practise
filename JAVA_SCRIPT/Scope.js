@@ -4,6 +4,14 @@
 //     console.log(dis)
 // }
 // g()
+let a=100;
+let ba=500;
+function c(){
+console.log(a)
+}
+console.log(ba)
+
+c()
 // ----------------------------------------------------------------
 // functional Scope
 // function awesomeFunction(){
@@ -14,13 +22,14 @@
 //     multiplyBy2(); 
 //   }
 //   console.log(a); // Throws reference error since a is written in local scope and cannot be accessed outside
-  
-  
+
 //   awesomeFunction()
+
+
 // function g(){
-// var dis=100
-//var b=50
-//console.log(b)
+// let dis=100
+// let b=50
+// // console.log(b)
 // }
 // console.log(dis)
 
@@ -38,6 +47,3 @@
 // }
 // console.log(i)//its came error because its in out side the block
 
-for(let i=0;i<5;i++){
-}
-console.log(i)
