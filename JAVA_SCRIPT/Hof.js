@@ -92,26 +92,27 @@
 // // Given an array of string generate an array whose first or last character is a
 // // Sample Input - ["assignment", "problem", "media", "upload"]
 // // Sample Output - ["assignment", "media"]
-// var arr=["apple", "windows", "ubuntu", "cola", "system"];
-// var output=arr.map(function(el,index,arra){
+//  var arr=["apple", "windows", "ubuntu", "cola", "system","ola"];
+//  var check=arr.map(function(el,acc,index){
 //     if(el[0]=="a"||el[el.length-1]=="a"){
 //         console.log(el)
 //     }
-// })
-
+//  })
+ 
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8
-// var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
-// var length=function(el,index,arra){
-//     return el.length
-// }
-// var odd=function(el,index,array){
-//     return el%2==1;
-// }
-// var sum=function(acc,el,index){
-//     return acc+el
-// }
-// console.log(arr.map(length).filter(odd).reduce(sum))
+var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
+var len=function(el,acc,index){
+    return el.length;
+}
+var odd=function(el,acc){
+    return el%2==1;
+}
+var sum=function(acc,el){
+    return acc+el;
+}
+var out=arr.map(len).filter(odd).reduce(sum);
+console.log(out)
 
 

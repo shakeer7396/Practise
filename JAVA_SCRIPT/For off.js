@@ -12,10 +12,10 @@ for(value of chek){
 // it implements [isko obj print karne spl se banaye hai] obj printing 
 
 var obj={
-    firstname:"shaik",
-    secondname:"shakeer",
+    name:"shaik",
     age:22
 }
-for(let key in obj){
-    console.log(key + ":" + obj[key])
+
+for(var key in obj){
+    console.log(key+" "+obj[key])
 }

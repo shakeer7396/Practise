@@ -43,19 +43,18 @@
 // Function expression 
 // when we create function and assign to a variable this is called function expression
 //function expression ko func before call nai kar sakte (func k vupar call karne aatani) this type of hoisting not accepted in js 
-let express=function chek(){
-    console.log("checked")
+var check=function exp(){
+    console.log("express function")
 }
-express();
+check()
 
 // -----------------------------
 
 // Function declaration 
 // function expression ko func before call kar sakte (func k vupar call kar sakte) this type of hoisting is accepted in js
 
-declare()
-function declare(){
-    console.log("Check kare")
+function dec(){
+    console.log("Declare Function")
 }
-
+dec()
 
