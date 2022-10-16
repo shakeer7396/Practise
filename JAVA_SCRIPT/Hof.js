@@ -1,12 +1,12 @@
 // // find odd values
+
 // var arr=[1,2,3,4,5,6];
 // var checkOdd=function(el,index,acc){
 //     return el%2==1;
 
 // }
 // var output=arr.filter(checkOdd)
-// console.log(output)
-
+// console.log(output);
 
 
 // // find even values
@@ -19,14 +19,15 @@
 
 
 // // multiply values
-// var arr=[1,2,3,4,5,6];
-// arr.forEach(function(el,index,arr){
-//     console.log(el*5)
-// })
+//  var arr1=[1,2,3,4,5];
 
+//  arr1.forEach(function(el,acc){
+//     console.log(el*2)
+//  })
 
+  
 //product of all the numbers
-// var arr=[1,2,3,4,5];
+// 
 // var prod=function(el,acc,index){
 //     return el*acc;
 // }
@@ -35,7 +36,8 @@
 
 
 //Odd sum bellow code
-// var arr=[1,2,3,4,5,6];
+//  var arr=[1,2,3,4,5,6];
+
 // var Odd=function(el,index,arr){
 //     return el%2==1;
 // }
@@ -76,7 +78,7 @@
 // var add=function(acc,el){
 //     return acc+el;
 // }
-// var out=arr.reduce(add);
+// var out=arr.reduce(add)
 // console.log(out)
 
 
@@ -100,16 +102,16 @@
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8
-var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
-var length=function(el,index,arra){
-    return el.length
-}
-var odd=function(el,index,array){
-    return el%2==1;
-}
-var sum=function(acc,el,index){
-    return acc+el
-}
-console.log(arr.map(length).filter(odd).reduce(sum))
+// var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
+// var length=function(el,index,arra){
+//     return el.length
+// }
+// var odd=function(el,index,array){
+//     return el%2==1;
+// }
+// var sum=function(acc,el,index){
+//     return acc+el
+// }
+// console.log(arr.map(length).filter(odd).reduce(sum))
 
 

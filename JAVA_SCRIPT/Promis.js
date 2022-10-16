@@ -38,27 +38,28 @@
 
 function getData(complete){
     return new Promise(function(resolve,reject){
-        console.log("please wait")
+        console.log("Please Wait")
         setTimeout(()=>{
             if(complete){
-                resolve("done")
+                resolve("Yes")
             }
             else{
-                reject("not done")
+                reject("No")
             }
-        },3000)
+        },2000)
     })
 }
 
-let ok=(yes)=>{
-    console.log(yes)
+let ful=(good)=>{
+    console.log(good)
 }
-let not_ok=(not)=>{
-    console.log(not)
+let err=(err)=>{
+    console.log(err)
 }
+getData(false)
+.then(ful).catch(err);
 
-getData(true)
-.then(ok).catch(not_ok)
+
 
 // function getresult(a,b){
 //     return new Promise(function(resolve,reject){
