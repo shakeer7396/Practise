@@ -12,53 +12,51 @@
 // }
 
 
-function prom(complete){
-    return new Promise(function(resolve,reject){
-        console.log("Fetching data please wait")
-        setTimeout(()=>{
-            if(complete){
-                resolve("success");
-            }
-            else{
-                reject("sorry")
-            }
-        },3000)
-    })
-}
-
-let onfulfil =(result)=>{
-    console.log(result)
-}
-let onReject=(error)=>{
-    console.log(error)
-}
-
-prom(true).then(onfulfil).catch(onReject)
-
-
-// function getData(complete){
+// function prom(complete){
 //     return new Promise(function(resolve,reject){
-//         console.log("Please Wait")
+//         console.log("Fetching data please wait")
 //         setTimeout(()=>{
 //             if(complete){
-//                 resolve("Yes")
+//                 resolve("success");
 //             }
 //             else{
-//                 reject("No")
+//                 reject("sorry")
 //             }
-//         },2000)
+//         },3000)
 //     })
 // }
 
-// let ful=(good)=>{
-//     console.log(good)
+// let onfulfil =(result)=>{
+//     console.log(result)
 // }
-// let err=(err)=>{
-//     console.log(err)
+// let onReject=(error)=>{
+//     console.log(error)
 // }
-// getData(false)
-// .then(ful).catch(err);
 
+// prom(true).then(onfulfil).catch(onReject)
+
+
+function getData(complete){
+    return new Promise(function(resolve,reject){
+        console.log("please wait");
+        setTimeout(()=>{
+            if(complete){
+                resolve("yah")
+            }
+            else{
+                reject("No")
+            }
+        },2000)
+    })
+}
+
+let fulfil=(t)=>{
+    console.log(t)
+}
+let rej=(f)=>{
+    console.log(f)
+}
+getData(true).then(fulfil).catch(rej)
 
 
 // function getresult(a,b){
