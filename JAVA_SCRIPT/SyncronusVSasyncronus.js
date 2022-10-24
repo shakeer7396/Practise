@@ -32,18 +32,18 @@
 // }
 // fun1();
 
-const fun2 =()=>{
-    setTimeout(()=>{
-        console.log("f2");
-    },3000)
-}
+// const fun2 =()=>{
+//     setTimeout(()=>{
+//         console.log("f2");
+//     },3000)
+// }
 
-const fun1 =()=>{
-    console.log("f1");
-    fun2();
-    console.log("f3")
-}
-fun1()
+// const fun1 =()=>{
+//     console.log("f1");
+//     fun2();
+//     console.log("f3")
+// }
+// fun1()
 
 // wait kartani fun1 si fun2 jata vune late bolta ina vaha si aako fun1 end karta baad me fun2 ko jaata
 

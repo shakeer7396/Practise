@@ -4,14 +4,15 @@
 //     console.log(dis)
 // }
 // g()
-let a=100;
-let ba=500;
-function c(){
-console.log(a)
-}
-console.log(ba)
+var a=10;
+let b=20;
 
-c()
+function sco(){
+console.log(a);
+}
+console.log(b)
+
+sco()
 // ----------------------------------------------------------------
 // functional Scope
 // function awesomeFunction(){
