@@ -16,27 +16,24 @@
 // It also helps in extracting all or some parts of the arguments.
 // Rest parameters can be used by applying three dots (...) before the parameters.
 
-// function hello(...args){
-//     console.log(args[2])
-// }
+function res(...args){
+    for(var i=0;i<args.length;i++){
+    }
+    console.log(args[2])
 
-// hello(1,23,4,5,6,7)
+}
+res(1,2,3,4)
 
-
-// function sumOff(...args){
-// var sum=0;
-
-// var i=0;
-// while(i<args.length){
-//     sum+=args[i];
-//     i++;
-// }
-// for(var i=0;i<args.length;i++){
-//     sum+=args[i]
-// }
-// console.log(sum);
-// }
-// sumOff(1,2,3,4,5)
+function sumoff(...args){
+    var sum=0;
+    var i=0;
+    while(i<args.length){
+        sum+=args[i];
+        i++;
+    }
+    console.log(sum)
+}
+sumoff(10,20,30)
 //   -----------------------------------------------------------------------------------------
 //   function addAllArgs(...args){
 //     let sumOfArgs = 0;
@@ -63,16 +60,16 @@
 // add(6,5,7,99)
 // add(10,20,30)
 
-function rest(...args){
-    var sum=0;
-    var i=0;
-    while(i<args.length){
-        sum+=args[i];
-        i++;
-    }
-    console.log(sum);
-}
-rest(10,15,20)
+// function rest(...args){
+//     var sum=0;
+//     var i=0;
+//     while(i<args.length){
+//         sum+=args[i];
+//         i++;
+//     }
+//     console.log(sum);
+// }
+// rest(10,15,20)
 
 // -----------------------------------------------------------------------
 
@@ -83,17 +80,23 @@ rest(10,15,20)
 
 // console.log(...arr1,...arr2)
 
-// var obj1={
-//     name:"shakeer",
-//     age:22
-// }
-// var obj2={
-//     marks:90
-// }
-// var obj3={...obj1,...obj2}
-// console.log(obj3)
+var obj1={
+    name:"shakeer",
+    age:22,
+    place:"Kanekal"
+}
+var obj2={
+    quali:"degree",
+    grade:80
+}
 
-var arr1=[1,2,3,4,5];
-var arr2=[6,7,8,9,10];
+var obj3={
+    ...obj1,...obj2
+}
+console.log(obj3)
 
-console.log(...arr1,...arr2)
+
+// var arr1=[1,2,3,4,5];
+// var arr2=[6,7,8,9,10];
+
+// console.log(...arr1,...arr2)
