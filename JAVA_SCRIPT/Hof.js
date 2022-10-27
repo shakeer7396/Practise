@@ -8,6 +8,25 @@
 // var output=arr.filter(checkOdd)
 // console.log(output);
 
+var arr=[1,2,3,4,5,6,7];
+
+let odd=function(el,acc){
+    return el%2==1
+}
+let addO=function(acc,el){
+    return acc+el;
+}
+let even=function(el,acc){
+    return el%2==0;
+}
+let addE=function(acc,el){
+    return acc+el;
+}
+let odout=arr.filter(odd).reduce(addO);
+let evout=arr.filter(even).reduce(addE);
+console.log(evout);
+console.log(odout);
+
 
 // // find even values
 // var arr=[1,2,3,4,5,6];
@@ -24,6 +43,8 @@
 //  arr1.forEach(function(el,acc){
 //     console.log(el*2)
 //  })
+
+
 
   
 //product of all the numbers
@@ -102,17 +123,17 @@
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8
-var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
-var len=function(el,acc,index){
-    return el.length;
-}
-var odd=function(el,acc){
-    return el%2==1;
-}
-var sum=function(acc,el){
-    return acc+el;
-}
-var out=arr.map(len).filter(odd).reduce(sum);
-console.log(out)
+// var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
+// var len=function(el,acc,index){
+//     return el.length;
+// }
+// var odd=function(el,acc){
+//     return el%2==1;
+// }
+// var sum=function(acc,el){
+//     return acc+el;
+// }
+// var out=arr.map(len).filter(odd).reduce(sum);
+// console.log(out)
 
 
