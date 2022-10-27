@@ -6,8 +6,19 @@
 //     console.log("This is Hari");
 //    }
 //    x();
+// function set(){
+//     setTimeout(()=>{
+//     for(var i=1;i<=5;i++){
+// console.log(i);
+//     }
+//     },3000)
+    
+//     }
+
+// set();
+
 function set(){
-    for(var i=1;i<=5;i++){
+    for(var i=0;i<5;i++){
         setTimeout(()=>{
             console.log(i)
         },i*3000)

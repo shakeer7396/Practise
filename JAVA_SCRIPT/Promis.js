@@ -36,27 +36,27 @@
 // prom(true).then(onfulfil).catch(onReject)
 
 
-function getData(complete){
-    return new Promise(function(resolve,reject){
-        console.log("please wait");
-        setTimeout(()=>{
-            if(complete){
-                resolve("yah")
-            }
-            else{
-                reject("No")
-            }
-        },2000)
-    })
-}
+// function getData(complete){
+//     return new Promise(function(resolve,reject){
+//         console.log("please wait");
+//         setTimeout(()=>{
+//             if(complete){
+//                 resolve("yah")
+//             }
+//             else{
+//                 reject("No")
+//             }
+//         },2000)
+//     })
+// }
 
-let fulfil=(t)=>{
-    console.log(t)
-}
-let rej=(f)=>{
-    console.log(f)
-}
-getData(true).then(fulfil).catch(rej)
+// let fulfil=(t)=>{
+//     console.log(t)
+// }
+// let rej=(f)=>{
+//     console.log(f)
+// }
+// getData(true).then(fulfil).catch(rej)
 
 
 // function getresult(a,b){
@@ -78,3 +78,24 @@ getData(true).then(fulfil).catch(rej)
 // .then((result)=>{console.log(result)})
 // .catch((error)=>{console.log(error)})
 
+function getSome(yes){
+    return new Promise(function(res,rej){
+        console.log("please wait loading");
+        setTimeout(()=>{
+            if(yes){
+                res("successful")
+            }
+            else{
+                rej("unsuccessful")
+            }
+        },3000)
+    })
+}
+let check =(out)=>{
+    console.log(out)
+}
+let checked =(err)=>{
+    console.log(err)
+}
+
+getSome(true).then(check).catch(checked)
