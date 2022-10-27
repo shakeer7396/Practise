@@ -11,19 +11,17 @@
 // }
 // var y;
 // hello()
- x=10;
-console.log(x);
-var x;
-    
+// x=100;
+// console.log(x);
+//  var x;
 
+//  function get(){
+//   y=200;
+//   console.log(y)
 
-function ho(){
-  z=19;
-}
-ho()
-
-console.log(z)
-var z;
+//  }
+//  get()
+ 
 
 //-------------------------------------
 // get();
@@ -40,9 +38,9 @@ var z;
 
 // Hoisting initialization are not supported only variable declaration are supported like you declare above console and initialize below console it will undefined
 
-// var b;
-// console.log(b);
-// b=100;
+let b;
+console.log(b);
+b=100;
 
 // var x;
 // console.log(x)
@@ -51,12 +49,12 @@ var z;
 // console.log(x)
 
 // ----------------------
-// function get(){
-//    var x;
-// console.log(x)
-// x=100; 
-// }
-// get();
+function get(){
+   var x;
+console.log(x)
+x=100; 
+}
+get();
 
 //WIPRO INTERVIEW QUESTION WHAT IS THE OUT PUT BELLOW
 // function code(){
@@ -68,3 +66,5 @@ var z;
 // console.log(a)
 // a=15;// IT WILL BE PRINTED OR NOT
 // console.log(b);
+
+
