@@ -77,25 +77,40 @@
 // getresult(10,5)
 // .then((result)=>{console.log(result)})
 // .catch((error)=>{console.log(error)})
-
-function getSome(yes){
+function getresult(a,b){
     return new Promise(function(res,rej){
-        console.log("please wait loading");
+        console.log("wait a movement")
+        c=a+b;
         setTimeout(()=>{
-            if(yes){
-                res("successful")
+            if(a,b){
+                res(`wait ${c}`)
             }
             else{
-                rej("unsuccessful")
+                rej("ot wait")
             }
         },3000)
     })
 }
-let check =(out)=>{
-    console.log(out)
-}
-let checked =(err)=>{
-    console.log(err)
-}
+getresult(10,20).then((out)=>{console.log(out)})
+.catch((err)=>{console.log(err)})
+// function getSome(yes){
+//     return new Promise(function(res,rej){
+//         console.log("please wait loading");
+//         setTimeout(()=>{
+//             if(yes){
+//                 res("successful")
+//             }
+//             else{
+//                 rej("unsuccessful")
+//             }
+//         },3000)
+//     })
+// }
+// let check =(out)=>{
+//     console.log(out)
+// }
+// let checked =(err)=>{
+//     console.log(err)
+// }
 
-getSome(true).then(check).catch(checked)
+// getSome(true).then(check).catch(checked)
