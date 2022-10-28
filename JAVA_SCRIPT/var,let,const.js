@@ -19,7 +19,7 @@
 // vars()
 //------------------------------------------------------------------
 // LET
-// LET IS STORE IN TEMPORAL DEAD ZONE ,IT MEANS TEMPORARY STORING AREA 
+// LET IS STORE IN TEMPORAL DEAD ZONE IN MEMORY ALLOCATED PHASE,IT MEANS TEMPORARY STORING AREA 
 //REDECLARE NOT POSSIBLE ONLY RE-ASSING WILL BE POSSIBLE
 
 // let a=10;
@@ -33,11 +33,20 @@
 // }
 // lets()
 
+// let b=30;
+// function lets(){
+//     console.log(b);
+// }
+// lets()
 // ----------------
-let b=30;
+// function lets(){
+// let b=30;
+// }
+// console.log(b);//clg out side the function so Refrence error 
+// lets()
+// --------------------------------------
 
-function lets(){
-    console.log(b);
+// CONST --SAME AS LET IT IS ALSO A TEMPORAL DEAD ZONE IN MEMORY ALLOCATED PHASE, BUT REDECLARE RE-ASSIGN IS NOT POSSIBLE IT IS MORE STRICT  
 
-}
-lets()
+const a=100;
+console.log(a);

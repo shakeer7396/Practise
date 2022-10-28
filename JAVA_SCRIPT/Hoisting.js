@@ -24,12 +24,12 @@
  
 
 //-------------------------------------
-// get();
-// function get(){
-//     x=100;
-//     console.log("hello",x)
-//     var x;
-// }
+get();
+function get(){
+    x=100;
+    console.log("hello",x)
+    var x;
+}
 
 // a=100;
 // console.log(a)
