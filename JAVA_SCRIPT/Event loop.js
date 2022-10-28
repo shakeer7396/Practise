@@ -57,3 +57,14 @@ setTimeout(()=>{
 // },3000)
 
 
+//EVENT BUBBLING OR CAPTURING
+//bubbling propagates from the innermost to outtermost ,capturing propagates outer to inner --gave event listener to child all ansisters will be invoked in this method is called evb 
+
+{/* <div grandparant>
+<div parent>
+    <div child>
+
+    </div>
+</div>
+</div> */}
+

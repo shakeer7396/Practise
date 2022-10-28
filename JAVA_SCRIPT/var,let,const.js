@@ -48,5 +48,12 @@
 
 // CONST --SAME AS LET IT IS ALSO A TEMPORAL DEAD ZONE IN MEMORY ALLOCATED PHASE, BUT REDECLARE RE-ASSIGN IS NOT POSSIBLE IT IS MORE STRICT  
 
-const a=100;
-console.log(a);
+// const a=100;
+// const a//Syntex error
+// console.log(a);
+
+// const b=30;
+// b=40;
+// console.log(b);//TypeError
+
+
