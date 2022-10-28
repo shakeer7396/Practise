@@ -4,15 +4,15 @@
 //     console.log(dis)
 // }
 // g()
-var a=10;
-let b=20;
+// var a=10;
+// let b=20;
 
-function sco(){
-console.log(a);
-}
-console.log(b)
+// function sco(){
+// console.log(a);
+// }
+// console.log(b)
 
-sco()
+// sco()
 // ----------------------------------------------------------------
 // functional Scope
 // function awesomeFunction(){
@@ -48,3 +48,9 @@ sco()
 // }
 // console.log(i)//its came error because its in out side the block
 
+var a = 100;
+{
+var a = 10;
+console.log(a);
+}
+console.log(a);

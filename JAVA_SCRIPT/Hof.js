@@ -8,24 +8,24 @@
 // var output=arr.filter(checkOdd)
 // console.log(output);
 
-var arr=[1,2,3,4,5,6,7];
+// var arr=[1,2,3,4,5,6,7];
 
-let odd=function(el,acc){
-    return el%2==1
-}
-let addO=function(acc,el){
-    return acc+el;
-}
-let even=function(el,acc){
-    return el%2==0;
-}
-let addE=function(acc,el){
-    return acc+el;
-}
-let odout=arr.filter(odd).reduce(addO);
-let evout=arr.filter(even).reduce(addE);
-console.log(evout);
-console.log(odout);
+// let odd=function(el,acc){
+//     return el%2==1
+// }
+// let addO=function(acc,el){
+//     return acc+el;
+// }
+// let even=function(el,acc){
+//     return el%2==0;
+// }
+// let addE=function(acc,el){
+//     return acc+el;
+// }
+// let odout=arr.filter(odd).reduce(addO);
+// let evout=arr.filter(even).reduce(addE);
+// console.log(evout);
+// console.log(odout);
 
 
 // // find even values
@@ -43,8 +43,6 @@ console.log(odout);
 //  arr1.forEach(function(el,acc){
 //     console.log(el*2)
 //  })
-
-
 
   
 //product of all the numbers
@@ -104,22 +102,22 @@ console.log(odout);
 
 
 // // Given an array of strings print the length of each string
-// var arr=["apple", "windows", "ubuntu"];
-// var check=arr.map(function(el,index){
-//     return el.length;
-// })
-// console.log(check);
+//  var arr=["apple", "windows", "ubuntu"];
+//     let check=arr.map(function(el,index){
+//         return el.length;
+//     })
+//     console.log(check);
 
 // // Given an array of string generate an array whose first or last character is a
 // // Sample Input - ["assignment", "problem", "media", "upload"]
 // // Sample Output - ["assignment", "media"]
-//  var arr=["apple", "windows", "ubuntu", "cola", "system","ola"];
+ //var arr=["apple", "windows", "ubuntu", "cola", "system","ola"];
 //  var check=arr.map(function(el,acc,index){
 //     if(el[0]=="a"||el[el.length-1]=="a"){
 //         console.log(el)
 //     }
 //  })
- 
+    
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8

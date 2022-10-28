@@ -38,10 +38,6 @@
 
 // Hoisting initialization are not supported only variable declaration are supported like you declare above console and initialize below console it will undefined
 
-let b;
-console.log(b);
-b=100;
-
 // var x;
 // console.log(x)
 
@@ -49,12 +45,12 @@ b=100;
 // console.log(x)
 
 // ----------------------
-function get(){
-   var x;
-console.log(x)
-x=100; 
-}
-get();
+// function get(){
+//    var x;
+// console.log(x)
+// x=100; 
+// }
+// get();
 
 //WIPRO INTERVIEW QUESTION WHAT IS THE OUT PUT BELLOW
 // function code(){
