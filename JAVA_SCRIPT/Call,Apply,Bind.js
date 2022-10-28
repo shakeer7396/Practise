@@ -3,16 +3,16 @@
 // this method using another objects values,
 // eg- ek place me hoko dusre place me bulaneka
 
-function calling(){
-    console.log(this.name+" "+this.age)
-}
+// function calling(){
+//     console.log(this.name+" "+this.age)
+// }
 
-var obj={
-    name:"shaik",
-    age:23
-}
+// var obj={
+//     name:"shaik",
+//     age:23
+// }
 
-calling.call(obj)
+// calling.call(obj)
 
 // function calling(){
 //     console.log("hello " + this.name)
@@ -44,15 +44,15 @@ calling.call(obj)
 // Apply()
 //the apply method similar to the call method ,the difference is call method takes arguments seperately,but apply method takes an arguments with arrays.
 
-function hello(message){
-    console.log(this.name+" "+this.age+message)
-}
+// function hello(message){
+//     console.log(this.name+" "+this.age+message)
+// }
 
-var obj1={
-    name:"shaik",
-    age:22
-}
-hello.apply(obj1,["male"])
+// var obj1={
+//     name:"shaik",
+//     age:22
+// }
+// hello.apply(obj1,["male"])
 
 // function check(message){
 //     console.log(this.name+" "+this.age+message)
@@ -75,17 +75,17 @@ hello.apply(obj1,["male"])
 
 // check();
 
-var details={
-    bike:function(brand,num){
-        console.log(this.name+" "+brand+" "+num)
-    }
-}
+// var details={
+//     bike:function(brand,num){
+//         console.log(this.name+" "+brand+" "+num)
+//     }
+// }
 
-var obj2={
-    name:"sarmas"
-}
-var out=details.bike.bind(obj2,"appachi",2345)
-out()
+// var obj2={
+//     name:"sarmas"
+// }
+// var out=details.bike.bind(obj2,"appachi",2345)
+// out()
 // var check={
 //     car:function(brand,number){
 //         console.log(this.name+" "+brand+" "+number)
@@ -107,25 +107,29 @@ var obj={
 }
 hello.call(obj)
 
+
 //apply
-function hellos(message){
-    console.log(this.name+" "+message)
-}
+// function hellos(message){
+//     console.log(this.name+" "+message)
+// }
 
-var obj={
-    name:"shaik"
-}
-hellos.apply(obj,["student"])
+// var obj={
+//     name:"shaik"
+// }
+// hellos.apply(obj,["student"])
 
-//bind
 
-data={
-    bike:function ride(brand,num){
-        console.log(this.name+" "+brand+" "+num)
-    }
-}
-var obj2={
-    name:"shakeer"
-}
-var temp=data.bike.bind(obj2,"apachi",1200)
-temp()
+// //bind
+
+// data={
+//     bike:function ride(brand,num){
+//         console.log(this.name+" "+brand+" "+num)
+//     }
+// }
+// var obj2={
+//     name:"shakeer"
+// }
+// var temp=data.bike.bind(obj2,"apachi",1200)
+// temp()
+
+
