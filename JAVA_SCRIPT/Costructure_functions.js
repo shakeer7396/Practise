@@ -45,14 +45,13 @@
 // ------------------------------------------------------
 // ES6 class functions
 
-class Person{
-    constructor(name,age,gender){
+class Check{
+    constructor(name,age,city){
         this.name=name,
         this.age=age,
-        this.gender=gender
+        this.city=city
     }
 }
+let out=new Check("shaik",22,"Atp")
+console.log(out);
 
-
-let r1=new Person("shaiks",23,"male")
-console.log(r1)

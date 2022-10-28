@@ -100,13 +100,13 @@
 
 // getSome(true).then(check).catch(checked)
 
-let a=11;
+var a=12;
 let checkOdd=new Promise((res,rej)=>{
-    if(a%2==0){
-        res("Is Odd")
+    if(a%2==1){
+        res("Is odd value")
     }
     else{
-        rej(" Is not Odd")
+        rej("is not odd")
     }
 })
 
