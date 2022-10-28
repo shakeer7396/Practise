@@ -77,22 +77,7 @@
 // getresult(10,5)
 // .then((result)=>{console.log(result)})
 // .catch((error)=>{console.log(error)})
-function getresult(a,b){
-    return new Promise(function(res,rej){
-        console.log("wait a movement")
-        c=a+b;
-        setTimeout(()=>{
-            if(a,b){
-                res(`wait ${c}`)
-            }
-            else{
-                rej("ot wait")
-            }
-        },3000)
-    })
-}
-getresult(10,20).then((out)=>{console.log(out)})
-.catch((err)=>{console.log(err)})
+
 // function getSome(yes){
 //     return new Promise(function(res,rej){
 //         console.log("please wait loading");
@@ -114,3 +99,15 @@ getresult(10,20).then((out)=>{console.log(out)})
 // }
 
 // getSome(true).then(check).catch(checked)
+
+let a=11;
+let checkOdd=new Promise((res,rej)=>{
+    if(a%2==0){
+        res("Is Odd")
+    }
+    else{
+        rej(" Is not Odd")
+    }
+})
+
+checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
