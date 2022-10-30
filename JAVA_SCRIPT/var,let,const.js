@@ -22,21 +22,17 @@
 // LET IS STORE IN TEMPORAL DEAD ZONE IN MEMORY ALLOCATED PHASE,IT MEANS TEMPORARY STORING AREA 
 //REDECLARE NOT POSSIBLE ONLY RE-ASSING WILL BE POSSIBLE
 
-// let a=10;
-// a=100;//reassing
-// a=50;
-// console.log(a);
+let a=10;
+a=100;//reassing
+a=50;
+console.log(a);
 
 // function helo(){
 
 // }
 // helo();
 
-const arr=(a)=>{
-var a=100;
-}
-arr()
-console.log(a);
+
 
 
 // function lets(){
