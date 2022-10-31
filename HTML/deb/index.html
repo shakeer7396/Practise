@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search" placeholder="search">
+</body>
+</html>
+<script>
+    let s=document.getElementById("search")
+    s.onkeypress=wrapper;
+
+    let count=0;
+    let timer=true;
+    function wrapper(){
+        if(timer){
+            debounce()
+            timer=false;
+            setTimeout(()=>{
+                timer=true
+            },2000)
+        }
+        
+    }
+    function debounce(){
+        console.log("count",count++);
+    }
+</script>
+

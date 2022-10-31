@@ -30,11 +30,11 @@ console.log(person3)
 // let p1=new Person("shaik",22,14)
 // console.log(p1)
 
-function Circle2(radius){
-    this.radius=radius
-}
-const circle=new Circle2(4)
-console.log(circle);
+// function Circle2(radius){
+//     this.radius=radius
+// }
+// const circle=new Circle2(4)
+// console.log(circle);
 
 
 
