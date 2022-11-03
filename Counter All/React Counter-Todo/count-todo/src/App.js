@@ -6,8 +6,8 @@ import Todo from './Todo/Todo';
 function App() {
   return (
     <div className="App">
-      {/* <Counter /> */}
-      <Todo />
+      <Counter />
+      {/* <Todo /> */}
     </div>
   );
 }
