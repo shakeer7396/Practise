@@ -100,14 +100,36 @@
 
 // getSome(true).then(check).catch(checked)
 
-var a=12;
-let checkOdd=new Promise((res,rej)=>{
-    if(a%2==1){
-        res("Is odd value")
-    }
-    else{
-        rej("is not odd")
-    }
-})
+// var a=12;
+// let checkOdd=new Promise((res,rej)=>{
+//     if(a%2==1){
+//         res("Is odd value")
+//     }
+//     else{
+//         rej("is not odd")
+//     }
+// })
 
-checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
+// checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
+
+function hello(complete){
+    console.log("please wait");
+    return new Promise(function(res,rej){
+        setTimeout(()=>{
+            if(complete){
+                res("true")
+            }
+            else{
+                rej("false")
+            }
+        },3000)
+    })
+}
+
+let ful=(done)=>{
+    console.log(done);
+}
+let res=(err)=>{
+    console.log(err);
+}
+hello(true).then(ful).catch(res)
