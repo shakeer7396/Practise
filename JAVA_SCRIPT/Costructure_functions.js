@@ -4,22 +4,23 @@
 // isko use karne function ke baad vala name starting ka Captial hona like function Hello() && new Person (function name se pehle new word lena compulsory declare karte jab )
 
 // old class function
-function Person(name,age,gender){
-this.name=name;
-this.age=age;
-this.gender=gender;
-}
+// function Person(name,age,gender){
+// this.name=name;
+// this.age=age;
+// this.gender=gender;
+// }
 
-Person.prototype.city="pune"
+// Person.prototype.city="pune"
 
-let person1=new Person("shaik",22,"male")
-console.log(person1)
+// let person1=new Person("shaik",22,"male")
+// console.log(person1)
 
-let person2=new Person("sana",20,"female")
-console.log(person2)
+// let person2=new Person("sana",20,"female")
+// console.log(person2)
 
-let person3=new Person("nasir",20,"male")
-console.log(person3)
+// let person3=new Person("nasir",20,"male")
+// console.log(person3)
+
 
 // function Person(name,age,roll){
 //     this.name=name,
@@ -61,3 +62,24 @@ console.log(person3)
 
 // var opt1=new People("shaik",22,"male")
 // console.log(opt1)
+
+
+// function Trial(name,age,gender){
+//     this.name=name,
+//     this.age=age,
+//     this.gender=gender
+// }
+
+// var out=new Trial("shakeer",22,"male")
+// console.log(out);
+
+class Trail{
+    constructor(name,age,gender){
+        this.name=name,
+        this.age=age,
+        this.gender=gender
+    }
+}
+
+var out=new Trail("shaik",22,"male")
+console.log(out)
