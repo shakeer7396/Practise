@@ -65,6 +65,3 @@
 // b=40;
 // console.log(b);//TypeError;
 
-const;
-
-console.log(const);
