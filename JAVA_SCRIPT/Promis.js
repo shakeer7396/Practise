@@ -100,6 +100,8 @@
 
 // getSome(true).then(check).catch(checked)
 
+
+//Es6 base4d sintex for promise
 // var a=12;
 // let checkOdd=new Promise((res,rej)=>{
 //     if(a%2==1){
@@ -112,24 +114,34 @@
 
 // checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
 
-function hello(complete){
-    console.log("please wait");
-    return new Promise(function(res,rej){
-        setTimeout(()=>{
-            if(complete){
-                res("true")
-            }
-            else{
-                rej("false")
-            }
-        },3000)
-    })
-}
+var a=21;
+let checkOdd=new Promise((res,rej)=>{
+    if(a%2==1){
+        res("this is odd")
+    }
+    else{
+        rej("this is not odd")
+    }
+})
+checkOdd.then((out)=>{console.log(out)}).catch((err)=>console.log(err))
+// function hello(complete){
+//     console.log("please wait");
+//     return new Promise(function(res,rej){
+//         setTimeout(()=>{
+//             if(complete){
+//                 res("true")
+//             }
+//             else{
+//                 rej("false")
+//             }
+//         },3000)
+//     })
+// }
 
-let ful=(done)=>{
-    console.log(done);
-}
-let res=(err)=>{
-    console.log(err);
-}
-hello(true).then(ful).catch(res)
+// let ful=(done)=>{
+//     console.log(done);
+// }
+// let res=(err)=>{
+//     console.log(err);
+// }
+// hello(true).then(ful).catch(res)
