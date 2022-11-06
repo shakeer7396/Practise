@@ -16,24 +16,32 @@
 // It also helps in extracting all or some parts of the arguments.
 // Rest parameters can be used by applying three dots (...) before the parameters.
 
+// function res(...args){
+//     for(var i=0;i<args.length;i++){
+//     }
+//     console.log(args[2])
+
+// }
+// res(1,2,3,4)
+
 function res(...args){
     for(var i=0;i<args.length;i++){
-    }
-    console.log(args[2])
 
-}
-res(1,2,3,4)
-
-function sumoff(...args){
-    var sum=0;
-    var i=0;
-    while(i<args.length){
-        sum+=args[i];
-        i++;
     }
-    console.log(sum)
+    console.log(args[3]);
 }
-sumoff(10,20,30)
+ res(1,2,3,4,5)
+
+// function sumoff(...args){
+//     var sum=0;
+//     var i=0;
+//     while(i<args.length){
+//         sum+=args[i];
+//         i++;
+//     }
+//     console.log(sum)
+// }
+// sumoff(10,20,30)
 //   -----------------------------------------------------------------------------------------
 //   function addAllArgs(...args){
 //     let sumOfArgs = 0;

@@ -98,38 +98,40 @@
 
 //call
 
-function hello(){
-    console.log(this.name)
-}
+// var obj={
+//     name:"shaik",
+//     age:22
+// }
 
-var obj={
-    name:"shaik"
-}
-hello.call(obj)
+// function hello(){
+//     console.log(this.name+" "+this.age);
+// }
 
+// hello.call(obj)
 
 //apply
-// function hellos(message){
-//     console.log(this.name+" "+message)
+// function hello(message){
+//     console.log(this.name+" "+this.age+" "+message);
 // }
-
 // var obj={
-//     name:"shaik"
+//     name:"shaik",
+//     age:22
 // }
-// hellos.apply(obj,["student"])
-
+// hello.apply(obj,["Is a Student"])
 
 // //bind
 
-// data={
-//     bike:function ride(brand,num){
-//         console.log(this.name+" "+brand+" "+num)
-//     }
-// }
-// var obj2={
-//     name:"shakeer"
-// }
-// var temp=data.bike.bind(obj2,"apachi",1200)
-// temp()
+var data={
+    bike:function(brand,price){
+        console.log(this.name+" "+brand+" "+price);
+    }
+}
+var obj={
+    name:"shaik"
+}
+var out=data.bike.bind(obj,"appachi",30,0000)
+out();
+
+
 
 
