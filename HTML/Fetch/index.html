@@ -48,7 +48,7 @@
 </html>
 <script>
     // https://fakestoreapi.com/products
-    async function getData(){
+    const getData= async()=>{
         try{
             let res=await fetch("https://fakestoreapi.com/products");
             let data=await res.json();
@@ -78,8 +78,7 @@
           let p5=document.createElement("p")
           p5.innerText=el.rating.rate
           div.append(img,p1,p2,p3,p4,p5);
-          container.append(div)
-          
+          container.append(div)         
         })
     }
 

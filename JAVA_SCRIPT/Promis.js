@@ -137,7 +137,6 @@ checkOdd.then((out)=>{console.log(out)}).catch((err)=>console.log(err))
 //         },3000)
 //     })
 // }
-
 // let ful=(done)=>{
 //     console.log(done);
 // }
