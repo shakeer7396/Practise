@@ -31,9 +31,9 @@ function get(){
     var x;
 }
 
-// a=100;
-// console.log(a)
-// var a;
+a=100;
+console.log(a)
+var a;
 // --------------------------
 
 // Hoisting initialization are not supported only variable declaration are supported like you declare above console and initialize below console it will undefined
