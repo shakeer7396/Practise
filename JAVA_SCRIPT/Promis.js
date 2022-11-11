@@ -36,27 +36,7 @@
 // prom(true).then(onfulfil).catch(onReject)
 
 
-// function getData(complete){
-//     return new Promise(function(resolve,reject){
-//         console.log("please wait");
-//         setTimeout(()=>{
-//             if(complete){
-//                 resolve("yah")
-//             }
-//             else{
-//                 reject("No")
-//             }
-//         },2000)
-//     })
-// }
 
-// let fulfil=(t)=>{
-//     console.log(t)
-// }
-// let rej=(f)=>{
-//     console.log(f)
-// }
-// getData(true).then(fulfil).catch(rej)
 
 
 // function getresult(a,b){
