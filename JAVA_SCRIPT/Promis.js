@@ -138,10 +138,12 @@ function hello(complete){
         },3000)
     })
 }
+
 let ful=(done)=>{
     console.log(done);
 }
 let res=(err)=>{
     console.log(err);
 }
+
 hello(true).then(ful).catch(res)
