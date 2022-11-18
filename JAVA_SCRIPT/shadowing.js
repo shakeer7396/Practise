@@ -4,6 +4,6 @@ var a=40;
 
 {
     var a=50;
-console.log(a)
+console.log("block-"+a)
 }
-console.log(a);
+console.log("global-"+a);
