@@ -110,27 +110,27 @@
 // hello.call(obj)
 
 //apply
-// function hello(message){
-//     console.log(this.name+" "+this.age+" "+message);
-// }
-// var obj={
-//     name:"shaik",
-//     age:22
-// }
-// hello.apply(obj,["Is a Student"])
+function hello(message){
+    console.log(this.name+" "+this.age+" "+message);
+}
+var obj={
+    name:"shaik",
+    age:22
+}
+hello.apply(obj,["Is a Student"])
 
 // //bind
 
-var data={
-    bike:function(brand,price){
-        console.log(this.name+" "+brand+" "+price);
-    }
-}
-var obj={
-    name:"shaik"
-}
-var out=data.bike.bind(obj,"appachi",30,0000)
-out();
+// var data={
+//     bike:function(brand,price){
+//         console.log(this.name+" "+brand+" "+price);
+//     }
+// }
+// var obj={
+//     name:"shaik"
+// }
+// var out=data.bike.bind(obj,"appachi",30,0000)
+// out();
 
 
 
