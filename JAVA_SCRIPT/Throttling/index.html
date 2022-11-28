@@ -55,16 +55,16 @@ let s=document.getElementById("search")
 s.onkeypress=wrapper;
 
 let count=0;
-let flag=true;
+let flag=false;
+
 function wrapper(){
-    
-        if(flag){
-    throt()
-    flag=false
-    setTimeout(()=>{
-        flag=true;
-    },2000)
-    } 
+    if(flag){
+        throt()
+        flag=false;
+        setTimeout(()=>{
+            flag=true;
+        },2000)
+    }
 }
 
 function throt(){
