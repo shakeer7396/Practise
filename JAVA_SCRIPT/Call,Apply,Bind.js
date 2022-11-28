@@ -110,14 +110,14 @@
 // hello.call(obj)
 
 //apply
-function hello(message){
-    console.log(this.name+" "+this.age+" "+message);
-}
-var obj={
-    name:"shaik",
-    age:22
-}
-hello.apply(obj,["Is a Student"])
+// function hello(message){
+//     console.log(this.name+" "+this.age+" "+message);
+// }
+// var obj={
+//     name:"shaik",
+//     age:22
+// }
+// hello.apply(obj,["Is a Student"])
 
 // //bind
 
@@ -132,6 +132,17 @@ hello.apply(obj,["Is a Student"])
 // var out=data.bike.bind(obj,"appachi",30,0000)
 // out();
 
+// CALL
+var obj={
+    name:"shaik",
+    age:20
+}
 
+
+var obj1={
+    name:"shakeer"
+}
+
+obj.call(obj1)
 
 
