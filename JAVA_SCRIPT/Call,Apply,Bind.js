@@ -132,17 +132,18 @@
 // var out=data.bike.bind(obj,"appachi",30,0000)
 // out();
 
-// CALL
-var obj={
-    name:"shaik",
-    age:20
+//bind
+let details={
+    bike:function(brand,price){
+        console.log(this.name+" "+brand+" "+price)
+    }
 }
 
-
-var obj1={
-    name:"shakeer"
+let obj={
+    name:"shaik"
 }
 
-obj.call(obj1)
+let out=details.bike.bind(obj,"shine","1 lakh")
+out()
 
 
