@@ -18,12 +18,11 @@
 
 // out(10,5,mult)
 
-function out(a,b,operate){
-    sum=a+b;
+function abc(a,b,operate){
+    var sum=a+b;
     operate(sum)
 }
 function mult(sum){
-    console.log("multi",sum*2)
+    console.log("mult",sum*2)
 }
-
-out(2,3,mult)
+abc(5,2,mult)
