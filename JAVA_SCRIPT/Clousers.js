@@ -13,21 +13,34 @@
 // var res=clousers();
 // res()
 
+// var a=100;
+// function out(){
+//     var b=50;
+//      function inside(){
+//         var c=20;
+//         console.log(a)
+//         console.log(b)
+//         console.log(c)
+//     }
+//     return inside
 
-var a=100;
+// }
+// var res=out();
+// res()
+
+let a=100;
 function out(){
-    var b=50;
-     function inside(){
-        var c=20;
-        console.log(a)
+    let b=200
+   return function (){
+        let c=50;
+        console.log(a);
         console.log(b)
         console.log(c)
     }
-    return inside
-
 }
 var res=out();
 res()
+
 // ------------------------------------------------------------------------
 
 
