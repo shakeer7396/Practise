@@ -1,9 +1,14 @@
 //The  for of statement creates a loop itrating over itrable objects
 
-var chek=["a","b","c",10];
+// var chek=["a","b","c",10];
 
-for(value of chek){
-    console.log(value,"\n")
+// for(value of chek){
+//     console.log(value,"\n")
+// }
+
+var check=['1','2','3','4'];
+for(value of check){
+    console.log(value,'\n')
 }
 
 // -----------------------------------------------
