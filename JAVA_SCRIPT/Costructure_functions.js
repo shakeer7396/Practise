@@ -73,6 +73,15 @@
 // var out=new Trial("shakeer",22,"male")
 // console.log(out);
 
+// function Trail(name,age,gender){
+//     this.name=name,
+//     this.age=age,
+//     this.gender=gender
+// }
+
+// var out=new Trail("shakeer",22,'male');
+// console.log(out)
+
 class Trail{
     constructor(name,age,gender){
         this.name=name,
@@ -80,6 +89,5 @@ class Trail{
         this.gender=gender
     }
 }
-
-var out=new Trail("shaik",22,"male")
-console.log(out)
+var opt=new Trail("shakeer",22,'male')
+console.log(opt)
