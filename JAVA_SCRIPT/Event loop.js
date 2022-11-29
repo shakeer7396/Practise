@@ -3,20 +3,20 @@
 
 
 
-var count=0;
-let a=true;
+// var count=0;
+// let a=true;
 
-setInterval(()=>{
-    if(a){
-    console.log(count++)
+// setInterval(()=>{
+//     if(a){
+//     console.log(count++)
 
-    }
-},200)
+//     }
+// },200)
 
 
-setTimeout(()=>{
-    a=false
-},2000)
+// setTimeout(()=>{
+//     a=false
+// },2000)
 
 
 
@@ -35,16 +35,18 @@ setTimeout(()=>{
 
 // },2000)
 
-// function two(){
-//     console.log("This is event loop ");
-// }
-// function one(){
-//     two()
-// }
-// function main(){
-//     one();
-// }
-// main()
+
+
+function one(){
+    console.log("This is event loop check")
+}
+function two(){
+    one()
+}
+function three(){
+    two()
+}
+three()
 
 
 // var count=0;
