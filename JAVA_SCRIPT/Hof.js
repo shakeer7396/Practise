@@ -103,11 +103,12 @@
 
 
 // // Given an array of strings print the length of each string
-// var arr=["apple", "windows", "ubuntu"];
-    // let check=arr.map(function(el,index){
-    //     return el.length;
-    // })
-    // console.log(check);
+var arr=["apple", "windows", "ubuntu"];
+   
+    let check=arr.map(function(el,index){
+        return el.length;
+    })
+    console.log(check)
     
 
 // // Given an array of string generate an array whose first or last character is a
