@@ -8,13 +8,21 @@
 // }
 // obj1.fun()
 
-// var obj={
-//     name:"sak",
-//     fun:function hello(){
-//         console.log(this.name)
-//     }
-// }
-// obj.fun()
+var obj1={
+    name:"shaik",
+    fun:function hello(){
+        console.log(this.name)
+    }
+}
+obj1.fun()
+
+var obj={
+    name:"sak",
+    fun:function hello(){
+        console.log(this.name)
+    }
+}
+obj.fun()
 // ------------------------------------
 // redeclare the obj values
 // eg--2
@@ -57,14 +65,14 @@
 //     age:22,
 //     city:"ATP",
 // }
-// // delete obj.city;
+// delete obj.city;
 // console.log(obj);
 
 // adding new values in obj 
 
-let obj={
-    name:"shaik"
-}
-obj.age=22
-Object.assign(obj,{city:"atp"})
-console.log(obj)
+// let obj={
+//     name:"shaik"
+// }
+// obj.age=22
+// Object.assign(obj,{city:"atp"})
+// console.log(obj)

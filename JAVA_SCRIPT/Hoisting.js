@@ -9,7 +9,7 @@ function hello(){
     y=100
     console.log(y)
 }
-var y;
+let y;
 hello()
 // x=100;
 // console.log(x);
