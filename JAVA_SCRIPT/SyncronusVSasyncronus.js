@@ -20,17 +20,17 @@
 // -----------------------------------------------------------------------------------------------
 // Asyncronus?
 // Asyncronus means Jab tak ek work complete nai hota jab tak next wala  kar sakte--> it is called Asyncronus function (sab kaam ko ek hi baar kar sakte)
-// const fun2 = ()=>{
-//     setTimeout(()=>{
-//         console.log("Called fun2 start")
-//     },3000)
-// }
-// const fun1=()=>{
-//     console.log("Called fun1 start")
-//     fun2();
-//     console.log("Called fun1 end")
-// }
-// fun1();
+const fun2 = ()=>{
+    setTimeout(()=>{
+        console.log("Called fun2 start")
+    },3000)
+}
+const fun1=()=>{
+    console.log("Called fun1 start")
+    fun2();
+    console.log("Called fun1 end")
+}
+fun1();
 
 // const fun2 =()=>{
 //     setTimeout(()=>{

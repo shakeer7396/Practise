@@ -94,57 +94,35 @@
 
 // checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
 
-// var a=21;
-// let checkOdd=new Promise((res,rej)=>{
-//     if(a%2==1){
-//         res("this is odd")
-//     }
-//     else{
-//         rej("this is not odd")
-//     }
-// })
-// checkOdd.then((out)=>{console.log(out)}).catch((err)=>console.log(err))
+var a=24;
+let checkEven=new Promise((res,rej)=>{
+    if(a%2==0){
+        res("Is Even")
+    }
+    else{
+        rej("Is not Even")
+    }
+})
+checkEven.then((ans)=>console.log(ans)).catch((err)=>console.log(err))
 // ------------------------------
-// function hello(complete){
-//     console.log("please wait");
+
+// function prom(complete){
+//     console.log("please wait data loading")
 //     return new Promise(function(res,rej){
 //         setTimeout(()=>{
 //             if(complete){
-//                 res("true")
+//                 res("Yes Done")
 //             }
 //             else{
-//                 rej("false")
+//                 rej("Not Done")
 //             }
 //         },3000)
 //     })
 // }
-
-// let ful=(done)=>{
-//     console.log(done);
+// let ri=(yes)=>{
+//     console.log(yes)
 // }
-// let res=(err)=>{
-//     console.log(err);
+// let wr=(no)=>{
+//     console.log(no)
 // }
-
-// hello(true).then(ful).catch(res)
-
-function prom(complete){
-    console.log("please wait data loading")
-    return new Promise(function(res,rej){
-        setTimeout(()=>{
-            if(complete){
-                res("Yes Done")
-            }
-            else{
-                rej("Not Done")
-            }
-        },3000)
-    })
-}
-let ri=(yes)=>{
-    console.log(yes)
-}
-let wr=(no)=>{
-    console.log(no)
-}
-prom(true).then(ri).catch(wr)
+// prom(true).then(ri).catch(wr)
