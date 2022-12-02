@@ -105,25 +105,46 @@
 // })
 // checkOdd.then((out)=>{console.log(out)}).catch((err)=>console.log(err))
 // ------------------------------
-function hello(complete){
-    console.log("please wait");
+// function hello(complete){
+//     console.log("please wait");
+//     return new Promise(function(res,rej){
+//         setTimeout(()=>{
+//             if(complete){
+//                 res("true")
+//             }
+//             else{
+//                 rej("false")
+//             }
+//         },3000)
+//     })
+// }
+
+// let ful=(done)=>{
+//     console.log(done);
+// }
+// let res=(err)=>{
+//     console.log(err);
+// }
+
+// hello(true).then(ful).catch(res)
+
+function prom(complete){
+    console.log("please wait data loading")
     return new Promise(function(res,rej){
         setTimeout(()=>{
             if(complete){
-                res("true")
+                res("Yes Done")
             }
             else{
-                rej("false")
+                rej("Not Done")
             }
         },3000)
     })
 }
-
-let ful=(done)=>{
-    console.log(done);
+let ri=(yes)=>{
+    console.log(yes)
 }
-let res=(err)=>{
-    console.log(err);
+let wr=(no)=>{
+    console.log(no)
 }
-
-hello(true).then(ful).catch(res)
+prom(true).then(ri).catch(wr)
