@@ -8,11 +8,20 @@
 // }
 // console.log(obj.fun());
 
-var check={
+// var check={
+//     fname:"shaik",
+//     lname:"shakeer",
+//     fun:function(){
+//        return this.fname+" "+this.lname
+//     }
+// }
+// console.log(check.fun())
+
+var details={
     fname:"shaik",
     lname:"shakeer",
     fun:function(){
-       return this.fname+" "+this.lname
-    }
+        return this.fname+" "+this.lname
+    }  
 }
-console.log(check.fun())
+console.log(details.fun())
