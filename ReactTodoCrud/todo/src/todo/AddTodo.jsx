@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 const AddTodo = ({mount}) => {
     const [add,setAdd]=useState("")
-
     const change=(e)=>{
         setAdd(e.target.value)
     }
