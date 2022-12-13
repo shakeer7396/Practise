@@ -18,5 +18,3 @@ function changeCount(val){
     counter.innerText=count;
 }
 
-
-
