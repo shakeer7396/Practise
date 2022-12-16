@@ -26,8 +26,9 @@ const Todo = () => {
     <div style={{marginBottom:"20px"}} >
         <form onSubmit={handleSubmit}>
         <input type="text" placeholder='Add Some Thing' value={add} onChange={handleChange} />
-        <button type="submit">Add</button>
+        <button type="submit">Add Item</button>
         </form>
+        
         {data.map((item,index)=>{
             return(
             <DeleteItem key={index} add={item} id={index} onSelect={handleDelete} />
