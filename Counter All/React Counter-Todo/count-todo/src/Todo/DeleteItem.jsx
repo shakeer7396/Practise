@@ -7,7 +7,7 @@ const DeleteItem = (props) => {
             <h2 style={{color:"yellowgreen"}} >{props.add}</h2>
 
         </div>
-        <button style={{height:"30px",color:"white",background:"red"}}onClick={()=>{props.onSelect(props.id)}}>X</button>
+        <button style={{height:"30px",color:"white",background:"red"}}onClick={()=>{props.onSelect(props.id)}}>Cancle</button>
     </div>
   )
 }
