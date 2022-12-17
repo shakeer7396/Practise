@@ -43,12 +43,14 @@ const Data = () => {
         <input type="text" name="name" onChange={handleChange} />
         <input type="text" name="age" onChange={handleChange} />
         <input type="text" name="username" onChange={handleChange}/>
-        <button type='submit' value='submit' onClick={handleClick}>Submit</button>
+        <button type='submit' value='submit' onClick={handleClick}>
+            Submit</button>
 
     </div>
     <div>
         {
             user.length && user.map((el,index)=>(
+
                 <div key={index+1}>
                     <p>{el.name}</p>
                     <p>{el.age} </p>
@@ -56,7 +58,7 @@ const Data = () => {
                 </div>
             ))
         }
-        
+
     </div>
     </>
 
