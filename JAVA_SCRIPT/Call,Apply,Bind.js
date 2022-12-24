@@ -102,11 +102,9 @@
 //     name:"shaik",
 //     age:22
 // }
-
 // function hello(){
 //     console.log(this.name+" "+this.age);
 // }
-
 // hello.call(obj)
 
 //apply
@@ -120,7 +118,6 @@
 // hello.apply(obj,["Is a Student"])
 
 // //bind
-
 // var data={
 //     bike:function(brand,price){
 //         console.log(this.name+" "+brand+" "+price);
