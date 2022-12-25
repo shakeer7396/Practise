@@ -118,29 +118,17 @@
 // hello.apply(obj,["Is a Student"])
 
 // //bind
-// var data={
-//     bike:function(brand,price){
-//         console.log(this.name+" "+brand+" "+price);
-//     }
-// }
-// var obj={
-//     name:"shaik"
-// }
-// var out=data.bike.bind(obj,"appachi",30,0000)
-// out();
-
-//bind
-let details={
+var data={
     bike:function(brand,price){
-        console.log(this.name+" "+brand+" "+price)
+        console.log(this.name+" "+brand+" "+price);
     }
 }
-
-let obj={
+var obj={
     name:"shaik"
 }
+var out=data.bike.bind(obj,"appachi",30,0000)
+out();
 
-let out=details.bike.bind(obj,"shine","1 lakh")
-out()
+
 
 
