@@ -12,6 +12,23 @@
 </html>
 <script>
 
+let s=document.getElementById("search")
+s.onkeypress=wrapper;
+let count=0;
+let flag=true;
+function wrapper(){
+if(flag){
+    throt();
+    flag=false;
+    setTimeout(()=>{
+        flag=true
+    },2000)
+}
+}
+function throt(){
+    console.log("count",count++)
+}
+
 // let t=document.getElementById("search");
 // t.onkeypress=wrapper
 
@@ -50,23 +67,5 @@
 //     console.log("count",count++)
 // }
 
-let s=document.getElementById("search")
-s.onkeypress=wrapper;
 
-let count=0;
-let flag=true;
-
-function wrapper(){
-if(flag){
-    throt();
-    flag=false;
-    setTimeout(()=>{
-        flag=true
-    },2000)
-}
-}
-
-function throt(){
-    console.log("count",count++)
-}
 </script>
