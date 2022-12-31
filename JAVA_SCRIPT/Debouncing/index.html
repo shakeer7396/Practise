@@ -16,9 +16,11 @@
     s.onkeypress=wrapper;
     let count=0;
     let timer;
+    
     function wrapper(){
         clearInterval(timer)
     timer=setTimeout(debounce,3000)
+
     }
     function debounce(){
         console.log("count",count++)
