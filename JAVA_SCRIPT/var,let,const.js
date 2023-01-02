@@ -18,7 +18,9 @@ console.log(a)
 
 var c=50;
 function out(){
+    var d=60;
     console.log(c)
+    console.log(d)
 }
 out();
 // ---------------------------------------Working
