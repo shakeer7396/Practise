@@ -10,6 +10,17 @@
 //     console.log(b)
 // }
 // vars()
+var a=100;
+// console.log(a)
+
+var a=10;
+console.log(a)
+
+var c=50;
+function out(){
+    console.log(c)
+}
+out();
 // ---------------------------------------Working
 // showing RefrenceError 
 // function vars(){
@@ -65,23 +76,5 @@
 // b=40;
 // console.log(b);//TypeError;
 
-var hello=100;
-console.log(hello)
 
-function check(){
-    var ins=150
-console.log(ins)
-
-}
-check()
-
-let hello1=50;
-console.log(hello1)
-
-function lets(){
-    let insd=200;
-console.log(insd)
-
-}
-lets()
 
