@@ -17,7 +17,7 @@ function changeCount(val){
     else if(val==reset){
         count=0
     }
-    
+
     counter.innerText=count;
 }
 
