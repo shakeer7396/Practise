@@ -1,20 +1,20 @@
 // This key word depends on parent object
 
-// var obj1={
-//     name:"shafi",
-//     fun:function hello(){
-//         console.log(this.name)
-//     }
-// }
-// obj1.fun()
-
 var obj1={
-    name:"shaik",
+    name:"shafi",
     fun:function hello(){
         console.log(this.name)
     }
 }
 obj1.fun()
+
+// var obj1={
+//     name:"shaik",
+//     fun:function hello(){
+//         console.log(this.name)
+//     }
+// }
+// obj1.fun()
 
 var obj={
     name:"sak",
