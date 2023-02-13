@@ -1,4 +1,4 @@
-// Hoisting is a default behaviour of js it means you intialize the value in top of the console,then your gave below declaration the console it be printed-->hoisting send the declaration to top of the console same as function outside and block scope also ex-->
+// Hoisting is a default behaviour of js it means you intialize the value at top of the console,then your gave below declaration the console it be printed-->hoisting send the declaration to top of the console same as function outside and block scope also ex-->
 
 
 // x=100;
@@ -11,6 +11,18 @@
 // }
 // let y;
 // hello()
+
+p=100;
+console.log(p);
+var p;
+
+function check(){
+    q=50;
+    console.log(q)
+}
+let q;
+check()
+
 x=100;
 console.log(x);
  var x;
