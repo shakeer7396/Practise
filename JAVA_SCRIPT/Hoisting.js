@@ -12,27 +12,27 @@
 // let y;
 // hello()
 
-p=100;
-console.log(p);
-var p;
+// p=100;
+// console.log(p);
+// var p;
 
-function check(){
-    q=50;
-    console.log(q)
-}
-let q;
-check()
+// function check(){
+//     q=50;
+//     console.log(q)
+// }
+// let q;
+// check()
 
-x=100;
-console.log(x);
- var x;
+// x=100;
+// console.log(x);
+//  var x;
 
- function get(){
-  y=200;
-  console.log(y)
+//  function get(){
+//   y=200;
+//   console.log(y)
 
- }
- get()
+//  }
+//  get()
  
 
 //-------------------------------------
@@ -76,3 +76,13 @@ console.log(x);
 // console.log(b);
 
 
+a=100;
+console.log(a)
+var a;
+
+function check(){
+    x=50;
+    console.log(x)
+    var x;
+}
+check();
