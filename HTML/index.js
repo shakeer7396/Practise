@@ -45,17 +45,17 @@
 //   helo.apply(obj,["you want more practise"])
 
 //bind method
-var details={
-    bike:function(brand,num){
-        console.log(this.name+" "+brand+" "+num)
-    }
-}
+// var details={
+//     bike:function(brand,num){
+//         console.log(this.name+" "+brand+" "+num)
+//     }
+// }
 
-var obj={
-    name:"rider"
-}
-var out=details.bike.bind(obj,"bullet",4561)
-out()
+// var obj={
+//     name:"rider"
+// }
+// var out=details.bike.bind(obj,"bullet",4561)
+// out()
 // function getData(complete){
 //     return new Promise(function(resolve,reject){
 //         console.log("please wait")
