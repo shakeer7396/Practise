@@ -86,3 +86,8 @@ function check(){
     var x;
 }
 check();
+
+
+var b;
+console.log(b);
+b=40;
