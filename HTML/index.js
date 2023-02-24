@@ -34,15 +34,15 @@
 
 
 //apply method
-//   function helo(message){
-//     console.log(this.name+" "+message)
-//   }
+  function helo(message){
+    console.log(this.name+" "+message)
+  }
 
-//   var obj={
-//     name:"shaik"
-//   }
+  var obj={
+    name:"shaik"
+  }
 
-//   helo.apply(obj,["you want more practise"])
+  helo.apply(obj,["you want more practise"])
 
 //bind method
 // var details={
