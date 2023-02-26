@@ -43,18 +43,18 @@
 
 
 
-let a=100;
-function out(){
-    let b=200
-   return function (){
-        let c=50;
-        console.log(a);
-        console.log(b)
-        console.log(c)
-    }
-}
-var res=out();
-res()
+// let a=100;
+// function out(){
+//     let b=200
+//    return function (){
+//         let c=50;
+//         console.log(a);
+//         console.log(b)
+//         console.log(c)
+//     }
+// }
+// var res=out();
+// res()
 
 // ------------------------------------------------------------------------
 
@@ -69,13 +69,13 @@ res()
 // var person=new Person("Neelesh")
 // console.log(person.getName())
 
-// var Person = function(pname){
-//     var name=pname
-//     this.getName=function(){
-//         return name;
-//     }
-// }
-// var person=new Person("Neelesh")
-// console.log(person.getName())
+var Person = function(pname){
+    var name=pname
+    this.getName=function(){
+        return name;
+    }
+}
+var person=new Person("Neelesh")
+console.log(person.getName())
 //Uses of Closure
 // Module Design Pattern, Currying, Functions like once(fun that can be run only once), memoize, maintaining state in async world, setTimeout, iterators...
