@@ -28,6 +28,21 @@
 // var res=out();
 // res()
 
+// let a=100;
+// function out(){
+//     let b=200
+//    return function (){
+//         let c=50;
+//         console.log(a);
+//         console.log(b)
+//         console.log(c)
+//     }
+// }
+// var res=out();
+// res()
+
+
+
 let a=100;
 function out(){
     let b=200
