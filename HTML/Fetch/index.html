@@ -69,15 +69,15 @@
           let img=document.createElement("img")
           img.src=el.image
           let p1=document.createElement("p")
-          p1.innerText=el.category
+          p1.innerText=`Name- ${el.category}`
           let p2=document.createElement("p")
-          p2.innerText=el.description
+          p2.innerText=`Description- ${el.description}`
           let p3=document.createElement("p")
-          p3.innerText=el.price
+          p3.innerText=`Price- ${el.price}`
           let p4=document.createElement("p")
-          p4.innerText=el.rating.cost
+          p4.innerText=`Count- ${el.rating.count}`
           let p5=document.createElement("p")
-          p5.innerText=el.rating.rate
+          p5.innerText=`Rating- ${el.rating.rate}`
           div.append(img,p1,p2,p3,p4,p5);
           container.append(div)         
         })
