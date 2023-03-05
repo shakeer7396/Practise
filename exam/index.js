@@ -30,17 +30,17 @@
 
 
 
-// let p1=new Person("shaik",23)
-// console.log(p1)
+let p1=new Person("shaik",23)
+console.log(p1)
 
-// function Person(first,age){
-//     this.firstName=first;
-//     this.age=age;
-// }
-// const myDetails=newPerson("shaik",23);
-// const myFriend=newPerson("raj",23);
+function Person(first,age){
+    this.firstName=first;
+    this.age=age;
+}
+const myDetails=newPerson("shaik",23);
+const myFriend=newPerson("raj",23);
 
-let question = true;
- if (question === false)
-  console.log(0) 
-  else console.log(10);
+// let question = true;
+//  if (question === false)
+//   console.log(0) 
+//   else console.log(10);
