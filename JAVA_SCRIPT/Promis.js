@@ -106,23 +106,3 @@ let checkEven=new Promise((res,rej)=>{
 checkEven.then((ans)=>console.log(ans)).catch((err)=>console.log(err))
 // ------------------------------
 
-// function prom(complete){
-//     console.log("please wait data loading")
-//     return new Promise(function(res,rej){
-//         setTimeout(()=>{
-//             if(complete){
-//                 res("Yes Done")
-//             }
-//             else{
-//                 rej("Not Done")
-//             }
-//         },3000)
-//     })
-// }
-// let ri=(yes)=>{
-//     console.log(yes)
-// }
-// let wr=(no)=>{
-//     console.log(no)
-// }
-// prom(true).then(ri).catch(wr)
