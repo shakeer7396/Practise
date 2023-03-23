@@ -57,18 +57,6 @@
 // res()
 
 // ------------------------------------------------------------------------
-
-
-
-// var Person = function(pname){
-//     var name=pname
-//     this.getName=function(){
-//         return name;
-//     }
-// }
-// var person=new Person("Neelesh")
-// console.log(person.getName())
-
 var Person = function(pname){
     var name=pname
     this.getName=function(){
