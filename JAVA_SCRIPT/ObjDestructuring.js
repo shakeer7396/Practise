@@ -11,9 +11,9 @@
 // console.log(name+" "+age);
 
 
-var arr=["shaik","shakeer",22]
+// var arr=["shaik","shakeer",22]
 
-var[fname,lname,age]=arr;
+// var[fname,lname,age]=arr;
 
-console.log(arr[0]);
-console.log(lname)
+// console.log(arr[0]);
+// console.log(lname)
