@@ -11,10 +11,8 @@ function out(a,b,operate){
 var sum=a+b;
 operate(sum)
 }
-
 function mult(sum){
 console.log("mult",sum*10)
 }
-
 out(10,5,mult)
 

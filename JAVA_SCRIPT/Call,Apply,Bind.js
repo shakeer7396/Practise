@@ -126,7 +126,7 @@ var data={
 var obj={
     name:"shaik"
 }
-var out=data.bike.bind(obj,"appachi",30,0000)
+var out=data.bike.bind(obj,"appachi",30000);
 out();
 
 
