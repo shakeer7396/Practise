@@ -10,9 +10,12 @@
 
 // Write a loop that prints every number divisible by three from 1-200.
 
-for(var i=1;i<=200;i++){
+// for(var i=1;i<=200;i++){
 
-    if(i%3==0){
-        console.log(i)
-    }
-}
+//     if(i%3==0){
+//         console.log(i)
+//     }
+// }
+
+console.log(1<2<3)
+console.log(3>2>1)
