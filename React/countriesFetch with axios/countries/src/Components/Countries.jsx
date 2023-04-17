@@ -5,7 +5,6 @@ const Countries = () => {
    const [data,setData]=useState([])
    const [filter,setFilter]=useState('')
    const [sort,setSort]=useState('')
-
     // Fetching Data
    const getData =async()=>{
     axios.get("https://restcountries.com/v2/all")
@@ -13,13 +12,10 @@ const Countries = () => {
         setData(r.data)
     })
    }
-
    useEffect(()=>{
     getData()
    },[])
    console.log(data);
-
-   
    //ANOTHER PROCESSES OF FETCHING DATA
     // const getData=async()=>{
     //     let res=await fetch("https://restcountries.com/v2/all")
@@ -27,7 +23,6 @@ const Countries = () => {
     //     setData(list)
     //     console.log(list);
     // }
-
     // useEffect(()=>{
     //     getData()
     // },[])
@@ -39,9 +34,6 @@ const Countries = () => {
             setData(r.data)
         })
     }
-   
-
-
     const handleSort =(e)=>{
         console.log(e.target.value)
         setSort(e.target.value);
@@ -55,7 +47,6 @@ const Countries = () => {
             return data
         }
     }
-   
    
   return (
     <div>
