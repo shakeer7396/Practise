@@ -40,3 +40,20 @@ const Todo = () => {
 }
 
 export default Todo
+
+// import React from 'react';
+
+// const Todo = ()=>{
+//     const[add,setAdd]=useState('');
+
+//     return(
+//         <>
+//         <div>
+//            <form action="">
+
+//            </form>
+//         </div>
+//         </>
+//     )
+// }
+// export default Todo;
