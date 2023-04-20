@@ -14,6 +14,8 @@
 //     console.log(el+4)
 // })
 
+//They gave
+
 var arr=[1,2,3,4];
 var sum=0;
     var count=0;
