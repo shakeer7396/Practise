@@ -5,24 +5,24 @@
 // var a=100;
 // console.log(a)
 
-// var b=40;
 // function vars(){
+// var b=40;
 //     console.log(b)
 // }
 // vars()
-var a=100;
+// var a=100;
 // console.log(a)
 
-var a=10;
-console.log(a)
+// var a=10;
+// console.log(a)
 
-var c=50;
-function out(){
-    var d=60;
-    console.log(c)
-    console.log(d)
-}
-out();
+// var c=50;
+// function out(){
+//     var d=60;
+//     console.log(c)
+//     console.log(d)
+// }
+// out();
 // ---------------------------------------Working
 // showing RefrenceError 
 // function vars(){

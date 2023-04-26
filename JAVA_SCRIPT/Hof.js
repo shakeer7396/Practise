@@ -105,8 +105,8 @@ arr1.forEach(function(el,acc){
 // // Given an array of strings print the length of each string
 var arr=["apple", "windows", "ubuntu"];
    
-    let check=arr.map(function(el,index){
-        return el.length;
+    let check=arr.map(function(el){
+        return el;
     })
     console.log(check)
     
