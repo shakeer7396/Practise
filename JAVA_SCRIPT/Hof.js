@@ -136,18 +136,18 @@ var arr=["apple", "windows", "ubuntu"];
 // }
 // var out=arr.map(len).filter(odd).reduce(sum);
 // console.log(out)
-// var arr=["apple","ant","umbrella","elephant","cat"];
-// var len=function(el,index){
-//     return el.length
-// }
-// var odd=function(el,ind){
-//     return el%2==1;
-// }
-// var sum=function(acc,el){
-//     return acc+el;
-// }
-// var out=arr.map(len).filter(odd).reduce(sum)
-// console.log(out)
+var arr=["apple","ant","umbrella","elephant","cat"];
+var len=function(el,index){
+    return el.length
+}
+var odd=function(el,ind){
+    return el%2==1;
+}
+var sum=function(acc,el){
+    return acc+el;
+}
+var out=arr.map(len).filter(odd).reduce(sum)
+console.log(out)
 
 
 
