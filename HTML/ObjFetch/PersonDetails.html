@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    const data = [
+  {
+    "name": "John",
+    "age": 35,
+    "gender": "male"
+  },
+  {
+    "name": "Jane",
+    "age": 27,
+    "gender": "female"
+  },
+  {
+    "name": "Mark",
+    "age": 42,
+    "gender": "male"
+  },
+  {
+    "name": "Susan",
+    "age": 29,
+    "gender": "female"
+  },
+  {
+    "name": "David",
+    "age": 20,
+    "gender": "male"
+  },
+  {
+    "name": "Harish",
+    "age": 22,
+    "gender": "male"
+  },
+  {
+    "name": "Manish",
+    "age": 24,
+    "gender": "male"
+  },
+  {
+    "name": "Varun",
+    "age": 25,
+    "gender": "male"
+  }
+];
+
+const filteredData = data.filter(person => person.gender === "female" && person.age % 2 !== 0);
+
+const container = document.getElementById("container");
+
+filteredData.forEach(person => {
+  const div = document.createElement("div");
+
+  const name = document.createElement("h2");
+  name.textContent = person.name;
+
+  const age = document.createElement("p");
+  age.textContent = person.age;
+
+  div.appendChild(name);
+  div.appendChild(age);
+  container.appendChild(div);
+});
+
+</script>

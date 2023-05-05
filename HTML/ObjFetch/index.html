@@ -68,6 +68,8 @@
       strikedoffprice: 1799,
     }
     ]
+    const malePeople = data.people.filter(person => person.gender === "male");
+
 
     data.map(function(elem,index,arr){
         var mainDiv=document.createElement("div");
