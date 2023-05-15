@@ -5,7 +5,7 @@ const Countries = () => {
    const [data,setData]=useState([])
    const [filter,setFilter]=useState('')
    const [sort,setSort]=useState('')
-    // Fetching Data
+    // Fetching Data with Axios
    const getData =async()=>{
     axios.get("https://restcountries.com/v2/all")
     .then((r)=>{
