@@ -88,20 +88,37 @@ function res(...args){
 
 // console.log(...arr1,...arr2)
 
-var obj1={
-    name:"shakeer",
-    age:22,
-    place:"Kanekal"
-}
-var obj2={
-    quali:"degree",
-    grade:80
-}
+// var obj1={
+//     name:"shakeer",
+//     age:22,
+//     place:"Kanekal"
+// }
+// var obj2={
+//     quali:"degree",
+//     grade:80
+// }
 
-var obj3={
-    ...obj1,...obj2
-}
-console.log(obj3)
+// var obj3={
+//     ...obj1,...obj2
+// }
+// console.log(obj3)
+
+const myVehicle = {
+    brand: 'Ford',
+    model: 'Mustang',
+    color: 'red'
+  }
+  
+  const updateMyVehicle = {
+    type: 'car',
+    year: 2021, 
+    color: 'yellow'
+  }
+  
+  const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+  
+  //Check the result object in the console:
+  console.log(myUpdatedVehicle);
 
 
 // var arr1=[1,2,3,4,5];
