@@ -32,12 +32,12 @@
 
 // A class created with a class inheritance inherits all the methods from another class
 
-class Car {
+class Car{
     constructor(name){
         this.brand=name;
     }
     present(){
-        return "I have a "+this.brand;
+        return "I have a "+this.brand
     }
 }
 class Model extends Car{
@@ -46,7 +46,7 @@ class Model extends Car{
         this.model=mod;
     }
     show(){
-       return this.present()+ ", it is a "+ this.model
+        return this.present()+", it is a " + this.model
     }
 }
 const mycar =new Model("Ford","Shift")
