@@ -41,3 +41,5 @@
 //   return bag;
 // }
 
+let str = `Quantity: ${40 + 2} units`; 
+console.log(str);
