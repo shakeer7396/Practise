@@ -1,27 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Fetch = () => {
     const [data, setData] = useState(null);
-    const [error, setError] = useState(null)
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products?limit=50')
-            .then(response => response.json())
-            .then(data => {
-                setData(data)
+        fetch("https://fakestoreapi.com/products?limit=50")
+            .then((response) => response.json())
+            .then((data) => {
+                setData(data);
             })
-            .catch(error => {
-                setError(error)
-            })
-    }, [])
+            .catch((error) => {
+                setError(error);
+            });
+    }, []);
 
     if (error) {
-        return <div>Error : {error.message}</div>
-    }
-    else if (!data) {
-        return <div>Loading....</div>
-    }
-    else {
+        return <div>Error : {error.message}</div>;
+    } else if (!data) {
+        return <div>Loading....</div>;
+    } else {
         return (
             <div>
                 {data?.map((el) => (
@@ -34,11 +32,8 @@ const Fetch = () => {
                         <h3>Descripton : {el.description}</h3>
                     </div>
                 ))}
-
             </div>
-        )
+        );
     }
-
-
-}
+};
 export default Fetch;
