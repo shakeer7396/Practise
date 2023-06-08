@@ -22,7 +22,7 @@ const Fetch = () => {
     } else {
         return (
             <div>
-                {/* //Data maping into Dom */}
+                {/* //Data maping into Dom on browser */}
                 {data?.map((el) => (
                     <div key={el.id} style={{ border: "2px solid red", padding: "20px" }}>
                         <div>
