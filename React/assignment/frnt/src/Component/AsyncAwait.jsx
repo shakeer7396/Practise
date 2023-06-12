@@ -8,7 +8,7 @@ const AsyncAwait = () => {
 
     const fetchData =async ()=>{
         try{
-            let res=await fetch("https://fakestoreapi.com/products?limit=50");
+            let res=await fetch("https://fakestoreapi.com/products");
             let data=await res.json()
             return data;
         }
