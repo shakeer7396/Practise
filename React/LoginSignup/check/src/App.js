@@ -19,6 +19,10 @@ import "./App.css";
 // import MyAccount from "./Pages/LoginSignin/MyAccount";
 import Signin from "./Pages/LoginSignin/Signin";
 import { Secpay } from "./Pages/Sec_payment";
+import SignupPage from "./Components/SignupPage";
+import Form from "./Components/Form";
+import Login from "./Pages/LoginSignin/Login";
+import LoginPage from "./Components/LoginPage";
 
 
 function App() {
@@ -28,7 +32,7 @@ function App() {
   
       
       {/* <Secpay/> */}
-      <Signin/>
+      {/* <Signin/> */}
 
       {/* <Routes>
         <Route path="/" element={<HomePage></HomePage>} />
@@ -61,6 +65,11 @@ function App() {
         <Route path="/myaccount" element={<MyAccount/>}></Route>
       </Routes>
       <Footer></Footer> */}
+
+      {/* <SignupPage /> */}
+
+      {/* <Form /> */}
+      <LoginPage />
 
     </div>
   );
