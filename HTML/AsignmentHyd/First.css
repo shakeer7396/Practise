@@ -1,0 +1,62 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li, pre {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and text color for the body */
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the logo */
+  header img.logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the main heading in the header */
+  header h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  /* Style the introduction section */
+  .introduction {
+    margin: 20px;
+  }
+  
+  /* Style section headings */
+  section h2 {
+    margin: 20px 0;
+  }
+  
+  /* Style paragraphs */
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Style code blocks */
+  pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+  }
+  
