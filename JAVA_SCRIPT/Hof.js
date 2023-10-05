@@ -1,10 +1,10 @@
 // // find odd values
 
-// var arr=[1,2,3,4,5,6];
-// var checkOdd=function(el,index,acc){
-//     return el%2==1;
+var arr=[1,2,3,4,5,6];
+var checkOdd=function(el,index,acc){
+    return el%2==1;
 
-// }
+}
 // var output=arr.filter(checkOdd)
 // console.log(output);
 
@@ -137,6 +137,8 @@
 // var out=arr.map(len).filter(odd).reduce(sum);
 // console.log(out)
 
+
+//4 HIGHER ORDER FUNCTIONS 1.MAP, 2.FOREACH, 3.FILTER, 4.REDUCE
 
 
 
