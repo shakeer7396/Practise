@@ -133,12 +133,20 @@
 //4 HIGHER ORDER FUNCTIONS 1.MAP, 2.FOREACH, 3.FILTER, 4.REDUCE
 
 //FILTER EVEN ODD CHECK
+//EVEN
 var arr=[1,2,3,4,5,6,7];
 var checkEven=function(el,index){
    return el%2==0
 }
-var output=arr.filter(checkEven);
-console.log(output);
+var outputE=arr.filter(checkEven);
+console.log(outputE);
 
+//ODD
+var arr1=[1,2,3,4,5,6,7];
+var checkOdd=function(el,index,acc){
+    return el%2==1;
+}
+var outputOd=arr1.filter(checkOdd);
+console.log(outputOd);
 
 
