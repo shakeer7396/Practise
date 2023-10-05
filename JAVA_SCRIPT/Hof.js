@@ -103,12 +103,12 @@
 
 
 // // Given an array of strings print the length of each string
-var arr=["apple", "windows", "ubuntu"];
+// var arr=["apple", "windows", "ubuntu"];
    
-    let check=arr.map(function(el){
-        return el;
-    })
-    console.log(check)
+//     let check=arr.map(function(el){
+//         return el;
+//     })
+//     console.log(check)
     
 
 // // Given an array of string generate an array whose first or last character is a
@@ -136,18 +136,6 @@ var arr=["apple", "windows", "ubuntu"];
 // }
 // var out=arr.map(len).filter(odd).reduce(sum);
 // console.log(out)
-var arr=["apple","ant","umbrella","elephant","cat"];
-var len=function(el,index){
-    return el.length
-}
-var odd=function(el,ind){
-    return el%2==1;
-}
-var sum=function(acc,el){
-    return acc+el;
-}
-var out=arr.map(len).filter(odd).reduce(sum)
-console.log(out)
 
 
 
