@@ -1,11 +1,11 @@
 // // find odd values
 
-var arr=[1,2,3,4,5,6];
-var checkOdd=function(el,index,acc){
-    return el%2==1;
-}
-var output=arr.filter(checkOdd)
-console.log(output);
+// var arr=[1,2,3,4,5,6];
+// var checkOdd=function(el,index,acc){
+//     return el%2==1;
+// }
+// var output=arr.filter(checkOdd)
+// console.log(output);
 
 // var arr=[1,2,3,4,5,6,7];
 
@@ -139,6 +139,13 @@ console.log(output);
 
 //4 HIGHER ORDER FUNCTIONS 1.MAP, 2.FOREACH, 3.FILTER, 4.REDUCE
 
+//FILTER EVEN ODD CHECK
+var arr=[1,2,3,4,5,6,7];
+var checkEven=function(el,index){
+   return el%2==0
+}
+var output=arr.filter(checkEven);
+console.log(output);
 
 
 
