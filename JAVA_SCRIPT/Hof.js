@@ -1,23 +1,23 @@
 
 
-// var arr=[1,2,3,4,5,6,7];
+var arr=[1,2,3,4,5,6,7];
 
-// let odd=function(el,acc){
-//     return el%2==1
-// }
-// let addO=function(acc,el){
-//     return acc+el;
-// }
-// let even=function(el,acc){
-//     return el%2==0;
-// }
-// let addE=function(acc,el){
-//     return acc+el;
-// }
-// let odout=arr.filter(odd).reduce(addO);
-// let evout=arr.filter(even).reduce(addE);
-// console.log(evout);
-// console.log(odout);
+let odd=function(el,acc){
+    return el%2==1
+}
+let addO=function(acc,el){
+    return acc+el;
+}
+let even=function(el,acc){
+    return el%2==0;
+}
+let addE=function(acc,el){
+    return acc+el;
+}
+let odout=arr.filter(odd).reduce(addO);
+let evout=arr.filter(even).reduce(addE);
+console.log(odout);
+console.log(evout);
 
 
 // // find even values
@@ -133,20 +133,20 @@
 //4 HIGHER ORDER FUNCTIONS 1.MAP, 2.FOREACH, 3.FILTER, 4.REDUCE
 
 //FILTER EVEN ODD CHECK
-//EVEN
-var arr=[1,2,3,4,5,6,7];
-var checkEven=function(el,index){
-   return el%2==0
-}
-var outputE=arr.filter(checkEven);
-console.log(outputE);
+// //EVEN
+// var arr=[1,2,3,4,5,6,7];
+// var checkEven=function(el,index){
+//    return el%2==0
+// }
+// var outputE=arr.filter(checkEven);
+// console.log(outputE);
 
-//ODD
-var arr1=[1,2,3,4,5,6,7];
-var checkOdd=function(el,index,acc){
-    return el%2==1;
-}
-var outputOd=arr1.filter(checkOdd);
-console.log(outputOd);
+// //ODD
+// var arr1=[1,2,3,4,5,6,7];
+// var checkOdd=function(el,index,acc){
+//     return el%2==1;
+// }
+// var outputOd=arr1.filter(checkOdd);
+// console.log(outputOd);
 
 
