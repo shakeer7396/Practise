@@ -15,3 +15,11 @@ let cars = ["bmw", "volvo", "honda"];
 // let last = cars[cars.length - 1];
 // console.log(last);
 
+// Loop Over the Array Items
+// You can also loop over an array in case you need to access multiple elements from the array at once. We use the forEach method for this, which calls a function once for each element in an array. 
+
+cars.forEach((item, index, array) => {
+        console.log(item, index);
+      });
+
+// The code above displays the name of the cars and their corresponding indices on the console
