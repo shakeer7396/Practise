@@ -37,11 +37,18 @@ let cars = ["bmw", "volvo", "honda"];
 // // The code above converted every item in the array to its corresponding binary string. The output is shown below: 
 
 // // elements-console
-
 // toString()
+
 
 // Push()
 // The push method is used to push the elements into an existing array. The push() method mutates the array. 
-cars.push("Audi")
-console.log(cars);
+// cars.push("Audi")
+// console.log(cars);
 // The new array element “Audi” is pushed at the end of the array. 
+
+
+// Unshift()
+// This method is used to add elements to the front of the array and increases the index of every element by one.
+
+// cars.unshift("Toyota")
+// console.log(cars);
