@@ -52,3 +52,23 @@ let cars = ["bmw", "volvo", "honda"];
 
 // cars.unshift("Toyota")
 // console.log(cars);
+
+
+// Pop()
+// This method is used to pop the last element from the array. 
+
+// cars.pop()
+// console.log(cars);
+
+// As per the above logic, the last element “” is deleted from the array. 
+
+
+// Shift()
+// This method is the opposite of unshift, and it removes the first element of the array. This method shifts all the elements, reducing the indexes of every element by one.
+
+// cars.shift();
+// console.log(cars);
+
+// The code above must return our original array with three elements. 
+
+
