@@ -27,15 +27,15 @@ let cars = ["bmw", "volvo", "honda"];
 // toString() 
 // The toString() method returns a string relating to the number. The only parameter it takes is the base index. 
 
-// let list_Number = [2,4,6,8,10]
-//             for(let x=0;x<list_Number.length;x++){
-//                    let y = list_Number[x]
-
-//                 console.log(y.toString(2))
-//             }
+let list_Number = [2,4,6,8,10]
+            for(let x=0;x<list_Number.length;x++){
+                   let y = list_Number[x]
+                   console.log(y);
+                // console.log(y.toString(2))
+            }
 
 // // The code above converted every item in the array to its corresponding binary string. The output is shown below: 
 
 // // elements-console
 
-// toString()
+toString()
