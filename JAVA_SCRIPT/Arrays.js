@@ -135,10 +135,19 @@
 
 let num1=[1,2,3,4,5,6];
 let num2=num1.map(double);
-
 function double(value){
     return value * 2
 }
 console.log(num2)
-
 //[ 2, 4, 6, 8, 10, 12 ]
+
+// num1.map(function(el){
+//     console.log(el*2);
+// })
+
+// 2
+// 4
+// 6
+// 8
+// 10
+

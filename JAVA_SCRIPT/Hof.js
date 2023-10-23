@@ -1,23 +1,23 @@
 
 
-var arr=[1,2,3,4,5,6,7];
+// var arr=[1,2,3,4,5,6,7];
 
-let odd=function(el,acc){
-    return el%2==1
-}
-let addO=function(acc,el){
-    return acc+el;
-}
-let even=function(el,acc){
-    return el%2==0;
-}
-let addE=function(acc,el){
-    return acc+el;
-}
-let odout=arr.filter(odd).reduce(addO);
-let evout=arr.filter(even).reduce(addE);
-console.log(odout);
-console.log(evout);
+// let odd=function(el,acc){
+//     return el%2==1
+// }
+// let addO=function(acc,el){
+//     return acc+el;
+// }
+// let even=function(el,acc){
+//     return el%2==0;
+// }
+// let addE=function(acc,el){
+//     return acc+el;
+// }
+// let odout=arr.filter(odd).reduce(addO);
+// let evout=arr.filter(even).reduce(addE);
+// console.log(odout);
+// console.log(evout);
 
 
 // // find even values
@@ -29,11 +29,11 @@ console.log(evout);
 // console.log(out)
 
 
-// // multiply values
-//  var arr1=[1,2,3,4,5];
-// arr1.forEach(function(el,acc){
-//     console.log(el*2)
-// })
+// multiply values
+ var arr1=[1,2,3,4,5];
+arr1.forEach(function(el,acc){
+    console.log(el*2)
+})
 
 
 
