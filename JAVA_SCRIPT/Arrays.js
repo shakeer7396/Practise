@@ -95,3 +95,15 @@
 // // [ 'Toyota', 'bmw' ]
 
 // Since the end parameter is excluded, the array element at index four is excluded. The output is shown below: 
+
+
+// // Concat()
+// // The concat() method is used to merge two or more arrays into a single one. 
+
+// let cars = ["bmw", "volvo", "honda"];
+// let bikes = ["yamaha", "suzuki", "royal enfield"];
+// let vehicles = cars.concat(bikes);
+// console.log(vehicles);
+
+// // The array bikes is merged with the array cars to the following output:
+// //[ 'bmw', 'volvo', 'honda', 'yamaha', 'suzuki', 'royal enfield' ]
