@@ -38,8 +38,8 @@
 
 
   
-//product of all the numbers
-//var arr=[1,2,3,4]
+// // product of all the numbers
+// var arr=[1,2,3,4]
 // var prod=function(el,acc,index){
 //     return el*acc;
 // }
@@ -86,7 +86,7 @@
 
 
 // //Add unlimited  values in arr
-// var arr=[1,2,3,4,5,6,7,8,9,10,45];
+// var arr=[1,2,3,4,5,6,7,8,9,10,20];
 // var add=function(acc,el){
 //     return acc+el;
 // }
@@ -116,37 +116,27 @@
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8
-var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
-var len=function(el,acc,index){
-    return el.length;
-}
-var odd=function(el,acc){
-    return el%2==1;
-}
-var sum=function(acc,el){
-    return acc+el;
-}
-var out=arr.map(len).filter(odd).reduce(sum);
-console.log(out)
-
-
-//4 HIGHER ORDER FUNCTIONS 1.MAP, 2.FOREACH, 3.FILTER, 4.REDUCE
-
-//FILTER EVEN ODD CHECK
-// //EVEN
-// var arr=[1,2,3,4,5,6,7];
-// var checkEven=function(el,index){
-//    return el%2==0
+// var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
+// var len=function(el,acc,index){
+//     return el.length;
 // }
-// var outputE=arr.filter(checkEven);
-// console.log(outputE);
-
-// //ODD
-// var arr1=[1,2,3,4,5,6,7];
-// var checkOdd=function(el,index,acc){
+// var odd=function(el,acc){
 //     return el%2==1;
 // }
-// var outputOd=arr1.filter(checkOdd);
-// console.log(outputOd);
+// var sum=function(acc,el){
+//     return acc+el;
+// }
+// var out=arr.map(len).filter(odd).reduce(sum);
+// console.log(out)
+
+
+//PRINT 1 - 100 NUMBERS;
+ 
+// for(var i=1;i<=100;i++){
+// console.log(i)
+// }
+
+// Array(100).fill( ).map( (_,i) => console.log( i + 1 ) );
+
 
 
