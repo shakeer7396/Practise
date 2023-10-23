@@ -116,18 +116,18 @@
 // Given an array of strings print the sum of lengths if the characters in the string are odd
 // Sample Input - ["A", "Good", "Problem"]
 // Sample Output - 8
-// var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
-// var len=function(el,acc,index){
-//     return el.length;
-// }
-// var odd=function(el,acc){
-//     return el%2==1;
-// }
-// var sum=function(acc,el){
-//     return acc+el;
-// }
-// var out=arr.map(len).filter(odd).reduce(sum);
-// console.log(out)
+var arr=["Apple", "Windows", "Linux", "Kindle", "Quiz"];
+var len=function(el,acc,index){
+    return el.length;
+}
+var odd=function(el,acc){
+    return el%2==1;
+}
+var sum=function(acc,el){
+    return acc+el;
+}
+var out=arr.map(len).filter(odd).reduce(sum);
+console.log(out)
 
 
 //4 HIGHER ORDER FUNCTIONS 1.MAP, 2.FOREACH, 3.FILTER, 4.REDUCE

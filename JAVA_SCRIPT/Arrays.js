@@ -172,3 +172,27 @@
 // All array elements greater than four will be pushed on to the output array num3
 // [ 5, 6, 7 ]
 
+
+
+// .reduce
+// The reduce() method reduces an array of values to just one value. The reduce function is run on each element of the array to get the single output value. This method does not reduce the original array.
+
+// let num1 = [2, 3, 4, 5, 6, 7];
+// let num4 = num1.reduce(sum);
+
+// function sum(total, value) {
+// return total + value;
+//  }
+// console.log(num4)
+//28
+
+// let arr=[1,2,3,4,5,6,7];
+
+// let arr2=arr.reduce(function(el,acc){
+//     return el+acc
+// })
+// console.log(arr2);
+//28
+
+
+// The sum of the array is calculated and reduced to a single value., and this value is stored in the output array num4. 
