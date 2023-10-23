@@ -80,9 +80,18 @@
 // If the end parameter is unspecified, the entire array from the begin index is sliced. 
 
 // let cars= ["Tayota","Maruthi","Benz","Kiya","Honda","Audi"];
-// let cars2=cars.slice(4);
+// let cars2=cars.slice(3);
 // console.log(cars2)
+// // [ 'Kiya', 'Honda', 'Audi' ]
 
 // let cars = ["Toyota", "bmw", "volvo", "honda","Audi"];
 // let cars2 = cars.slice(1)
 // console.log(cars2);
+// // [ 'bmw', 'volvo', 'honda', 'Audi' ]
+
+// let cars = ["Toyota", "bmw", "volvo", "honda","Audi"];
+// let cars2 = cars.slice(0,2)
+// console.log(cars2);
+// // [ 'Toyota', 'bmw' ]
+
+// Since the end parameter is excluded, the array element at index four is excluded. The output is shown below: 
