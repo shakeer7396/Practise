@@ -130,3 +130,15 @@
 // //[ 8, 7, 6, 5, 4, 3, 2, 1 ]
 
 
+// .map()
+// The map() method is used to create a new array from an existing one by applying a function to each of the elements of the first array. It does not change the original array. 
+
+let num1=[1,2,3,4,5,6];
+let num2=num1.map(double);
+
+function double(value){
+    return value * 2
+}
+console.log(num2)
+
+//[ 2, 4, 6, 8, 10, 12 ]
