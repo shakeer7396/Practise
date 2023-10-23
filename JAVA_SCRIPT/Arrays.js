@@ -77,5 +77,12 @@
 
 // Slice()
 // The slice() method cuts the array and returns a shallow copy of a portion of an array into a new array object. It takes in two parameters: begin and end. The array is sliced from the index specified as begin till the end index (end index excluded). The original array will not be modified.
-
 // If the end parameter is unspecified, the entire array from the begin index is sliced. 
+
+// let cars= ["Tayota","Maruthi","Benz","Kiya","Honda","Audi"];
+// let cars2=cars.slice(4);
+// console.log(cars2)
+
+// let cars = ["Toyota", "bmw", "volvo", "honda","Audi"];
+// let cars2 = cars.slice(1)
+// console.log(cars2);
