@@ -107,3 +107,15 @@
 
 // // The array bikes is merged with the array cars to the following output:
 // //[ 'bmw', 'volvo', 'honda', 'yamaha', 'suzuki', 'royal enfield' ]
+
+
+// Sort () 
+// As the name suggests, this method is used to sort the array. By default, it sorts the array in ascending order. 
+
+// let list = [3,2,6,1,5,4,8,7];
+// list.sort()
+// console.log(list);
+
+// // [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+
+
