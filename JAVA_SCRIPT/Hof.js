@@ -29,11 +29,11 @@
 // console.log(out)
 
 
-// multiply values
- var arr1=[1,2,3,4,5];
-arr1.forEach(function(el,acc){
-    console.log(el*2)
-})
+// // multiply values
+//  var arr1=[1,2,3,4,5];
+// arr1.forEach(function(el,acc){
+//     console.log(el*2)
+// })
 
 
 

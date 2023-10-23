@@ -133,21 +133,42 @@
 // .map()
 // The map() method is used to create a new array from an existing one by applying a function to each of the elements of the first array. It does not change the original array. 
 
-let num1=[1,2,3,4,5,6];
-let num2=num1.map(double);
-function double(value){
-    return value * 2
-}
-console.log(num2)
-//[ 2, 4, 6, 8, 10, 12 ]
+// let num1=[1,2,3,4,5,6];
+// let num2=num1.map(double);
+// function double(value){
+//     return value * 2
+// }
+// console.log(num2)
+// //[ 2, 4, 6, 8, 10, 12 ]
 
-// num1.map(function(el){
-//     console.log(el*2);
+// // num1.map(function(el){
+// //     console.log(el*2);
+// // })
+
+// // 2
+// // 4
+// // 6
+// // 8
+// // 10
+
+
+// .filter
+// The filter() method takes each element from an array and applies a conditional statement against it. If this condition is true, the element gets pushed to the output array. If the condition is false, the element does not get pushed to the output array. 
+
+// let num1 = [2, 3, 4, 5, 6, 7];
+// let num3 = num1.filter(check)
+// function check(value){
+//   return value > 4
+// }
+// console.log(num3)
+
+//ODD CHECK
+// let num2 = [1,2,3,4,5,6,7,8];
+// let num3= num2.filter(function(el,acc){
+//     return el%2==0
 // })
+// console.log(num3);
 
-// 2
-// 4
-// 6
-// 8
-// 10
+// All array elements greater than four will be pushed on to the output array num3
+// [ 5, 6, 7 ]
 
