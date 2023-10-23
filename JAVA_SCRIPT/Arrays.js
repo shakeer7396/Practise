@@ -119,3 +119,14 @@
 // // [ 1, 2, 3, 4, 5, 6, 7, 8 ]
 
 
+// // Reverse()
+// // To reverse the order of elements in an array, we use the reverse() method. When reverse is used after the sort() method, you get the values in descending order. 
+
+// let list_Number = [3,2,6,1,5,4,8,7];
+// list_Number.sort();
+// list_Number.reverse();
+// console.log(list_Number);
+
+// //[ 8, 7, 6, 5, 4, 3, 2, 1 ]
+
+
