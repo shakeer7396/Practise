@@ -6,6 +6,7 @@ var obj={
     gender:"male",
     city:"ATP"
 }
+console.log(obj.name+" "+obj.age);
 
 let {name,age,gender,city}=obj
 console.log(name+" "+age);

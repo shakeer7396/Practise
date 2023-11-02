@@ -1,12 +1,12 @@
 // This key word depends on parent object
 
-var obj1={
-    name:"shafi",
-    fun:function hello(){
-        console.log(this.name)
-    }
-}
-obj1.fun()
+// var obj1={
+//     name:"shafi",
+//     fun:function hello(){
+//         console.log(this.name)
+//     }
+// }
+// obj1.fun()
 
 // var obj1={
 //     name:"shaik",
@@ -16,13 +16,7 @@ obj1.fun()
 // }
 // obj1.fun()
 
-var obj={
-    name:"sak",
-    fun:function hello(){
-        console.log(this.name)
-    }
-}
-obj.fun()
+
 // ------------------------------------
 // redeclare the obj values
 // eg--2
@@ -70,9 +64,9 @@ obj.fun()
 
 // adding new values in obj 
 
-// let obj={
-//     name:"shaik"
-// }
-// obj.age=22
-// Object.assign(obj,{city:"atp"})
-// console.log(obj)
+let obj={
+    name:"shaik"
+}
+obj.age=22
+Object.assign(obj,{city:"atp"})
+console.log(obj)
