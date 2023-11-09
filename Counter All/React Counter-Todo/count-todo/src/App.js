@@ -6,8 +6,8 @@ import Data from './api/Data';
 function App() {
   return (
     <div className="App">
-      {/* <Counter /> */}
-      <Todo />
+      <Counter />
+      {/* <Todo /> */}
       {/* <Data /> */}
     </div>
   );
