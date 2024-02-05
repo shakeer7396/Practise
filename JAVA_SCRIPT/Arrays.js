@@ -28,10 +28,16 @@
 
 // Loop Over the Array Items
 // You can also loop over an array in case you need to access multiple elements from the array at once. We use the forEach method for this, which calls a function once for each element in an array. 
-let cars = ["bmw", "volvo", "honda"];
-cars.forEach((item, index, array) => {
-        console.log(item, index);
-      });
+// let cars = ["bmw", "volvo", "honda"];
+// cars.forEach((item,index)=>{
+//     console.log(item,index);
+// })
+
+for(var i=0;i<cars.length;i++){
+    console.log(cars[i]);
+}
+
+
 
 // The code above displays the name of the cars and their corresponding indices on the console
 
