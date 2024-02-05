@@ -1,8 +1,8 @@
-// let cars = ["bmw", "volvo", "honda"];
-// console.log(cars);
-
 //Accessing array elements
-// console.log(cars[0],cars[2]);
+let cars = ["bmw", "volvo", "honda"];
+console.log(cars);
+console.log(cars[0][1]);
+console.log(cars[0],cars[2]);
 
 
 // Array Length Property
