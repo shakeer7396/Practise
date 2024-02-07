@@ -10,6 +10,22 @@
 // const findingTarget=numbers.includes(target);
 // console.log("findingTarget",findingTarget)
 
+// const numbers = [2, 4, 6, 8, 10];
+// let target = 4;
+// let found=false;
+
+// for(var i=0;i<=numbers.length;i++){
+//     if(numbers[i]==target){
+//         found=true
+//         break;
+//     }
+// }
+// if(found){
+//     console.log("Target is there")
+// }
+// else{
+//     console.log("Target is not there")
+// }
 
 
 // Array Length Property
@@ -108,6 +124,8 @@
 // let cars2 = cars.slice(0,3)
 // console.log(cars2);
 // // [ 'Toyota', 'bmw' ]
+
+
 
 // Since the end parameter is excluded, the array element at index four is excluded. The output is shown below: 
 
