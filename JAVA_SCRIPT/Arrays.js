@@ -27,17 +27,17 @@
 // console.log(last);
 
 // Loop Over the Array Items
+//Method-1
 // You can also loop over an array in case you need to access multiple elements from the array at once. We use the forEach method for this, which calls a function once for each element in an array. 
 // let cars = ["bmw", "volvo", "honda"];
 // cars.forEach((item,index)=>{
 //     console.log(item,index);
 // })
 
-for(var i=0;i<cars.length;i++){
-    console.log(cars[i]);
-}
-
-
+//Method-2
+// for(var i=0;i<cars.length;i++){
+//     console.log(cars[i]);
+// }
 
 // The code above displays the name of the cars and their corresponding indices on the console
 
@@ -59,6 +59,7 @@ for(var i=0;i<cars.length;i++){
 
 // Push()
 // The push method is used to push the elements into an existing array. The push() method mutates the array. 
+// let cars = ["bmw", "volvo", "honda"];
 // cars.push("Audi")
 // console.log(cars);
 // The new array element “Audi” is pushed at the end of the array. 
@@ -66,14 +67,14 @@ for(var i=0;i<cars.length;i++){
 
 // Unshift()
 // This method is used to add elements to the front of the array and increases the index of every element by one.
-
+// let cars = ["bmw", "volvo", "honda"];
 // cars.unshift("Toyota")
 // console.log(cars);
 
 
 // Pop()
 // This method is used to pop the last element from the array. 
-
+// let cars = ["bmw", "volvo", "honda"];
 // cars.pop()
 // console.log(cars);
 
@@ -82,7 +83,7 @@ for(var i=0;i<cars.length;i++){
 
 // Shift()
 // This method is the opposite of unshift, and it removes the first element of the array. This method shifts all the elements, reducing the indexes of every element by one.
-
+// let cars = ["bmw", "volvo", "honda"];
 // cars.shift();
 // console.log(cars);
 
@@ -104,7 +105,7 @@ for(var i=0;i<cars.length;i++){
 // // [ 'bmw', 'volvo', 'honda', 'Audi' ]
 
 // let cars = ["Toyota", "bmw", "volvo", "honda","Audi"];
-// let cars2 = cars.slice(0,2)
+// let cars2 = cars.slice(0,3)
 // console.log(cars2);
 // // [ 'Toyota', 'bmw' ]
 
@@ -148,11 +149,17 @@ for(var i=0;i<cars.length;i++){
 // The map() method is used to create a new array from an existing one by applying a function to each of the elements of the first array. It does not change the original array. 
 
 // let num1=[1,2,3,4,5,6];
-// let num2=num1.map(double);
-// function double(value){
-//     return value * 2
+
+// function multi(value){
+//     return value*2;
 // }
+// let num2=num1.map(multi);
 // console.log(num2)
+
+// for(var i=1;i<=num1.length;i++){
+// console.log(i*2)
+// }
+
 // //[ 2, 4, 6, 8, 10, 12 ]
 
 // // num1.map(function(el){
@@ -169,44 +176,84 @@ for(var i=0;i<cars.length;i++){
 // .filter
 // The filter() method takes each element from an array and applies a conditional statement against it. If this condition is true, the element gets pushed to the output array. If the condition is false, the element does not get pushed to the output array. 
 
-// let num1 = [2, 3, 4, 5, 6, 7];
-// let num3 = num1.filter(check)
+// let num1 = [2, 3, 4, 5, 6,7,8];
 // function check(value){
-//   return value > 4
+//     return value>4;
 // }
-// console.log(num3)
+// let num2 =num1.filter(check);
+// console.log(num2)
 
-//ODD CHECK
-// let num2 = [1,2,3,4,5,6,7,8];
-// let num3= num2.filter(function(el,acc){
-//     return el%2==0
-// })
-// console.log(num3);
+// for(var i=1;i<=num1.length;i++){
+//     if(i>4){
+//         console.log(i)
+//     }
+// }
 
 // All array elements greater than four will be pushed on to the output array num3
 // [ 5, 6, 7 ]
+
+// ODD CHECK
+// let num2 = [1,2,3,4,5,6,7,8];
+//METHOD-1
+// let num3 =num2.filter(function(el){
+//     return el%2==1
+// })
+// console.log(num3)
+// METHOD-2
+// function odd(el){
+//     return el%2==1
+// }
+// num3=num2.filter(odd);
+// console.log(num3)
+//METHOD-3
+// for(var i=1;i<=num2.length;i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+//Even check
+// let num4 = num1.filter(function(el){
+//     return el%2==0;
+// })
+// console.log(num4)
+
+// for(var i=1;i<=num2.length;i++){
+//         if(i%2==1){
+//             console.log(i)
+//         }
+//     }
 
 
 
 // .reduce
 // The reduce() method reduces an array of values to just one value. The reduce function is run on each element of the array to get the single output value. This method does not reduce the original array.
 
-// let num1 = [2, 3, 4, 5, 6, 7];
-// let num4 = num1.reduce(sum);
+// let num1 = [1,2, 3, 4, 5, 6, 7];
 
-// function sum(total, value) {
-// return total + value;
-//  }
-// console.log(num4)
+// function count(acc,el){
+//     return acc+el;
+// }
+// let num2=num1.reduce(count);
+// console.log(num2);
 //28
 
 // let arr=[1,2,3,4,5,6,7];
 
-// let arr2=arr.reduce(function(el,acc){
-//     return el+acc
+// let arr2=arr.reduce(function(acc,el){
+//     return acc+el;
 // })
-// console.log(arr2);
+// console.log(arr2)
 //28
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+
+// console.log("The sum of the array elements is: " + sum);
 
 
 // The sum of the array is calculated and reduced to a single value., and this value is stored in the output array num4. 
