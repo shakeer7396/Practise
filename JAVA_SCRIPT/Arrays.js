@@ -275,3 +275,18 @@
 
 
 // The sum of the array is calculated and reduced to a single value., and this value is stored in the output array num4. 
+
+//array to string
+var arr= [1,2,3,4,5]
+    var bag="";
+    for(var i=0;i<arr.length;i++){
+      if(arr[i]<0){
+        bag+=arr[i]=0;
+      }
+      else{
+        bag+=arr[i]
+      }
+    }
+    console.log(bag)
+  
+  
