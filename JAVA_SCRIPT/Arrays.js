@@ -277,16 +277,30 @@
 // The sum of the array is calculated and reduced to a single value., and this value is stored in the output array num4. 
 
 //array to string
-var arr= [1,2,3,4,5]
-    var bag="";
-    for(var i=0;i<arr.length;i++){
-      if(arr[i]<0){
-        bag+=arr[i]=0;
-      }
-      else{
-        bag+=arr[i]
-      }
-    }
-    console.log(bag)
+// var arr= [1,2,3,4,5]
+//     var bag="";
+//     for(var i=0;i<arr.length;i++){
+//       if(arr[i]<0){
+//         bag+=arr[i]=0;
+//       }
+//       else{
+//         bag+=arr[i]
+//       }
+//     }
+//     console.log(bag)
+
+//REMOVE DUPLICATES
+// var arr=[1,2,2,4,3,3,5,6,6]
+// var uniqArr=arr.filter((item,index)=>arr.indexOf(item)===index);
+// console.log(uniqArr);
+
+// var arr=[1,2,2,4,3,3,5,6,6]
+// var unarr=Array.from(new Set(arr));
+// console.log(unarr)
+
+var arr=[1,2,2,4,3,3,5,6,6];
+let newArr=arr.filter((item,index)=>arr.indexOf(item)===index);
+let output=newArr.sort()
+console.log(output);
   
   
