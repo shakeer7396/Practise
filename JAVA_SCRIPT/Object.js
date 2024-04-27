@@ -64,9 +64,11 @@
 
 // adding new values in obj 
 
-let obj={
-    name:"shaik"
-}
-obj.age=22
-Object.assign(obj,{city:"atp"})
-console.log(obj)
+// let obj={
+//     name:"shaik"
+// }
+// obj.age=22
+// Object.assign(obj,{city:"atp"})
+// console.log(obj)
+
+

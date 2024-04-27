@@ -94,7 +94,7 @@
 
 // checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
 
-var a=21;
+var a=13;
 let checkEven=new Promise((res,rej)=>{
     if(a%2==0){
         res("Is Even")
@@ -103,6 +103,6 @@ let checkEven=new Promise((res,rej)=>{
         rej("Is not Even")
     }
 })
-checkEven.then((ans)=>console.log(ans)).catch((err)=>console.log(err))
+checkEven.then((out)=>console.log(out)).catch((err)=>console.log(err))
 // ------------------------------
 

@@ -126,8 +126,10 @@
 // // [ 'Toyota', 'bmw' ]
 
 
-
 // Since the end parameter is excluded, the array element at index four is excluded. The output is shown below: 
+let array = [1, 2, 3, 4, 5];
+let newArray = array.slice(1, 2); // newArray = [2, 3], array = [1, 2, 3, 4, 5]
+console.log(newArray)
 
 
 // // Concat()
@@ -298,9 +300,9 @@
 // var unarr=Array.from(new Set(arr));
 // console.log(unarr)
 
-var arr=[1,2,2,4,3,3,5,6,6];
-let newArr=arr.filter((item,index)=>arr.indexOf(item)===index);
-let output=newArr.sort()
-console.log(output);
+// var arr=[1,2,2,4,3,3,5,6,6];
+// let newArr=arr.filter((item,index)=>arr.indexOf(item)===index);
+// let output=newArr.sort()
+// console.log(output);
   
   
