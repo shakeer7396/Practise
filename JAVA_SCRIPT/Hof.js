@@ -45,15 +45,39 @@
 //         console.log("Its a odd Number")
 //     }
 // }
-var arr = [1, 2, 3, 4, 5, 6, 7];
-var evenNumbers = [];
+// var arr = [1, 2, 3, 4, 5, 6, 7];
+// var evenNumbers = [];
 
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 0) {
-        evenNumbers.push(arr[i]);
-    }
-}
-console.log(evenNumbers);
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//         evenNumbers.push(arr[i]);
+//     }
+// }
+// console.log(evenNumbers);
+
+// var arr=[1,2,3,4,5,6,7,8];
+// var box=[];
+// for(var i=0;i<arr.length;i++){
+//     if(arr[i]%2==0){
+//         box.push(arr[i])
+//     }
+// }
+// console.log(box.join(" "));
+
+// var arr = [1, 2, 3, 4, 5, 6, 7];
+// var evenNumbers = [];
+// function filterAndPrintEvenNumbers(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             evenNumbers.push(arr[i]);
+//         }
+//     }
+//     console.log(evenNumbers);
+// }
+// filterAndPrintEvenNumbers(arr);
+
+
+
 
 // // multiply values
 //  var arr1=[1,2,3,4,5];
