@@ -28,6 +28,32 @@
 // var out=arr.filter(checkEven)
 // console.log(out)
 
+// Print Even only
+// var arr=[1,2,3,4,5,6,7];
+// var even=function(el,acc){
+//     return(el%2==0)
+// }
+// let output=arr.filter(even)
+// console.log(output)
+
+// var arr=[1,2,3,4,5,6,7];
+// for(var i=0;i<arr.length;i++){
+//     if(arr[i]%2==0){
+//         console.log(arr[i])
+//     }
+//     else{
+//         console.log("Its a odd Number")
+//     }
+// }
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var evenNumbers = [];
+
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+        evenNumbers.push(arr[i]);
+    }
+}
+console.log(evenNumbers);
 
 // // multiply values
 //  var arr1=[1,2,3,4,5];
