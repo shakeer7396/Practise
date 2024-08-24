@@ -1,22 +1,6 @@
 
 
-var arr=[1,2,3,4,5,6,7];
-
-let odd=function(el,acc){
-    return el%2==1
-}
-let addO=function(acc,el){
-    return acc+el;
-}
-let even=function(el,acc){
-    return el%2==0
-}
-let addE=function(acc,el){
-    return acc+el;
-}
-
-let out=arr.filter(odd)
-console.log(out);
+// var arr=[1,2,3,4,5,6,7];
 
 // let odd=function(el,acc){
 //     return el%2==1
@@ -57,9 +41,7 @@ console.log(out);
 //     if(arr[i]%2==0){
 //         console.log(arr[i])
 //     }
-//     else{
-//         console.log("Its a odd Number")
-//     }
+    
 // }
 // var arr = [1, 2, 3, 4, 5, 6, 7];
 // var evenNumbers = [];
@@ -95,11 +77,18 @@ console.log(out);
 
 
 // // multiply values
+var arr=[1,2,3,4,5];
+let bag="";
+arr.forEach(function(el){
+    bag+=el*2+" "
+
+})
+console.log(bag.trim())
+
 //  var arr1=[1,2,3,4,5];
 // arr1.forEach(function(el,acc){
 //     console.log(el*2)
 // })
-
 // // product of all the numbers
 // var arr=[1,2,3,4]
 // var prod=function(el,acc,index){
