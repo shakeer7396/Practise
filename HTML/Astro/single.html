@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Graph Animation</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.graph {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    background-color: black;
+}
+
+.bar {
+    width: 40px;
+    height: 20px;
+    background-color: #3498db;
+    transition: height 0.5s;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+}
+.start{
+    background-color: green;
+}
+.stop{
+    background-color:red;
+}
+.reset{
+    background-color: purple;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="graph">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+            <div class="bar" id="bar4"></div>
+        </div>
+        <div class="controls">
+            <button class="start" onclick="startAnimation()">Start</button>
+            <button class="reset" onclick="resetAnimation()">Reset</button>
+            <button class="stop" onclick="stopAnimation()">Stop</button>
+        </div>
+    </div>
+    <script>
+      let interval;
+let bars = [
+    { id: "bar1", height: 20 },
+    { id: "bar2", height: 60 },
+    { id: "bar3", height: 40 },
+    { id: "bar4", height: 80 },
+];
+
+function animateBars() {
+    bars.forEach(bar => {
+        const element = document.getElementById(bar.id);
+        bar.height = bar.height >= 300 ? 20 : bar.height + 20;
+        element.style.height = bar.height + "px";
+    });
+}
+
+function startAnimation() {
+    if (!interval) {
+        interval = setInterval(animateBars, 300);
+    }
+}
+
+function stopAnimation() {
+    clearInterval(interval);
+    interval = null;
+}
+
+function resetAnimation() {
+    stopAnimation(); // Stop the current animation
+    bars.forEach(bar => {
+        bar.height = 300; // Set all bars to the maximum height
+        document.getElementById(bar.id).style.height = bar.height + "px";
+    });
+}
+
+
+    </script>
+</body>
+</html>

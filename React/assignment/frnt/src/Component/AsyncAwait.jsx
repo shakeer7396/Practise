@@ -33,8 +33,7 @@ const AsyncAwait = () => {
                 {data.map((el) => (
                     <div
                         key={el.id}
-                        style={{ border: "2px solid purple", padding: "20px" }}
-                    >
+                        style={{ border: "2px solid purple", padding: "20px" }}>
                         <div>
                             <img src={el.image} alt="check" width="200px" />
                         </div>

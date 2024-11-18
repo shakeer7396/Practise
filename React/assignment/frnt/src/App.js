@@ -8,8 +8,8 @@ function App() {
     <div className="App">
      <h1>Assignment</h1>
      {/* <Fetch /> */}
-     {/* <Axios /> */}
-     <AsyncAwait />
+     <Axios />
+     {/* <AsyncAwait /> */}
     </div>
   );
 }
