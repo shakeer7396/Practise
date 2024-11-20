@@ -16,7 +16,7 @@ for(var i=0;i<arr.length;i++){
 
 //Printing Even numbers using filter method
 
-let even = function(el,acc){
+let even = function(el,acc,index){  //(parameters are element,accumulater,index)
     return el%2==0;
 }
 let output = arr.filter(even);
@@ -83,7 +83,7 @@ console.log(output); // Printing the output
 */
 
 
-// Finding Even numbers and Add them && Finding Odd numbers and Add them
+//3. Finding Even numbers and Add them && Finding Odd numbers and Add them
 
 //var arr=[1,2,3,4,5,6,7];
 // let odd=function(el,acc){
@@ -104,27 +104,32 @@ console.log(output); // Printing the output
 // console.log(evout);
 
 
+/*
+// 4. multiply with 2 all values using forEach method
 
-// // multiply values
-// var arr=[1,2,3,4,5];
-// let bag="";
-// arr.forEach(function(el){
-//     bag+=el*2+" "
+var arr=[1,2,3,4,5];
+let bag="";
+arr.forEach(function(el){
+    bag+=el*2+" "
 
-// })
-// console.log(bag.trim())
+})
+console.log(bag) //output is 2 4 6 8 10 
 
-//  var arr1=[1,2,3,4,5];
-// arr1.forEach(function(el,acc){
-//     console.log(el*2)
-// })
-// // product of all the numbers
+ var arr1=[1,2,3,4,5];
+arr1.forEach(function(el,acc){
+    console.log(el*2)   //output printing line by line 
+})
+*/
+
+
+// 5.  product of all the numbers
+
 // var arr=[1,2,3,4]
 // var prod=function(el,acc,index){
 //     return el*acc;
 // }
 // var res=arr.reduce(prod)
-// console.log(res)
+// console.log(res)  //output is 24
 
 
 //Odd sum bellow code
@@ -141,31 +146,21 @@ console.log(output); // Printing the output
 // console.log(final);
 
 
-//Even sum
-// var arr=[1,2,3,4,5,6,7,8];
-// var even=function(el,index,array){
-//     return el%2==0;
-// }
-// var sum=function(acc,el,index){
-//     return acc+el;
-// }
-// var result=arr.filter(even).reduce(sum);
-// console.log(result);
 
+//6. Multiply and cube
 
-//Multiply and cube
 // var arr=[1,2,3,4,5];
 // var mult=function(el,index,arra){
-//     return el%3==0
+//     return el%3==0   //output [ 3 ]
 // }
 // var cube=function(acc,el,index){
-//     return acc+(el**3);
+//     return acc+(el**3);  //3*3*3 =27
 // }
-// var out=arr.filter(mult).reduce(cube,0)
-// console.log(out)
+// var out=arr.filter(mult).reduce(cube,0); returning array so use 0 as an index
+// console.log(out)  //output is 27
 
 
-// //Add unlimited  values in arr
+// 7. Add unlimited  values in arr
 // var arr=[1,2,3,4,5,6,7,8,9,10,20];
 // var add=function(acc,el){
 //     return acc+el;
@@ -183,9 +178,10 @@ console.log(output); // Printing the output
 //     console.log(check)
     
 
-// // Given an array of string generate an array whose first or last character is a
-// // Sample Input - ["assignment", "problem", "media", "upload"]
-// // Sample Output - ["assignment", "media"]
+//  Given an array of string generate an array whose first or last character is a
+//  Sample Input - ["assignment", "problem", "media", "upload"]
+//  Sample Output - ["assignment", "media"]
+
  //var arr=["apple", "windows", "ubuntu", "cola", "system","ola"];
 //  var check=arr.map(function(el,acc,index){
 //     if(el[0]=="a"||el[el.length-1]=="a"){
