@@ -1,6 +1,6 @@
 
 /*
-//FILTER 77 REDUCE METHODS
+//FILTER && REDUCE METHODS
 //1. Printing Even numbers using forloop
 var arr=[1,2,3,4,5,6,7];
 
@@ -153,10 +153,24 @@ console.log(output); // Printing the output
 // console.log(out)
 
 
-/*
-//FOREACH  && MAP METHODS
-// 7. multiply with 2 all values using forEach method
 
+//FOREACH  && MAP METHODS
+//For Each and map working as same but forEach not return new array
+//Map return a new array with updated values
+
+//example with forEach
+// var arr=["apple", "windows", "ubuntu"];
+// let output = arr.forEach(names => names.toUpperCase());
+// console.log(output)  //output is Undefined 
+
+//example with map
+// var arr=["apple", "windows", "ubuntu"];
+// let output = arr.map(names => names.toUpperCase());
+// console.log(output)  //output is [ 'APPLE', 'WINDOWS', 'UBUNTU' ]
+
+
+// 7. multiply with 2 all values using forEach method
+/*
 var arr=[1,2,3,4,5];
 let bag="";
 arr.forEach(function(el){
@@ -226,9 +240,9 @@ console.log(out)        //output is 17
 // console.log(i)
 // }
 
- Array(100).fill( ).map( (_,i) =>{
-console.log( i + 1 ) 
- }) ;
+//  Array(100).fill( ).map( (_,i) =>{
+// console.log( i + 1 ) 
+//  }) ;
 
 
 
