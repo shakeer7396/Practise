@@ -1,14 +1,18 @@
 
 /*
-var arr=[1,2,3,4,5,6,7];
 
-//Printing Even numbers using forloop
+//1. Printing Even numbers using forloop
+var arr=[1,2,3,4,5,6,7];
 
 for(var i=0;i<arr.length;i++){
     if(arr[i]%2==0){
         console.log(arr[i])
     }
 }
+//output is 
+// 2
+// 4
+// 6
 
 //Printing Even numbers using filter method
 
@@ -16,12 +20,42 @@ let even = function(el,acc){
     return el%2==0;
 }
 let output = arr.filter(even);
-console.log(output);
+console.log(output);  //output is [2, 4, 6]
+
+
 */
 
+/*
+//Empty array using for storing even number and print the value
+
+var arr=[1,2,3,4,5,6,7,8];
+var box=[];
+for(var i=0;i<arr.length;i++){
+    if(arr[i]%2==0){
+        box.push(arr[i])
+    }
+}
+console.log(box.join(" ")); // Using join for converting array to string output ( 2 4 6 )
+*/
 
 /*
-// Finding Even numbers and Add them using forloop
+//Function method using for printing even values
+
+var evenNumbers = [];
+function filterAndPrintEvenNumbers(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenNumbers.push(arr[i]);
+        }
+    }
+    console.log(evenNumbers);
+}
+filterAndPrintEvenNumbers([1, 2, 3, 4, 5, 6, 7]);  //output is [ 2, 4, 6 ]
+
+*/
+
+/*
+// 2. Finding Even numbers and Add them using forloop
 
 var arr=[1,2,3,4,5,6,7];
 
@@ -68,62 +102,6 @@ console.log(output); // Printing the output
 // let evout=arr.filter(even).reduce(addE);
 // console.log(odout);
 // console.log(evout);
-
-
-
-// // find even values
-//  var arr=[1,2,3,4,5,6];
-// var checkEven=function(el,acc){
-//     return el%2==0;
-// }
-// var out=arr.filter(checkEven)
-// console.log(out)
-
-// Print Even only
-// var arr=[1,2,3,4,5,6,7];
-// var even=function(el,acc){
-//     return(el%2==0)
-// }
-// let output=arr.filter(even)
-// console.log(output)
-
-// var arr=[1,2,3,4,5,6,7];
-// for(var i=0;i<arr.length;i++){
-//     if(arr[i]%2==0){
-//         console.log(arr[i])
-//     }
-    
-// }
-// var arr = [1, 2, 3, 4, 5, 6, 7];
-// var evenNumbers = [];
-
-// for (var i = 0; i < arr.length; i++) {
-//     if (arr[i] % 2 == 0) {
-//         evenNumbers.push(arr[i]);
-//     }
-// }
-// console.log(evenNumbers);
-
-// var arr=[1,2,3,4,5,6,7,8];
-// var box=[];
-// for(var i=0;i<arr.length;i++){
-//     if(arr[i]%2==0){
-//         box.push(arr[i])
-//     }
-// }
-// console.log(box.join(" "));
-
-// var arr = [1, 2, 3, 4, 5, 6, 7];
-// var evenNumbers = [];
-// function filterAndPrintEvenNumbers(arr) {
-//     for (var i = 0; i < arr.length; i++) {
-//         if (arr[i] % 2 === 0) {
-//             evenNumbers.push(arr[i]);
-//         }
-//     }
-//     console.log(evenNumbers);
-// }
-// filterAndPrintEvenNumbers(arr);
 
 
 
