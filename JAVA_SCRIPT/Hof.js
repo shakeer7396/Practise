@@ -1,23 +1,74 @@
 
-console.log("Testing");
+/*
 var arr=[1,2,3,4,5,6,7];
 
-let odd=function(el,acc){
-    return el%2==1
+//Printing Even numbers using forloop
+
+for(var i=0;i<arr.length;i++){
+    if(arr[i]%2==0){
+        console.log(arr[i])
+    }
 }
-let addO=function(acc,el){
-    return acc+el;
-}
-let even=function(el,acc){
+
+//Printing Even numbers using filter method
+
+let even = function(el,acc){
     return el%2==0;
 }
-let addE=function(acc,el){
+let output = arr.filter(even);
+console.log(output);
+*/
+
+
+/*
+// Finding Even numbers and Add them using forloop
+
+var arr=[1,2,3,4,5,6,7];
+
+var sum=0;
+for(var i=0;i<arr.length;i++){
+    if(arr[i]%2==0){
+        sum+=arr[i]
+    }
+}
+console.log(sum);
+
+// Finding Even numbers and Add them using filter and reduce methods
+
+//Filter pre-function for filtering Even numbers in the arr
+let even =function(el,acc){  //you just change acc,el places it changes to ODD 
+    return el%2==0;
+} 
+//Reduce pre-function for add and giving single output
+let Evadd =function(acc,el){
     return acc+el;
 }
-let odout=arr.filter(odd).reduce(addO);
-let evout=arr.filter(even).reduce(addE);
-console.log(odout);
-console.log(evout);
+
+let output = arr.filter(even).reduce(Evadd); // Assigning the pre- functions values with a variable
+console.log(output); // Printing the output
+*/
+
+
+// Finding Even numbers and Add them && Finding Odd numbers and Add them
+
+//var arr=[1,2,3,4,5,6,7];
+// let odd=function(el,acc){
+//     return el%2==1
+// }
+// let addO=function(acc,el){
+//     return acc+el;
+// }
+// let even=function(el,acc){
+//     return el%2==0;
+// }
+// let addE=function(acc,el){
+//     return acc+el;
+// }
+// let odout=arr.filter(odd).reduce(addO);
+// let evout=arr.filter(even).reduce(addE);
+// console.log(odout);
+// console.log(evout);
+
 
 
 // // find even values
