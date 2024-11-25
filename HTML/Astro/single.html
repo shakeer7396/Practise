@@ -68,6 +68,7 @@
             <div class="bar" id="bar2"></div>
             <div class="bar" id="bar3"></div>
             <div class="bar" id="bar4"></div>
+            <div class="bar" id="bar5"></div>
         </div>
         <div class="controls">
             <button class="start" onclick="startAnimation()">Start</button>
@@ -78,10 +79,11 @@
     <script>
       let interval;
 let bars = [
-    { id: "bar1", height: 20 },
+    { id: "bar1", height: 10 },
     { id: "bar2", height: 60 },
-    { id: "bar3", height: 40 },
+    { id: "bar3", height: 10 },
     { id: "bar4", height: 80 },
+    { id: "bar5", height: 20 },
 ];
 
 function animateBars() {
@@ -94,7 +96,7 @@ function animateBars() {
 
 function startAnimation() {
     if (!interval) {
-        interval = setInterval(animateBars, 300);
+        interval = setInterval(animateBars, 200);
     }
 }
 
