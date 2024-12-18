@@ -12,9 +12,11 @@ const Cart = () => {
     <div className="cart">
         {/*Rendering dynamically stored data from UseContext */}
         <h1>Cart Details</h1>
-        {cart && cart.items.map(item => <li>
+        {cart && cart.items.map(item =>
+             <li>
             {item.name} - $ {item.price}
-        </li>)}
+        </li>
+    )}
         
 
 

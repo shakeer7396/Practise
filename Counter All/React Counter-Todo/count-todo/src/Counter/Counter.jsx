@@ -8,7 +8,7 @@ const [count,setCount] = useState(0);
       <h1>Counter : { count}</h1>
       <button onClick={()=>setCount(count+1)}>Increment</button>
       <button onClick={()=>setCount(count>1?count-1:0)}>Decrement</button>
-      <button onClick={() => setCount(count > 1 ? 0 : 0)}>Reset</button>
+      <button onClick={() => setCount(count > 0 ? 0 : 0)}>Reset</button>
     </div>
   )
 }

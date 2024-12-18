@@ -18,7 +18,7 @@ const Todo = () => {
     }
     const handleDelete = (a) =>{
         const myData =data.filter((current,index)=>{
-            return index !=a
+            return index !==a
         })
         setData(myData);
     }
