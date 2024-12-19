@@ -12,9 +12,10 @@ const Todo = () => {
     const handleSubmit =(e)=>{
         e.preventDefault();
         let newdata=add;
+        if(add.trim()){  // Avoiding enpty Submits 
         setData([...data,newdata])
         setAdd('')
-
+        }
     }
     const handleDelete = (a) =>{
         const myData =data.filter((current,index)=>{
@@ -31,8 +32,7 @@ const Todo = () => {
         </form>
 
         {data.map((item,index)=>{
-            return(
-                
+            return(              
             <DeleteItem key={index} add={item} id={index} onSelect={handleDelete} />
             )
         })}

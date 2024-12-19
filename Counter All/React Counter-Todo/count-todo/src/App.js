@@ -14,14 +14,14 @@ function App() {
       {/* App k Nder k Pure Child Components access kar sakte hai wrap karne se */ }
     <div className="App">
       {/* <Counter /> */}
-      {/* <TodoAddDelete /> */}
+      <TodoAddDelete />
       {/* <Todo /> */}
       {/* <Data /> */}
       {/*sending data through using props in items.jsx file */}
-      <Items name="Iphone" price={100000} /> 
+      {/* <Items name="Iphone" price={100000} /> 
       <Items name="MacBook Pro" price={120000} />
       <Items name="Vivo" price={50000} />
-      <Cart />
+      <Cart /> */}
     </div>
     </CartProvider>
   );

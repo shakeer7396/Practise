@@ -16,7 +16,7 @@ const Countries = () => {
     getData()
    },[])
    console.log(data);
-   //ANOTHER PROCESSES OF FETCHING DATA
+   //ANOTHER PROCESSES OF FETCHING DATA WITH ASYNC AWAIT
     // const getData=async()=>{
     //     let res=await fetch("https://restcountries.com/v2/all")
     //     let list=await res.json()
