@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from "prop-types";
 
-const Greetings = ({name}) => {
-
+const Greetings = ({ name }) => {
   return <h2>Hello, {name} ! </h2>
 }
 
