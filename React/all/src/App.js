@@ -5,6 +5,7 @@ import ParentProps from "./Components/PropsAll/DefaultProps/ParentProps";
 import Props from "./Components/PropsAll/ParentComponent";
 import ProfileCardParent from "./Components/PropsAll/ProfileCard/ProfileCardParent";
 import { ParentToogle } from "./Components/PropsAll/ToogleProps/ToogleBtn";
+import Counter from "./Components/StateAll/CounterApp/Counter";
 function App() {
   return (
     <div className="App">
@@ -15,9 +16,10 @@ function App() {
       {/* <ParentPropsCondition />  */}
       {/* <ParentConditionalProps /> */}
       {/* <ParentToogle /> */}
-      <DarkModeToggleParnt />
+      {/* <DarkModeToggleParnt /> */}
+      {/* ------------------------------------------------------------------------------- */}
       
-   
+   <Counter />
     </div>
   );
 }

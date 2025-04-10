@@ -18,7 +18,7 @@
 // export default ParentComponent;
 
 import React from "react";
-import { ChildComponent } from "../ChildComponent";
+import { ChildComponent } from "./ChildComponent";
 
 function ParentComponent() {
 
