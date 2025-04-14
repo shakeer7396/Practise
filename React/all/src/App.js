@@ -1,11 +1,16 @@
 import "./App.css";
-import ParentPropsCondition, { ParentConditionalProps } from "./Components/PropsAll/ConditionalRendering/ParentProps";
+import ParentPropsCondition, {
+  ParentConditionalProps,
+} from "./Components/PropsAll/ConditionalRendering/ParentProps";
 import { DarkModeToggleParnt } from "./Components/PropsAll/DarkMode/DarkModeToggleParnt";
 import ParentProps from "./Components/PropsAll/DefaultProps/ParentProps";
 import Props from "./Components/PropsAll/ParentComponent";
 import ProfileCardParent from "./Components/PropsAll/ProfileCard/ProfileCardParent";
 import { ParentToogle } from "./Components/PropsAll/ToogleProps/ToogleBtn";
 import Counter from "./Components/StateAll/CounterApp/Counter";
+import DarkToggle from "./Components/StateAll/DarkTheme/DarkToggle";
+import Form from "./Components/StateAll/Form/Form";
+import StopWatch from "./Components/StateAll/Timer/StopWatch";
 function App() {
   return (
     <div className="App">
@@ -19,7 +24,12 @@ function App() {
       {/* <DarkModeToggleParnt /> */}
       {/* ------------------------------------------------------------------------------- */}
       
-   <Counter />
+      {/* useState */}
+      {/* <Counter /> */}
+      {/* <Form /> */}
+      {/* <DarkToggle /> */}
+      <StopWatch />
+      {/*-------------------------------------------------------------*/}
     </div>
   );
 }
