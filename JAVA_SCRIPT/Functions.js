@@ -51,7 +51,7 @@ check()
 // -----------------------------
 
 // Function declaration 
-// function expression ko func before call kar sakte (func k vupar call kar sakte) this type of hoisting is accepted in js
+// function declaration ko func before call kar sakte (func k vupar call kar sakte) this type of hoisting is accepted in js
 
 function dec(){
     console.log("Declare Function")

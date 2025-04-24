@@ -8,13 +8,14 @@
 // }
 // obj1.fun()
 
-// var obj1={
-//     name:"shaik",
+// let obj1 = {
+//     name: "Shafi",
+//     age: 24,
 //     fun:function hello(){
-//         console.log(this.name)
+//         console.log(this.name, this.age)
 //     }
 // }
-// obj1.fun()
+// obj1.fun();
 
 
 // ------------------------------------

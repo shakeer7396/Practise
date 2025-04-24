@@ -7,12 +7,22 @@
 // }
 // main(5,5,multi)
 // -----------------------------------------------------------
-function out(a,b,operate){
-var sum=a+b;
-operate(sum)
+function add(a,b,fun){
+    let sum=a+b;
+    fun(sum)
+    console.log(sum);
 }
-function mult(sum){
-console.log("mult",sum*10)
+function sub(sum){
+    console.log("substraction", sum-2)
 }
-out(10,5,mult)
+add(6,4,sub)
+
+// function out(a,b,operate){
+// var sum=a+b;
+// operate(sum)
+// }
+// function mult(sum){
+// console.log("mult",sum*10)
+// }
+// out(10,5,mult)
 

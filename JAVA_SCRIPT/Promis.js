@@ -12,28 +12,28 @@
 // }
 
 
-// function prom(complete){
-//     return new Promise(function(resolve,reject){
-//         console.log("Fetching data please wait")
-//         setTimeout(()=>{
-//             if(complete){
-//                 resolve("success");
-//             }
-//             else{
-//                 reject("sorry")
-//             }
-//         },3000)
-//     })
-// }
+function prom(complete){
+    return new Promise(function(resolve,reject){
+        console.log("Fetching data please wait")
+        setTimeout(()=>{
+            if(complete){
+                resolve("success");
+            }
+            else{
+                reject("sorry")
+            }
+        },3000)
+    })
+}
 
-// let onfulfil =(result)=>{
-//     console.log(result)
-// }
-// let onReject=(error)=>{
-//     console.log(error)
-// }
+let onfulfil =(result)=>{
+    console.log(result)
+}
+let onReject=(error)=>{
+    console.log(error)
+}
 
-// prom(true).then(onfulfil).catch(onReject)
+prom(true).then(onfulfil).catch(onReject)
 
 
 
@@ -94,15 +94,15 @@
 
 // checkOdd.then((out)=>console.log(out)).catch((err)=>console.log(err))
 
-var a=13;
-let checkEven=new Promise((res,rej)=>{
-    if(a%2==0){
-        res("Is Even")
-    }
-    else{
-        rej("Is not Even")
-    }
-})
-checkEven.then((out)=>console.log(out)).catch((err)=>console.log(err))
+// var a=13;
+// let checkEven=new Promise((res,rej)=>{
+//     if(a%2==0){
+//         res("Is Even")
+//     }
+//     else{
+//         rej("Is not Even")
+//     }
+// })
+// checkEven.then((out)=>console.log(out)).catch((err)=>console.log(err))
 // ------------------------------
 

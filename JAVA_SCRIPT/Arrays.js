@@ -3,7 +3,7 @@
 // console.log(cars);
 // console.log(cars[0][1]);
 // console.log(cars[0],cars[2]);
-
+let = "hello"
 // Write code to check if the array contains the target element
 // const numbers = [2, 4, 6, 8, 10];
 // const target = 6;

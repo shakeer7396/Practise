@@ -35,6 +35,14 @@
 
 // },2000)
 
+let sub=10;
+let timer = setInterval(()=>{
+console.log(sub--);
+},200)
+
+setTimeout(()=>{
+    clearInterval(timer);
+},2000);
 
 
 function one(){
@@ -62,11 +70,14 @@ three()
 //EVENT BUBBLING OR CAPTURING
 //bubbling propagates from the innermost to outtermost ,capturing propagates outer to inner --gave event listener to child all ansisters will be invoked in this method is called evb 
 
-{/* <div grandparant>
+
+{/* 
+    <div grandparant>
 <div parent>
     <div child>
 
     </div>
 </div>
-</div> */}
+</div>
+ */}
 
