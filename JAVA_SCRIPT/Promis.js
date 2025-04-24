@@ -12,31 +12,46 @@
 // }
 
 
-function prom(complete){
+// function prom(complete){
+//     return new Promise(function(resolve,reject){
+//         console.log("Fetching data please wait")
+//         setTimeout(()=>{
+//             if(complete){
+//                 resolve("success");
+//             }
+//             else{
+//                 reject("sorry")
+//             }
+//         },3000)
+//     })
+// }
+
+// let onfulfil =(result)=>{
+//     console.log(result)
+// }
+// let onReject=(error)=>{
+//     console.log(error)
+// }
+
+// prom(true).then(onfulfil).catch(onReject)
+
+
+function check (complete){
     return new Promise(function(resolve,reject){
         console.log("Fetching data please wait")
         setTimeout(()=>{
             if(complete){
-                resolve("success");
+             resolve("Done");
             }
             else{
-                reject("sorry")
+                reject("Not Done")
             }
-        },3000)
+        },2000)
+
+
     })
 }
-
-let onfulfil =(result)=>{
-    console.log(result)
-}
-let onReject=(error)=>{
-    console.log(error)
-}
-
-prom(true).then(onfulfil).catch(onReject)
-
-
-
+check(true).then((out)=>console.log(out)).catch((err)=>console.log(err));
 
 
 // function getresult(a,b){
