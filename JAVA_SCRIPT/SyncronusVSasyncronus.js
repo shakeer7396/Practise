@@ -1,7 +1,7 @@
 // Syncronus 
 
 
-// Syncronus means Jab tak ek work complete nai hota jab tak next wala nai kar sakte--> it is called syncronus function 
+// Syncronus means Jab tak ek work complete nai hota tab tak next wala nai kar sakte--> it is called syncronus function 
 
 // const fun2=()=>{
 //     console.log("Calling fun3")
@@ -19,7 +19,7 @@
 
 // -----------------------------------------------------------------------------------------------
 // Asyncronus?
-// Asyncronus means Jab tak ek work complete nai hota jab tak next wala  kar sakte--> it is called Asyncronus function (sab kaam ko ek hi baar kar sakte)
+// Asyncronus means Jab tak ek work complete nai hota tab tak next wala kar sakta hai--> it is called Asyncronus function (sab kaam ko ek hi baar kar sakte)
 const fun2 = ()=>{
     setTimeout(()=>{
         console.log("Called fun2 start")
