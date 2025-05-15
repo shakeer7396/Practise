@@ -18,7 +18,6 @@ const DarkToggle = () => {
         setDarkMode((PrevMode) => !PrevMode)
     }
 
-
     return (
         <div style={styles}>
             {darkMode ? "Dark Theme" : "Light Theme"}

@@ -30,7 +30,6 @@ function OnToogle(){
   alert("Toggle Successful")
 }
 
-
   return (
   <ToogleBtn toogleTheme={OnToogle} />
   )
