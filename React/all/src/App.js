@@ -11,6 +11,7 @@ import Counter from "./Components/StateAll/CounterApp/Counter";
 import DarkToggle from "./Components/StateAll/DarkTheme/DarkToggle";
 import Form from "./Components/StateAll/Form/Form";
 import StopWatch from "./Components/StateAll/Timer/StopWatch";
+import Fetch from "./Components/UsEffect/Fetch";
 function App() {
   return (
     <div className="App">
@@ -23,12 +24,16 @@ function App() {
       {/* <ParentToogle /> */}
       {/* <DarkModeToggleParnt /> */}
       {/* ------------------------------------------------------------------------------- */}
-      
+
       {/* useState----------> */}
       {/* <Counter /> */}
       {/* <Form /> */}
       {/* <DarkToggle /> */}
-      <StopWatch />
+      {/* <StopWatch /> */}
+      {/*-------------------------------------------------------------*/}
+
+      {/*useEffect-------------------> */}
+      <Fetch />
       {/*-------------------------------------------------------------*/}
     </div>
   );
