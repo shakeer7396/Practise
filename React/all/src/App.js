@@ -14,6 +14,7 @@ import Form from "./Components/StateAll/Form/Form";
 import StopWatch from "./Components/StateAll/Timer/StopWatch";
 import ContextProvider from "./Components/UseContxt/ThemeBtn/ContextProvider";
 import Fetch from "./Components/UsEffect/Fetch";
+import ApiFetch from "./Components/Crud_App_uSuEuC/ApiFetch";
 function App() {
   return (
     <div className="App">
@@ -36,20 +37,26 @@ function App() {
 
       {/*useEffect-------------------> */}
       {/* <Fetch /> */}
+      <ApiFetch />
       {/*-------------------------------------------------------------*/}
 
       {/* useContext */}
       {/* <ContextProvider /> */}
       {/*-------------------------------------------------------------*/}
 
-    {/* CRUD App */}
-     
-      <Final />
-      {/*-------------------------------------------------------------*/}
 
+
+
+    {/* CRUD App */}
+    
+      {/* <Final /> */}
+
+      {/*-------------------------------------------------------------*/}
 
     </div>
   );
 }
 
 export default App;
+
+
