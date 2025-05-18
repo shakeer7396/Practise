@@ -1,4 +1,5 @@
 import "./App.css";
+import Final from "./Components/Crud_App_uSuEuC/Final";
 import ParentPropsCondition, {
   ParentConditionalProps,
 } from "./Components/PropsAll/ConditionalRendering/ParentProps";
@@ -11,6 +12,7 @@ import Counter from "./Components/StateAll/CounterApp/Counter";
 import DarkToggle from "./Components/StateAll/DarkTheme/DarkToggle";
 import Form from "./Components/StateAll/Form/Form";
 import StopWatch from "./Components/StateAll/Timer/StopWatch";
+import ContextProvider from "./Components/UseContxt/ThemeBtn/ContextProvider";
 import Fetch from "./Components/UsEffect/Fetch";
 function App() {
   return (
@@ -33,8 +35,19 @@ function App() {
       {/*-------------------------------------------------------------*/}
 
       {/*useEffect-------------------> */}
-      <Fetch />
+      {/* <Fetch /> */}
       {/*-------------------------------------------------------------*/}
+
+      {/* useContext */}
+      {/* <ContextProvider /> */}
+      {/*-------------------------------------------------------------*/}
+
+    {/* CRUD App */}
+     
+      <Final />
+      {/*-------------------------------------------------------------*/}
+
+
     </div>
   );
 }
