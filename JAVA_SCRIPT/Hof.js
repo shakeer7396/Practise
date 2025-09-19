@@ -201,6 +201,12 @@ arr2.forEach(function(el){
 //     console.log(check)  //output is [ 5, 7, 6 ]
 
     
+let arr=["apple", "windows", "ubuntu", "cola", "system"];
+let bag="";
+for(let i=0;i<arr.length; i++){
+    bag+=arr[i].length+" ";  //arr[i] it means arr[0,1,2,3,4]
+}
+console.log(bag);  //output is 5 7 6 4 6
 
 // 9. Given an array of string generate an array whose first or last character is a
 //  Sample Input - ["assignment", "problem", "media", "upload"]
