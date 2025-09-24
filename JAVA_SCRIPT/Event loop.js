@@ -24,25 +24,25 @@
 
 // right-way are given below 
 
-// let add=0;
-// let timer=setInterval(()=>{
-//     console.log(add++)
+let add=0;
+let timer=setInterval(()=>{
+    console.log(add++)
 
+},100)
+
+setTimeout(()=>{
+    clearInterval(timer)
+
+},3000)
+
+// let sub=10;
+// let timer = setInterval(()=>{
+// console.log(sub--);
 // },200)
 
 // setTimeout(()=>{
-//     clearInterval(timer)
-
-// },2000)
-
-let sub=10;
-let timer = setInterval(()=>{
-console.log(sub--);
-},200)
-
-setTimeout(()=>{
-    clearInterval(timer);
-},2000);
+//     clearInterval(timer);
+// },2000);
 
 
 function one(){

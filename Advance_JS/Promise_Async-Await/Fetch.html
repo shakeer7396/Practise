@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Data</title>
+    <style>
+        #container{
+            display:grid;
+            gap:20px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            
+        }
+        #main{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:20px;
+            text-align: center;
+        }
+        img{
+            width:250px;
+            height:250px;
+        }
+        @media all and (max-width:399px){
+            #container{
+            display:grid;
+            gap:20px;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:auto; 
+            padding:0px 12px 0px 12px;
+            }
+        }
+        @media all and (min-width:400px) and (max-width:700px){
+            #container{
+            display:grid;
+            gap:20px;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+</body>
+</html>
+<script>
+    //Fetching data
+    // https://fakestoreapi.com/products
+   
+
+    const getData = async() =>{
+        try{
+            let res=await fetch("https://fakestoreapi.com/products");
+            let data=await res.json();
+            appendData(data);
+            console.log(data);
+
+        }catch(err){
+console.log(err);
+        }
+    }
+
+    getData();
+    // Getting the container div from the html
+    let container = document.getElementById("container");
+    // Setting up the data in the DOM using this appendData function
+    function appendData(data){
+data.forEach(el=>{
+    let div = document.createElement("div"); // createElement used creating an element (any)
+    div.setAttribute("id","main" );          // setAttribute used to setting the attribute (id, class, src, href etc) of that element with name and value
+
+    let img = document.createElement("img");
+    img.src=el.image
+
+    let p1 = document.createElement("p");
+    p1.innerText=`Name- ${el.category}`   // innerText is used to set the text inside that element
+
+    let p2 = document.createElement("p");
+    p2.innerText=`Description- ${el.description}`
+    let p3 = document.createElement("p");
+    p3.innerText=`Price- ${el.price}`
+
+    let p4 = document.createElement("p");
+    p4.innerText=`Count- ${el.rating}`
+
+    let p5 = document.createElement("p");
+    p5.innerText=`Rating- ${el.rating}`
+
+    div.append(img,p1,p2,p3,p4,p5);  // append is used to combine multiple elements into a single element.
+    container.append(div);
+
+})
+    }
+
+</script>
+

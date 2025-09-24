@@ -35,7 +35,7 @@ console.log(result); //output is 24
 
 //forEach
 let arr4=[1,2,3,4,5];
-arr4.forEach(n => console.log(n*2)) //output is 2 4 6 8 10
+arr4.forEach(n => console.log(n*2)) //output is 2 4 6 8 10 by line by line
 
 
 
