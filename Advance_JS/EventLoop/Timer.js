@@ -1,10 +1,30 @@
 // Event loop is somthing that is used to handle asynchronous operations in java script.
 // Event loop is a single thread that runs in the background and continuously checks the call stack and the task queue
-// If the call stack is empty, the event loop takes the first task from the task queue and pushes it to the call stack for execution
-// This way, java script can handle multiple operations concurrently without blocking the main thread
 
+// Call stack is a data structure that stores the function calls in a stack format
+// When a function is called it is added to the top of the stack and when the function is completed it is removed from the stack
+// This is how the event loop works in java script
+// Event loop continuously checks the call stack and the task queue
+// If the call stack is empty it takes the first task from the task queue and pushes it to the call stack for execution
+// This way java script can handle multiple operations concurrently without blocking the main thread
+
+// In the below example when we call the function three() it will call the function two() and then it will call the function one() and then it will print the message in the console
+// This is how the call stack works in java script
 
 // exp-1
+// function one(){
+//     console.log("This is event loop check")
+// }
+// function two(){
+//     one()
+// }
+// function three(){
+//     two()
+// }
+// three()
+
+
+// exp-2
 
 // Its single Thread read one line at a time its not a right-way to stop the loop in below
 
@@ -35,22 +55,3 @@ setTimeout(()=>{
 
 // In react these are used in useEffect hook to create a timer or clock or to create a delay in the execution of the code
 
-// exp-2
-// function one(){
-//     console.log("This is event loop check")
-// }
-// function two(){
-//     one()
-// }
-// function three(){
-//     two()
-// }
-// three()
-// In the above example when we call the function three() it will call the function two() and then it will call the function one() and then it will print the message in the console
-// This is how the call stack works in java script
-// Call stack is a data structure that stores the function calls in a stack format
-// When a function is called it is added to the top of the stack and when the function is completed it is removed from the stack
-// This is how the event loop works in java script
-// Event loop continuously checks the call stack and the task queue
-// If the call stack is empty it takes the first task from the task queue and pushes it to the call stack for execution
-// This way java script can handle multiple operations concurrently without blocking the main thread
