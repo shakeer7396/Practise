@@ -1,4 +1,6 @@
-// var explanation:- var is a local scope and global scope varible. 
+// var explanation:- var is a local scope and global scope varible. redeclaration and reassigning is possible with var. It is function scope variable. It is hoisted to the top of the scope.
+// var x= 10; redeclare var x=20; reassign var x=30; reassign var x=40; reassign
+
 //exp-1
 console.log(x)//output: undefined because of hoisting. 
 var x=10;
@@ -22,6 +24,7 @@ console.log("var calling Outside function variable, b =", b);
 
 
 // let explanation:- let is a block scope varible. It is only accessible within the block means function, loop, if statements etc.
+// let variable reenitialization is not possible but reassignment is possible. It is not hoisted to the top of the scope like var and cannot be accessed before initialization. 
 
 // exp-1
 console.log(y); 
