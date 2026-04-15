@@ -52,23 +52,35 @@
 // const explanation:- const is also a block scope variable. It is used to declare a constant variable which cannot be reassigned. It must be initialized at the time of declaration.
 // const variable is not hoisted to the top of the scope like var and cannot be accessed before initialization.
 
-// exp-1
-console.log(z); 
-const z=10;
-// output: Uncaught ReferenceError: Cannot access 'z' before initialization because const variable is not hoisted like var and cannot be accessed before initialization.
+// // exp-1
+// console.log(z); 
+// const z=10;
+// // output: Uncaught ReferenceError: Cannot access 'z' before initialization because const variable is not hoisted like var and cannot be accessed before initialization.
 
-// exp-2
-const e=20;
-function test3(){
-    console.log("const calling Inside function test3, e =", e); 
-    //output: const calling Inside function test3, e = 20
-    const f=30;
-    console.log("const calling Inside function test3, f =", f);
-    //output: const calling Inside function test3, f = 30
+// // exp-2
+// const e=20;
+// function test3(){
+//     console.log("const calling Inside function test3, e =", e); 
+//     //output: const calling Inside function test3, e = 20
+//     const f=30;
+//     console.log("const calling Inside function test3, f =", f);
+//     //output: const calling Inside function test3, f = 30
+// }
+// test3();
+
+// console.log("const calling Outside function variable, e =", e);
+// // output: const calling Outside function variable, e = 20
+// console.log("const calling Outside function variable, f =", f);
+// // output: Uncaught ReferenceError: f is not defined because const f is a block scope variable and cannot be accessed outside the function test3.   
+
+
+function test() {
+  if (true) {
+    var x = 10;
+    let y = 20;
+  }
+  console.log(x); // 10
+  console.log(y); // Uncaught ReferenceError: y is not defined
 }
-test3();
 
-console.log("const calling Outside function variable, e =", e);
-// output: const calling Outside function variable, e = 20
-console.log("const calling Outside function variable, f =", f);
-// output: Uncaught ReferenceError: f is not defined because const f is a block scope variable and cannot be accessed outside the function test3.   
+test();
